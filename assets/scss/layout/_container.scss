@@ -1,0 +1,13 @@
+.l-container {
+  width: 100%;
+  position: relative;
+
+  
+  @include xs{
+
+    min-width: 0;
+    // margin-bottom: 130px;
+      overflow-x: hidden;
+        overflow-y: hidden;
+  }
+}
