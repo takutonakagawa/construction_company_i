@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+@import "../../config";
+@import "../../function";
+@import "../../mixin";
+
+
+.p-mv{
+    height: 95vh;
+    width: 100%;
+    background-color: $main-blue-1;
+    position: relative;
+    &__main{
+        position: absolute;
+        width: 100%;
+        min-width: 1500px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    &__mark{
+        position: absolute;
+        z-index: 5;
+        right: 0;
+        top: 5vw;
+        width: 18vw;
+    }
+    &__title{
+        padding: 15px;
+        background: rgba(255, 255, 255, 0.8);
+        position: absolute;
+        left: 10%;
+        bottom: 30%;
+        font-size: 2.8vw;
+        font-weight: bold;
+        line-height: 1.5;
+        z-index: 10;
+        .core{
+            font-size: 4.3vw;
+            color: $main-blue-2;
+        }
+        .professional{
+            font-size: 4.3vw;
+            color: $main-blue-1;
+        }
+        .kanji{
+            font-size: 3.6vw;
+        }
+    }
+    &__lines{
+        width: 120%;
+        position: absolute;
+        z-index: 1;
+        top: 50%;
+        left: 0;
+    }
+  
+}
+
+
+  

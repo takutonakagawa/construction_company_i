@@ -4,13 +4,20 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  
+  transition: all 0.3s;
+  color: #333333;
 }
 
 p{
   line-height: 1.7;
   @include xs{
     font-size: 16px;
+  }
+}
+a{
+  text-decoration: none;
+  &:hover{
+    opacity: .8;
   }
 }
 

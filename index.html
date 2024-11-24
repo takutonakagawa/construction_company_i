@@ -1,51 +1,342 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TOP</title>
+
+    <!-- 共通css -->
+    <link rel="stylesheet" href="/assets/css/common.css">
+    <!-- 共通css / -->
+    <!-- 固有css -->
+    <link rel="stylesheet" href="/assets/css/index.css">
+     <!-- 固有css/ -->
 </head>
 <body>
+    <div class="l-cutin">
+
+    </div>
+    <!-- header -->
     <header class="l-header">
-        <div class="l-header__inner">
-            <a href="/" class="l-header___logo">
-                <img src="" alt="logo">
+        <div class="l-header__container">
+            <a href="" class="logo">
+                <i>
+                    <img src="/assets/img/common/logo.svg" alt="">
+                </i>
+                <div class="text">
+                    <div class="title">株式会社池田総合設備</div>
+                    <div class="copy">お客様の想いを形で結果として応える会社</div>
+                </div>
             </a>
-            <div class="l-header__menu">
-                <ul>
-                    <li>
-                        <a href="">TOP</a>
-                    </li>
-                    <li>
-                        <a href="">TOP</a>
-                    </li>
-                    <li>
-                        <a href="">TOP</a>
-                    </li>
-                    <li>
-                        <a href="">TOP</a>
-                    </li>
-                    <li>
-                        <a href="">TOP</a>
-                    </li>
-                    <li>
-                        <a href="">TOP</a>
-                    </li>
+            <nav class="l-header__nav">
+                <ul class="l-header__menu">
+                    <li claiss="l-header__list"><a href="" class="is-current">TOP</a></li>
+                    <li claiss="l-header__list"><a href="">会社概要</a></li>
+                    <li claiss="l-header__list"><a href="">施工実績 / 物件案内</a></li>
+                    <li claiss="l-header__list"><a href="">料金案内</a></li>
+                    <li claiss="l-header__list"><a href="">事業内容</a></li>
+                    <li claiss="l-header__list"><a href="">お問い合わせ</a></li>
                 </ul>
-                <div class="sns">
+                <div class="l-header__sns">
                     <a href="">
-                        <img src="" alt="">
+                        <img src="/assets/img/common/LINE.png" alt="">
                     </a>
                     <a href="">
-                        <img src="" alt="">
+                        <img src="/assets/img/common/Instagram.png" alt="">
                     </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- header / -->
+
+    <!-- main内 各ページ固有ソース -->
+    <main class="l-main" id="top">
+
+        <!-- mv -->
+        <section class="p-mv p-mv--top">
+            <img class="p-mv__main" src="/assets/img/common/mv_top.png" alt="">
+            <img class="p-mv__mark rellax" src="/assets/img/common/MARK2.png" alt="">
+
+            <img class="p-mv__lines rellax-2" src="/assets/img/common/lines.png" alt="">
+            <h1 class="p-mv__title">
+                <span class="core">水</span>・<span class="core">空気</span>・<span class="core">住む</span>の<span class="kanji">未来</span>を<span class="kanji">創</span>る。<br>
+                <span class="professional">プロフェッショナル</span>の<span class="kanji">力</span>で、<span class="kanji">社会</span>に<span class="kanji">貢献</span>を。
+            </h1>
+            
+        </section>
+        <!-- mv / -->
+
+        <!--line -->
+        <section class="p-instagram p-lead-sec">
+            <div class="c-inner">
+                <h1 class="c-title">
+                    <div class="ja">公式</div>
+                    <div class="en">instagram</div>
+                </h1>
+                <div class="p-instagram__content p-lead-sec__content">
+                    <p>
+                        当社は事業ごとにインスタグラムでそれぞれの「今」を発信しています。<br>
+                        お客様のご興味やニーズにあわせてぜひ一度チェックしてみてください。
+                    </p>
+                    <ul>
+                        <li>
+                            <a href="">
+                                <div class="media">
+                                    <img src="" alt="">
+                                </div>
+                                <div class="text">
+                                    <h2>title</h2>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="media">
+                                    <img src="" alt="">
+                                </div>
+                                <div class="text">
+                                    <h2>title</h2>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="media">
+                                    <img src="" alt="">
+                                </div>
+                                <div class="text">
+                                    <h2>title</h2>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!--line / -->
+
+        <!--line -->
+        <section class="p-line p-lead-sec">
+            <div class="c-inner">
+                <h1 class="c-title">
+                    <div class="ja">公式</div>
+                    <div class="en">line</div>
+                </h1>
+                <div class="p-line__content p-lead-sec__content">
+                    <p>
+                        お役立ち情報や新規物件の情報をいち早くお届けいたします。<br>
+                        右のボタンから追加をよろしくお願いします。
+                        公式LINEからの問い合わせやお見積もりも可能です。
+                    </p>
+                    <div class="p-line__btns p-lead-sec__btns">
+                        <a href="" class="c-btn">友達追加</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--line / -->
+
+        <!--コンタクト -->
+        <section class="p-contact p-lead-sec">
+            <div class="c-inner">
+                <h1 class="c-title">
+                    <div class="ja">お問い合わせ</div>
+                    <div class="en">contact</div>
+                </h1>
+                <div class="p-contact__content p-lead-sec__content">
+                    <p>
+                        私たちのサービスや製品についてのご質問やご相談がございましたら、<br>
+                        電話またはフォームからお問い合わせください。<br>
+                        迅速にご対応させていただきます。
+                    </p>
+                    <div class="p-content__btns p-lead-sec__btns">
+                        <a href="" class="c-btn">LINE</a>
+                        <a href="/contact.html" class="c-btn">フォーム</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--コンタクト / -->
+
+        <!-- リクルート -->
+        <section class="p-recruit p-lead-sec">
+            <div class="c-inner">
+                <h1 class="c-title">
+                    <div class="ja">採用情報</div>
+                    <div class="en">recruitment</div>
+                </h1>
+                <div class="p-recruit__content p-lead-sec__content">
+                    <p>
+                        弊社では一緒に働く仲間を募集しております。<br>
+                        お電話、メールフォームどちらからでもお問い合わせ可能です。<br>
+                        ご質問や、気になることがありましたらまずはお気軽にお問い合わせください！
+                    </p>
+                    <div class="p-recruit__btns p-lead-sec__btns">
+                        <a href="/recruit.html" class="c-btn">採用情報へ</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- リクルート / -->
+
+        
+    </main>
+     <!-- main内 各ページ固有ソース / -->
+
+    <!-- footer -->
+    <footer class="l-footer">
+        <div class="l-footer__container">
+            <div class="l-footer__content">
+                <div class="l-footer__text">
+                    <a href="" class="logo">
+                        <i>
+                            <img src="/assets/img/common/logo.svg" alt="">
+                        </i>
+                        <div class="text">
+                            <div class="title">株式会社池田総合設備</div>
+                            <div class="copy">お客様の想いを形で結果として応える会社</div>
+                        </div>
+                    </a>
+                    <div class="l-footer__sns">
+                        <a href="">
+                            <img src="/assets/img/common/LINE.png" alt="">
+                        </a>
+                        <a href="">
+                            <img src="/assets/img/common/Instagram.png" alt="">
+                        </a>
+                    </div>
+                    <div class="l-footer__info">
+                        <p>000-0000-0000</p>
+                        <p>兵庫県神戸市中央区あああああ</p>
+                    </div>
+                </div>
+                <div class="l-footer__menu">
+                    <ul>
+                        <li>
+                            <a href="" class="main">TOP</a>
+                        </li>
+                        <li>
+                            <a href="">TOP</a>
+                        </li>
+                        <li>
+                            <a href="">TOP</a>
+                        </li>
+                        <li>
+                            <a href="">TOP</a>
+                        </li>
+                        <li>
+                            <a href="">TOP</a>
+                        </li>
+                        <li>
+                            <a href="">TOP</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="" class="main">会社概要</a>
+                        </li>
+                        <li>
+                            <a href="">TOP</a>
+                        </li>
+                        <li>
+                            <a href="">TOP</a>
+                        </li>
+                        <li>
+                            <a href="">TOP</a>
+                        </li>
+                        <li>
+                            <a href="">TOP</a>
+                        </li>
+                        <li>
+                            <a href="">TOP</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="" class="main">施工実績/物件案内</a>
+                        </li>
+                        <li>
+                            <a href="">TOP</a>
+                        </li>
+                        <li>
+                            <a href="">TOP</a>
+                        </li>
+                        <li>
+                            <a href="">TOP</a>
+                        </li>
+                        <li>
+                            <a href="">TOP</a>
+                        </li>
+                        <li>
+                            <a href="">TOP</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="" class="main">料金案内</a>
+                        </li>
+                        <li>
+                            <a href="">TOP</a>
+                        </li>
+                        <li>
+                            <a href="">TOP</a>
+                        </li>
+                        <li>
+                            <a href="">TOP</a>
+                        </li>
+                        <li>
+                            <a href="">TOP</a>
+                        </li>
+                        <li>
+                            <a href="">TOP</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="" class="main">事業内容</a>
+                        </li>
+                        <li>
+                            <a href="">TOP</a>
+                        </li>
+                        <li>
+                            <a href="">TOP</a>
+                        </li>
+                        <li>
+                            <a href="">TOP</a>
+                        </li>
+                        <li>
+                            <a href="">TOP</a>
+                        </li>
+                        <li>
+                            <a href="">TOP</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="" class="main">お問い合わせ</a>
+                        </li>
+                        <li>
+                            <a href="">TOP</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
-    </header>
-    <main>
 
-    </main>
+        <div class="copyright">コピーライトコピーライト</div>
+    </footer>
+    <!-- footer / -->
+
+
+    <!-- 共通JS -->
+    <!-- 共通JS -->
+
+
+    <!-- 固有JS -->
+    <script src="/assets/js/_vendor/rellax.js"></script>
+    <script src="/assets/js/top/top.js"></script>
+    <!-- 固有JS　/ -->
     
 </body>
 </html>

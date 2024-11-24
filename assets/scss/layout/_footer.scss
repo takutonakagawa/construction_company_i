@@ -6,5 +6,62 @@
 
 
 .l-footer{
-  
+  width: 100%;
+  background-color: #F3F3F3;
+  margin-top: 120px;
+  &__container{
+    padding: 20px;
+  }
+  &__content{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 15px;
+
+  }
+  &__text{
+    .logo{
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        align-items: center;
+        .text{
+            .title{
+                color: $main-blue-1;
+                font-size: 24px;
+                margin-bottom: 5px;
+            }
+            .copy{
+                font-size: 12px;
+                color: $main-blue-2;
+            }
+        }
+    }
+  }
+  &__menu{
+    display: flex;
+    gap: 40px;
+    ul{
+        li{
+            margin-bottom: 20px;
+            >a{
+                font-size: 14px;
+                &.main{
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+  }
+  &__sns{
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+    margin-top: 80px;
+  }
+  .copyright{
+    font-size: 12px;
+    text-align: center;
+    padding: 20px;
+  }
 }
