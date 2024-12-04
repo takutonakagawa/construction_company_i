@@ -1,0 +1,121 @@
+/* 共通 */
+.p-contact{
+    text-align: center;
+}
+.p__contact--inner{
+    width: 50%;
+    margin: 0 auto;
+}
+
+
+/* タイトル */
+.c-title--secondary {
+    text-align: center;
+    margin: 20px 0;
+    position: relative;
+    margin-bottom: 150px;
+}
+
+.en--secondary {
+    font-size: 42px;
+    font-weight: bold;
+    color: #4CB6E9;
+    opacity: 45%;
+}
+
+.ja--secondary {
+    position: absolute;
+    top: 105%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    color: #333;
+}
+
+.ja--secondary::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -15px;
+    transform: translateX(-50%);
+    width: 50%;
+    height: 2px;
+    background-color: #002f6c;
+}
+  
+/* フォーム */
+.c-contact__form{
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.p-contact__form{
+    text-align: left;
+}
+
+.c-required{
+    color: red;
+    font-size: 50%;
+}
+
+.c-forms{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 120%;
+    left: 11%;
+}
+
+.p-contact__category{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 11%;
+}
+
+.p-contact__content{
+    position: absolute;
+    top: 0;
+    bottom: 10;
+    margin: auto;
+    left: 11%;
+    resize: none;
+    width: 680px;
+    line-height: 1;
+    height: 20rem;
+}
+
+.p-contact__privacy{
+    margin-top: 320px;
+    border: solid 1px;
+    margin-bottom: 30px;
+}
+
+.p-contact_btn{
+    margin-bottom: 100px;
+}
+
+.c-btn{
+    font-size: 20px;
+    padding: 25px 110px;
+    border: #4CB6E9 1px solid;
+    text-align: center;
+    color: #004982;
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+    .c-arrow{
+    position: absolute;
+    width: 60px;
+    height: 15px;
+    border-right: 2px solid #004982;
+    border-bottom: 2px solid #004982;
+    transform: skew(45deg);
+    display: inline-block;
+    left: 86%;
+    top: 30%;
+    }
+}
+
