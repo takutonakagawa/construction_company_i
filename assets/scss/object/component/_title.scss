@@ -1,0 +1,38 @@
+
+@charset "utf-8";
+
+@import "../../config";
+@import "../../function";
+@import "../../mixin";
+
+.c-title{
+    position: relative;
+    &::after{
+        content: "";
+        position: absolute;
+        width: 70px;
+        height: 1px;
+        background-color: $main-blue-1;
+        rotate: -45deg;
+        top: -10px;
+        left: -50px;
+    }
+    .ja{
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+    .en{
+        font-size: 32px;
+        font-weight: bold;
+    }
+    .icon{
+        position: absolute;
+    }
+    &--recruit{
+        margin-bottom: 65px;
+        .ja,.en{ 
+            color: white;
+        }
+
+    }
+}

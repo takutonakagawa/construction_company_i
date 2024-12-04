@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+@import "../../config";
+@import "../../function";
+@import "../../mixin";
+
+
+.p-line{
+    position: relative;
+    .c-title{
+        margin-bottom: 60px;
+    }
+    .icon{
+        top: 5px;
+        left: 70px;
+      }
+    &__bg{
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        z-index: -1;
+    }
+}

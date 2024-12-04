@@ -32,7 +32,6 @@
   font-size: 24px;
   color: #333;
 }
-
 .ja--secondary::after {
   content: "";
   position: absolute;
@@ -41,7 +40,7 @@
   transform: translateX(-50%);
   width: 50%;
   height: 2px;
-  background-color: #002f6c;
+  background-color: #004982;
 }
 
 /* フォーム */
@@ -94,28 +93,8 @@
   margin-bottom: 30px;
 }
 
-.p-contact_btn {
+.contact_btn {
   margin-bottom: 100px;
-}
-
-.c-btn {
-  font-size: 20px;
-  padding: 25px 110px;
-  border: #4CB6E9 1px solid;
-  text-align: center;
-  color: #004982;
-  display: inline-block;
-  text-decoration: none;
-  position: relative;
-}
-.c-btn .c-arrow {
-  position: absolute;
-  width: 60px;
-  height: 15px;
-  border-right: 2px solid #004982;
-  border-bottom: 2px solid #004982;
-  transform: skew(45deg);
-  display: inline-block;
-  left: 86%;
-  top: 30%;
+  display: flex;
+  justify-content: center;
 }

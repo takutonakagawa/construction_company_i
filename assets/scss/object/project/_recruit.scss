@@ -1,0 +1,21 @@
+
+@charset "utf-8";
+
+@import "../../config";
+@import "../../function";
+@import "../../mixin";
+
+
+.p-recruit{
+    background: rgba(0,0,0, 0.5);
+    
+    &__content{
+        p{
+            color: white;
+        }
+        .c-btn{
+            color: $main-blue-1;
+            background: rgba(255,255,255, 0.5);
+        }
+    }
+}

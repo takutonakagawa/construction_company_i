@@ -213,12 +213,50 @@ img {
   }
 }
 
+.c-title {
+  position: relative;
+}
+.c-title::after {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 1px;
+  background-color: #004982;
+  rotate: -45deg;
+  top: -10px;
+  left: -50px;
+}
+.c-title .ja {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+.c-title .en {
+  font-size: 32px;
+  font-weight: bold;
+}
+.c-title .icon {
+  position: absolute;
+}
+.c-title--recruit {
+  margin-bottom: 65px;
+}
+.c-title--recruit .ja, .c-title--recruit .en {
+  color: white;
+}
+
 .c-btn {
   width: 240px;
   padding: 17.5px;
   border: 1px solid #4CB6E9;
   display: block;
   text-align: center;
+  position: relative;
+}
+.c-btn::after {
+  content: url("/assets/img/common/btn-arrow.png");
+  position: absolute;
+  top: 10px;
+  right: -25px;
 }
 
 .p-mv {
@@ -272,9 +310,49 @@ img {
   left: 0;
 }
 
+.p-lead-sec {
+  padding: 65px 50px;
+}
 .p-lead-sec__content {
   display: flex;
+  gap: 40px;
   justify-content: space-between;
+  align-items: end;
+}
+
+.p-recruit {
+  background: rgba(0, 0, 0, 0.5);
+}
+.p-recruit__content p {
+  color: white;
+}
+.p-recruit__content .c-btn {
+  color: #004982;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.p-instagram .icon {
+  top: 5px;
+  left: 180px;
+}
+
+.p-line {
+  position: relative;
+}
+.p-line .c-title {
+  margin-bottom: 60px;
+}
+.p-line .icon {
+  top: 5px;
+  left: 70px;
+}
+.p-line__bg {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
 }
 
 .l-header {
