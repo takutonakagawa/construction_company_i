@@ -1,0 +1,16 @@
+
+
+@charset "utf-8";
+
+@import "../../config";
+@import "../../function";
+@import "../../mixin";
+
+
+.p-lead-sec{
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        
+    }
+}

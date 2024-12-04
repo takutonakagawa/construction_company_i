@@ -1,6 +1,9 @@
 .c-inner {
   width: 100%;
   position: relative;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
   &--20 {
     padding-left: 20px;
     padding-right: 20px;
