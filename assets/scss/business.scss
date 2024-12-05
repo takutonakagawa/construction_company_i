@@ -1,0 +1,121 @@
+.p-business{
+    margin-top: 250px;
+    .business__inner{
+        width: 100%;
+        .p-business__contents{
+            margin-top: 80px;
+            .p-business__content{
+                margin-top: 80px;
+                position: relative;
+                margin-bottom: 360px;
+                .p-business__title{
+                    width: 50%;
+                    font-size: 28px;
+                    border-bottom: solid 1.5px ;
+                    padding-bottom: 7px;
+                    padding-left: 5px;
+                    margin-bottom: 50px;
+                }
+            }
+            .p-business__content--visual{
+                width: 1000px;
+                height: 400px;
+            }
+            .business__visual-rightside{
+                float: right;
+            }
+            .clearbox{
+                clear: both;
+            }
+            .p-business__desc{
+                border: solid 1px #4CB6E9;
+                width: 47%;
+                padding: 15px;
+                background-color: rgba($color: #ffffff, $alpha: 0.7)
+            }
+            .business_desc--p01{
+                position: absolute;
+                top: 90%;
+                left: 54%;
+            }
+            .business_desc--p02{
+                position: absolute;
+                top: 82%;
+                left: 0%;
+            }
+            .business__design-block--construction_blue-p01{
+                position: absolute;
+                background-color: #004982;
+                width: 200px;
+                height: 200px;
+                top: 80%;
+                left: -4%;
+                z-index: -1;
+            }
+            .business__design-block--construction_skyblue-p01{
+                position: absolute;
+                background-color: #4CB6E9;
+                width: 300px;
+                height: 220px;
+                top: 7%;
+                left: 61%;
+                z-index: -1;
+            }.business__design-block--construction_blue-p02{
+                position: absolute;
+                background-color: #004982;
+                width: 280px;
+                height: 370px;
+                top: 3%;
+                left: 84%;
+                z-index: -1;
+            }
+            .business__design-block--construction_skyblue-p02{
+                position: absolute;
+                background-color: #4CB6E9;
+                width: 300px;
+                height: 260px;
+                top: 37%;
+                left: 13%;
+                z-index: -1;
+            }
+            .business__design-block--construction_blue-p03{
+                position: absolute;
+                background-color: #004982;
+                width: 200px;
+                height: 220px;
+                top: 30%;
+                left: 77%;
+                z-index: -1;
+            }
+            .business__design-block--construction_skyblue-p03{
+                position: absolute;
+                background-color: #4CB6E9;
+                width: 300px;
+                height: 300px;
+                top: 55%;
+                left: -8%;
+                z-index: -1;
+            }
+            .business__btn--p01{
+                position: absolute;
+                left: 82.2%;
+                top: 134%;
+            }
+            .business__btn--p02{
+                position: absolute;
+                display: flex;
+                left: 55.5%;
+                top: 111.2%;
+                gap: 50px;
+                .business__btn--detail{
+                    width: 280px;
+                }
+            }
+            .business__btn--p03{
+                position: absolute;
+                left: 82.2%;
+                top: 117%;
+            }
+        }
+    }
+}
