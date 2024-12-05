@@ -63,18 +63,4 @@
   justify-content: center;
   align-items: center;
   gap: 100px;
-}
-.p-recruitment .p__recruitment--inner .p-recruitment_btn .c-btn {
-  position: relative;
-}
-.p-recruitment .p__recruitment--inner .p-recruitment_btn .c-btn .c-arrow {
-  position: absolute;
-  width: 60px;
-  height: 15px;
-  border-right: 2px solid #004982;
-  border-bottom: 2px solid #004982;
-  transform: skew(45deg);
-  display: inline-block;
-  left: 86%;
-  top: 30%;
 }/*# sourceMappingURL=recruitment.css.map */

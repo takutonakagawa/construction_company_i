@@ -1,0 +1,77 @@
+.p-price__contents {
+  margin-bottom: 300px;
+}
+.p-price__contents .p-price__content {
+  margin-bottom: 100px;
+}
+.p-price__contents .p-price__content .p-price__title {
+  font-size: 38px;
+}
+.p-price__contents .p-price__content .p-price__img {
+  height: 350px;
+  width: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding-top: 50px;
+  padding-left: 50px;
+}
+.p-price__contents .p-price__content .p-price__explain {
+  padding-top: 80px;
+  padding-left: 50px;
+  float: right;
+  width: 60%;
+}
+.p-price__contents .p-price__content .p-price__explain .p-price__subtitle {
+  font-size: 32px;
+}
+.p-price__contents .p-price__content .p-price__explain .p-price__desc {
+  padding-top: 50px;
+  font-size: 20px;
+}
+.p-price__contents .p-price__content .p-price__explain .p-price__price {
+  padding-top: 50px;
+  font-size: 20px;
+}
+.p-price__contents .p-price__content .p-price__explain .p-price__btn--right {
+  float: right;
+}
+.p-price__contents .p-price__content .irenovation__explain {
+  width: 40%;
+  float: left;
+  padding-top: 30px;
+  padding-left: 0px;
+}
+.p-price__contents .p-price__content .irenovation__explain .irenovation__subtitle {
+  margin-bottom: 50px;
+}
+.p-price__contents .p-price__content .irenovation__explain .price__list {
+  width: 100%;
+  display: flex;
+  margin-bottom: 25px;
+}
+.p-price__contents .p-price__content .irenovation__explain .irenovation__price-title {
+  width: 100%;
+  padding-top: 0px;
+}
+.p-price__contents .p-price__content .irenovation__explain .irenovation__price {
+  font-size: 20px;
+}
+.p-price__contents .p-price__content .irenovation__img {
+  float: right;
+}
+.p-price__contents .p-price__btn--center {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.p-price__contents .p-price__btn--center-W {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+.p-price__contents .p-price__btn--center-W .irenovation__btn {
+  width: 320px;
+}/*# sourceMappingURL=price.css.map */
