@@ -27,40 +27,6 @@
   margin: 0 auto;
 }
 
-/* タイトル */
-.c-title--secondary {
-  text-align: center;
-  margin: 20px 0;
-  position: relative;
-  margin-bottom: 150px;
-}
-
-.en--secondary {
-  font-size: 42px;
-  font-weight: bold;
-  color: #4CB6E9;
-  opacity: 45%;
-}
-
-.ja--secondary {
-  position: absolute;
-  top: 105%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 24px;
-  color: #333;
-}
-.ja--secondary::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  bottom: -15px;
-  transform: translateX(-50%);
-  width: 50%;
-  height: 2px;
-  background-color: #004982;
-}
-
 /* フォーム */
 .c-contact__form {
   position: relative;
@@ -72,22 +38,17 @@
 }
 .c-contact__form .error_message-p01 {
   position: absolute;
-  left: 48%;
+  left: 12%;
+  top: 200%;
   color: red;
 }
 .c-contact__form .error_message-p02 {
   position: absolute;
   left: 12%;
-  top: 200%;
-  color: red;
-}
-.c-contact__form .error_message-p03 {
-  position: absolute;
-  left: 12%;
   top: 140%;
   color: red;
 }
-.c-contact__form .error_message-p04 {
+.c-contact__form .error_message-p03 {
   position: absolute;
   left: 12%;
   top: 2050%;
