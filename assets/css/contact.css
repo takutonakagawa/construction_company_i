@@ -1,7 +1,25 @@
 @charset "UTF-8";
+/* mv */
+.contact__mv {
+  height: 300px;
+}
+.contact__mv .p-mv__main {
+  margin-top: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 400px;
+}
+.contact__mv .contact__title {
+  position: absolute;
+  bottom: -30%;
+  left: 8%;
+}
+
 /* 共通 */
 .p-contact {
   text-align: center;
+  margin-top: 300px;
+  position: relative;
 }
 
 .p__contact--inner {
@@ -46,7 +64,34 @@
 /* フォーム */
 .c-contact__form {
   position: relative;
-  margin-bottom: 30px;
+  margin-bottom: 55px;
+  display: flex;
+}
+.c-contact__form .contact-item {
+  margin-left: 50px;
+}
+.c-contact__form .error_message-p01 {
+  position: absolute;
+  left: 48%;
+  color: red;
+}
+.c-contact__form .error_message-p02 {
+  position: absolute;
+  left: 12%;
+  top: 200%;
+  color: red;
+}
+.c-contact__form .error_message-p03 {
+  position: absolute;
+  left: 12%;
+  top: 140%;
+  color: red;
+}
+.c-contact__form .error_message-p04 {
+  position: absolute;
+  left: 12%;
+  top: 2050%;
+  color: red;
 }
 
 .p-contact__form {
@@ -63,8 +108,10 @@
   top: 0;
   bottom: 0;
   margin: auto;
-  height: 120%;
+  padding-top: 35px;
   left: 11%;
+  border: 1px solid #4CB6E9;
+  border-radius: 0.4em;
 }
 
 .p-contact__category {
@@ -85,10 +132,12 @@
   width: 680px;
   line-height: 1;
   height: 20rem;
+  border: 1px solid #4CB6E9;
+  border-radius: 0.4em;
 }
 
 .p-contact__privacy {
-  margin-top: 320px;
+  margin-top: 360px;
   border: solid 1px;
   margin-bottom: 30px;
 }
@@ -97,4 +146,4 @@
   margin-bottom: 100px;
   display: flex;
   justify-content: center;
-}
+}/*# sourceMappingURL=contact.css.map */
