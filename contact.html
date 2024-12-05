@@ -48,83 +48,101 @@
     <!-- header / -->
 
     <main>
+        <!-- mv -->
+        <section class="p-mv contact__mv">
+            <img class="p-mv__main" src="assets/img/common/mv_top.png" alt="">
+            <div class="contact__title">
+                <h1 class="c-mv__title">
+                    <span class="c-mv__title--ja">お問い合わせ</span><br>
+                    <span class="c-mv__title--en">Contact</span>
+                </h1>
+            </div>
+        </section>
+        <!-- mv / -->
         <section class="p-contact">
-            <div class="c-inner">
+            <div>
+                <img class="p-mv__mark rellax" src="/assets/img/common/MARK2.png" alt="">
+            </div>
+            <div class="c-inner p__contact--inner">
                 <div class="c-title--secondary">
                     <div class="en--secondary">Contact form</div>
                     <div class="ja--secondary">お問い合わせ</div>
                 </div>
                 <div class="p-contact__form">
                     <div class="c-contact__form">
-                            <label form="name">
-                                    お名前
-                            </label>
-                            <div class="">
-                                <span class="c-required">※</span>
-                                <input class="c-forms" size="43">
-                            </div>
+                        <label form="name">
+                            お名前
+                        </label>
+                        <div class="contact__input">
+                            <span class="c-required">※</span>
+                            <input class="c-forms" size="43">
+                        </div>
+                        <div class="error_message-p01">お名前が正確に入力されていません</div>
                     </div>
                     <div class="c-contact__form">
-                        <p>
-                            <label form="furigana">
-                                    ふりがな
-                                    <span class="c-required">※</span>
-                                    <input class="c-forms" size="43">
-                            </label>
-                        </p>
+                        <label form="furigana">
+                            ふりがな
+                        </label>
+                        <div class="contact__input">
+                            <span class="c-required">※</span>
+                            <input class="c-forms" size="43">
+                        </div>
+                        <div class="error_message-p01">ふりがなが正確に入力されていません</div>
                     </div>
                     <div class="c-contact__form">
-                        <p>
-                            <label form="tel">
-                                    電話番号
-                                    <span class="c-required">※</span>
-                                    <input class="c-forms" size="100">
-                            </label>
-                        </p>
+                        <label form="tel">
+                            電話番号
+                        </label>
+                        <div class="contact__input">
+                            <span class="c-required">※</span>
+                            <input class="c-forms" size="100">
+                        </div>
+                        <div class="error_message-p02">電話番号が正確に入力されていません</div>
                     </div>
                     <div class="c-contact__form">
-                        <p>
-                            <label form="e-mail">
-                                    アドレス
-                                    <span class="c-required">※</span>
-                                    <input class="c-forms" size="100">
-                            </label>
-                        </p>
+                        <label form="email">
+                            アドレス
+                        </label>
+                        <div class="contact__input">
+                            <span class="c-required">※</span>
+                            <input class="c-forms" size="100">
+                        </div>
+                        <div class="error_message-p02">アドレスが正確に入力されていません</div>
                     </div>
                     <div class="c-contact__form">
-                        <p>
-                            <label form="address">
-                                    住所
-                                    <input class="c-forms" size="100">
-                            </label>
-                        </p>
+                        <label form="address">
+                            住所
+                        </label>
+                        <div class="contact__input">
+                            <span class="c-required">※</span>
+                            <input class="c-forms" size="100">
+                        </div>
+                        <div class="error_message-p02">住所が正確に入力されていません</div>
                     </div>
                     <div class="c-contact__form">
-                        <p>
-                            <label form="category">
-                                    種別
-                                    <span class="c-required">※</span>
-                                    <div class="p-contact__category">
-                                        <input type="radio" value="採用について">
-                                        <label>採用について</label>
-                                        <input type="radio" value="お仕事のご依頼">
-                                        <label>お仕事のご依頼</label>
-                                        <input type="radio" value="ご質問">
-                                        <label>ご質問</label>
-                                        <input type="radio" value="その他">
-                                        <label>その他</label>
-                                    </div>
-                            </label>
-                        </p>
+                        種別
+                        <span class="c-required">※</span>
+                        <div class="contact-item">
+                            <input type="radio" name="contact_reason" value="採用について" id="recruitment" checked>           <label for="recruitment">採用について</label>
+                        </div>
+                        <div class="contact-item">
+                            <input type="radio" name="contact_reason" value="お仕事のご依頼" id="work_request">
+                        <label for="work_request">お仕事のご依頼</label>
+                        </div>
+                            <div class="contact-item"><input type="radio" name="contact_reason" value="ご質問" id="questions">
+                        <label for="questions">ご質問</label>
+                        </div>
+                        <div class="contact-item">
+                            <input type="radio" name="contact_reason" value="その他" id="other"><label for="other">その他</label>
+                        </div>
+                        <div class="error_message-p03">種別が正確に選択されていません</div>
                     </div>
                     <div class="c-contact__form">
-                        <p>
-                            <label form="content">
                                     内容
                                     <span class="c-required">※</span>
                                     <textarea class="p-contact__content"></textarea>
                             </label>
-                        </p>
+                        <div class="error_message-p04">種別が正確に選択されていません</div>
                     </div>
                 </div>
                 <div class="p-contact__privacy">
