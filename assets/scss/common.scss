@@ -42,6 +42,50 @@
 @import "./object/utility/position";
 @import "./object/utility/vertical";
 
+.c-mv__title{
+    position: absolute;
+    left: 10%;
+    bottom: 30%;
+    font-size: 2.5vw;
+    line-height: 1.2;
+    z-index: 10;
+    .c-mv__title--ja{
+        color: #004982;
+    }
+    .c-mv__title--en{
+        color: #4CB6E9;
+        font-size: 7.5vw;
+        letter-spacing: 5px;
+        font-weight: bold;
+    }
+}
+.c-inner{
+    margin: 0 auto;
+    letter-spacing: 2px;
+    text-align: left;
+    .c-title{
+        margin-top: 100px;
+        position: relative;
+        .c-slash{
+            position: absolute;
+            height: 60px;
+            border-bottom: 2px solid #004982;
+            transform: skew(-45deg);
+            left: -3%;
+            top: -50%;
+        }
+        .ja{
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .en{
+            font-size: 42px;
+            font-weight: bold;
+        }
+    }
+}
+
+
 
 
 
