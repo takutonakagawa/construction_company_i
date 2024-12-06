@@ -28,7 +28,7 @@
     position: relative;
 }
 .p__contact--inner{
-    width: 50%;
+    max-width: 800px;
     margin: 0 auto;
 }
 
@@ -37,25 +37,43 @@
     position: relative;
     margin-bottom: 55px;
     display: flex;
-    .contact-item{
-        margin-left: 50px;
+    align-items: center;
+    label{
+        display: block;
+        width: 85px;
+    }
+    .c-contact__label{
+        width: 85px;
+    }
+    .contact-items{
+        display: flex;
+        .contact-item{
+            margin-left: 20px;
+            display: flex;
+            &:nth-of-type(1){
+                margin-left: 0;
+            }
+            label{
+                width: auto;
+            }
+        }
     }
     .error_message-p01{
         position: absolute;
-        left: 12%;
-        top: 200%;
+        left: 11%;
+        top: 110%;
         color: red;
     }
     .error_message-p02{
         position: absolute;
-        left: 12%;
+        left: 11%;
         top: 140%;
         color: red;
     }
     .error_message-p03{
         position: absolute;
-        left: 12%;
-        top: 2050%;
+        left: 11%;
+        top: 102%;
         color: red;
     }
 }
@@ -69,16 +87,22 @@
     font-size: 50%;
 }
 
-.c-forms{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    padding-top: 35px;
-    left: 11%;
-    border: 1px solid #4CB6E9;
-    border-radius: 0.4em;
+.contact__input{
+    width: calc(100% - 100px);
+    &--compact{
+        width: calc((100% - 100px) / 2);
+    }
+    .c-forms{
+        width: 100%;
+        margin: auto;
+        padding: 10px;
+    
+        border: 1px solid #4CB6E9;
+        border-radius: 0.4em;
+        font-size: 16px;
+    }
 }
+
 
 .p-contact__category{
     position: absolute;
@@ -89,11 +113,9 @@
 }
 
 .p-contact__content{
-    position: absolute;
-    top: 0;
-    bottom: 10;
+    padding: 10px;
+    font-size: 16px;
     margin: auto;
-    left: 11%;
     resize: none;
     width: 680px;
     line-height: 1;
@@ -103,7 +125,7 @@
 }
 
 .p-contact__privacy{
-    margin-top: 360px;
+    margin-top: 60px;
     border: solid 1px;
     margin-bottom: 30px;
 }
