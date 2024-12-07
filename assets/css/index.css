@@ -1,1 +1,269 @@
-/*# sourceMappingURL=index.css.map */
+.c-inner__index {
+  margin-bottom: 50px;
+}
+.c-inner__index .p-index__about {
+  position: relative;
+}
+.c-inner__index .p-index__about .p-index__about-title {
+  margin-top: 250px;
+}
+.c-inner__index .p-index__about .p-index__about-catch {
+  margin-top: 50px;
+  font-weight: bold;
+  font-size: 40px;
+}
+.c-inner__index .p-index__about .p-index__about-desc {
+  margin-top: 50px;
+  font-size: 28px;
+  width: 60%;
+}
+.c-inner__index .p-index__about .index__about-img {
+  position: absolute;
+  width: 70%;
+  height: 500px;
+  top: 0;
+  right: -16.2%;
+  z-index: -1;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.c-inner__index .p-index__about .p-index__about-btn {
+  float: right;
+}
+.c-inner__index .p-index__business {
+  margin-top: 350px;
+}
+.c-inner__index .p-index__business .p-index__business-imgs {
+  width: 45%;
+  height: 100%;
+  position: relative;
+  z-index: -1;
+}
+.c-inner__index .p-index__business .p-index__business-imgs .block__title {
+  z-index: 3;
+  position: absolute;
+  font-size: 19px;
+  left: 42%;
+  top: -10px;
+  color: #ffffff;
+}
+.c-inner__index .p-index__business .p-index__business-imgs .block__title--property {
+  top: 459px;
+  left: -9%;
+}
+.c-inner__index .p-index__business .p-index__business-imgs .block__title--renovation {
+  top: 459px;
+  left: 72%;
+}
+.c-inner__index .p-index__business .p-index__business-imgs .block__blue {
+  text-align: center;
+  background-color: #004982;
+  width: 27%;
+  height: 50px;
+  position: absolute;
+  z-index: 2;
+  left: 40%;
+  top: -25px;
+  transform: skew(-30deg);
+}
+.c-inner__index .p-index__business .p-index__business-imgs .block__blue--property {
+  left: -18%;
+  top: 445px;
+}
+.c-inner__index .p-index__business .p-index__business-imgs .block__blue--renovation {
+  left: 70%;
+  top: 445px;
+}
+.c-inner__index .p-index__business .p-index__business-imgs .block__skyblue {
+  position: absolute;
+  background-color: #4CB6E9;
+  width: 27%;
+  height: 50px;
+  z-index: 1;
+  left: 37%;
+  top: -15px;
+  transform: skew(-30deg);
+}
+.c-inner__index .p-index__business .p-index__business-imgs .block__skyblue--property {
+  left: -21%;
+  top: 456px;
+}
+.c-inner__index .p-index__business .p-index__business-imgs .block__skyblue--renovation {
+  left: 67%;
+  top: 456px;
+}
+.c-inner__index .p-index__business .p-index__business-imgs .index__about-img {
+  width: 200px;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  position: absolute;
+}
+.c-inner__index .p-index__business .p-index__business-imgs .index__about-img--construction {
+  left: 20%;
+}
+.c-inner__index .p-index__business .p-index__business-imgs .index__about-img--property {
+  left: -14.8%;
+  top: 300px;
+}
+.c-inner__index .p-index__business .p-index__business-imgs .index__about-img--renovation {
+  left: 54.7%;
+  top: 300px;
+}
+.c-inner__index .p-index__business .p-index__business-imgs .index__about-message {
+  position: absolute;
+  font-size: 18px;
+  top: 285px;
+  left: 27.5%;
+}
+.c-inner__index .p-index__business .p-index__business-content {
+  width: 55%;
+  float: right;
+}
+.c-inner__index .p-index__business .p-index__business-content .p-index__business-desc {
+  margin-top: 30px;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+.c-inner__index .p-index__business .p-index__business-content .p-index__business-btn {
+  margin-top: 50px;
+  float: right;
+}
+.c-inner__index .p-index__achivements {
+  margin-top: 1100px;
+}
+.c-inner__index .p-index__achivements .p-index__achivements-catch {
+  margin-top: 40px;
+  width: 100%;
+  font-size: 30px;
+  letter-spacing: 1.5px;
+}
+.c-inner__index .p-index__achivements .p-index__achivements-list {
+  width: 100%;
+  margin-top: 50px;
+  height: 550px;
+}
+.c-inner__index .p-index__achivements .p-index__achivements-list--float-off {
+  clear: both;
+}
+.c-inner__index .p-index__achivements .p-index__achivements-list .p-index__achivements-list-right {
+  width: 47%;
+  float: right;
+  padding-top: 60px;
+}
+.c-inner__index .p-index__achivements .p-index__achivements-list .p-index__achivements-list-right .p-index__achivements-category {
+  font-size: 32px;
+  border-bottom: 1px solid #004982;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+.c-inner__index .p-index__achivements .p-index__achivements-list .p-index__achivements-list-right .p-index__achivements-desc {
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+.c-inner__index .p-index__achivements .p-index__achivements-list .p-index__achivements-list-right .p-index__achivements-btn {
+  margin-top: 60px;
+  float: right;
+}
+.c-inner__index .p-index__achivements .p-index__achivements-list .p-index__achivements-list-left {
+  width: 47%;
+  position: relative;
+}
+.c-inner__index .p-index__achivements .p-index__achivements-list .p-index__achivements-list-left .block__skyblue {
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  background-color: #4CB6E9;
+}
+.c-inner__index .p-index__achivements .p-index__achivements-list .p-index__achivements-list-left .block__skyblue--1 {
+  width: 360px;
+  height: 220px;
+  right: 0;
+}
+.c-inner__index .p-index__achivements .p-index__achivements-list .p-index__achivements-list-left .block__blue {
+  position: absolute;
+  right: 0;
+  top: 260px;
+  width: 200px;
+  height: 200px;
+  background-color: #004982;
+}
+.c-inner__index .p-index__achivements .p-index__achivements-list .p-index__achivements-list-left .block__blue--1 {
+  left: 0;
+  height: 320px;
+  top: 200px;
+}
+.c-inner__index .p-index__achivements .p-index__achivements-list .p-index__achivements-list-left .index__achivements-img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+}
+.c-inner__index .p-index__achivements .p-index__achivements-list .p-index__achivements-list-left .index__achivements-img--1 {
+  width: 230px;
+  height: 230px;
+  z-index: 3;
+  top: 170px;
+  right: 20%;
+}
+.c-inner__index .p-index__achivements .p-index__achivements-list .p-index__achivements-list-left .index__achivements-img--2 {
+  width: 330px;
+  height: 330px;
+  z-index: 2;
+  left: 5%;
+  top: 120px;
+}
+.c-inner__index .p-index__achivements .p-index__achivements-list .p-index__achivements-list-left .index__achivements-img--3 {
+  width: 380px;
+  height: 350px;
+  z-index: 1;
+  right: 3%;
+  top: 20px;
+}
+.c-inner__index .p-index__achivements .p-index__achivements-list .p-index__achivements-list-left .index__achivements-img--4 {
+  width: 260px;
+  height: 230px;
+  right: 0;
+  top: 300px;
+  z-index: 3;
+}
+.c-inner__index .p-index__achivements .p-index__achivements-list .p-index__achivements-list-left .index__achivements-img--5 {
+  width: 430px;
+  height: 280px;
+  left: 18%;
+  top: 150px;
+  z-index: 2;
+}
+.c-inner__index .p-index__achivements .p-index__achivements-list .p-index__achivements-list-left .index__achivements-img--6 {
+  width: 450px;
+  height: 250px;
+  left: -5%;
+  top: -20px;
+  z-index: 1;
+}
+.c-inner__index .p-index__price {
+  margin: auto;
+}
+.c-inner__index .p-index__price .p-index__price-title {
+  margin-top: 150px;
+}
+.c-inner__index .p-index__price .p-index__price-catch {
+  margin-top: 40px;
+  width: 100%;
+  font-size: 30px;
+  letter-spacing: 1.5px;
+}
+.c-inner__index .p-index__price .p-index__price-list {
+  width: 100%;
+  margin-top: 40px;
+  text-align: center;
+}
+.c-inner__index .p-index__price .p-index__price-list .p-index__price-img {
+  width: 49%;
+  padding: 30px;
+}
+.c-inner__index .p-index__price .p-index__price-btn {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}/*# sourceMappingURL=index.css.map */
