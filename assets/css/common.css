@@ -516,6 +516,9 @@ img {
   margin-bottom: 20px;
   margin-top: 80px;
 }
+.l-footer__non-margin-top {
+  margin-top: 0px;
+}
 .l-footer .copyright {
   font-size: 12px;
   text-align: center;
