@@ -321,8 +321,6 @@ img {
   width: 18vw;
 }
 .p-mv__title {
-  padding: 15px;
-  background: rgba(255, 255, 255, 0.8);
   position: absolute;
   left: 10%;
   bottom: 30%;
@@ -342,12 +340,44 @@ img {
 .p-mv__title .kanji {
   font-size: 3.6vw;
 }
+.p-mv__title .ja {
+  font-size: 40px;
+  color: #004982;
+}
+.p-mv__title .en {
+  font-size: 120px;
+  font-weight: bold;
+  color: #4CB6E9;
+  line-height: 1;
+}
 .p-mv__lines {
   width: 120%;
   position: absolute;
   z-index: 1;
   top: 50%;
   left: 0;
+}
+.p-mv--top .p-mv__title {
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.8);
+}
+.p-mv--small {
+  margin-top: 100px;
+  height: 400px;
+  background-image: url("/assets/img/common/mv_top.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.p-mv--small .p-mv__title .ja {
+  font-size: 40px;
+  color: #004982;
+}
+.p-mv--small .p-mv__title .en {
+  font-size: 120px;
+  font-weight: bold;
+  color: #4CB6E9;
+  line-height: 1;
 }
 
 .p-lead-sec {

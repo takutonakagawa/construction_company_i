@@ -42,6 +42,7 @@
     // business
     .p-index__business{
         margin-top: 350px;
+        position: relative;
         .p-index__business-imgs{
             width: 45%;
             height: 100%;
@@ -138,11 +139,19 @@
                 float: right;
             }
         }
+        .mark-text{
+                position: absolute;
+                top: 100px;
+                left: 50%;
+                transform: translate(-50%, 0%);
+                z-index: -2;
+        }
     }
 
     // achivements
     .p-index__achivements{
         margin-top: 1100px;
+        position: relative;
         .p-index__achivements-catch{
             margin-top: 40px;
             width: 100%;
@@ -251,10 +260,25 @@
                 
             }
         }
+        .mark{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: -2;
+        }
+        .mark-text{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+        }
     }
     // price
     .p-index__price{
         margin: auto;
+        position: relative;
         .p-index__price-title{
             margin-top: 150px;
         }
@@ -277,6 +301,14 @@
             margin-top: 30px;
             display: flex;
             justify-content: center;
+        }
+        .mark{
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 100%;
+            z-index: -1;
+            transform: translate(0, -50%);
         }
     }
 }
@@ -328,7 +360,7 @@
         height: 100%;
         width: 100%;
         ul{
-            animation: marquee-right 90s linear infinite;
+            animation: marquee-right 180s linear infinite;
             display: flex;
             margin: 0;
             align-items: center;
@@ -369,7 +401,7 @@
         margin-right: auto;
         position: relative;
         z-index: 9;
-        background: rgba(255,255,255, 0.5);
+        background: rgba(255,255,255, 0.9);
         display: block;
     }
 }

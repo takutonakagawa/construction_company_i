@@ -1,0 +1,75 @@
+#detail .detail {
+  margin-top: 80px;
+}
+#detail .detail__head {
+  margin-bottom: 40px;
+  line-height: 1.5;
+}
+#detail .detail__head h1 {
+  font-size: 60px;
+  margin-bottom: 40px;
+}
+#detail .detail__status {
+  display: flex;
+  gap: 40px;
+}
+#detail .detail__status .tag {
+  background-color: #004982;
+  color: #fff;
+  display: inline-block;
+  padding: 5px 10px;
+  margin-bottom: 20px;
+}
+#detail .detail__status ul li {
+  font-size: 24px;
+  display: flex;
+}
+#detail .detail__status ul li .key {
+  margin-right: 10px;
+}
+#detail .detail__content h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #004982;
+}
+#detail .detail__content h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  display: table;
+  padding-bottom: 5px;
+  border-bottom: 5px solid #4CB6E9;
+}
+#detail .detail__content h3 {
+  display: table;
+  font-size: 32px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #004982;
+}
+#detail .detail__content h4 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+#detail .detail__content h5 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+#detail .detail__content a {
+  text-decoration: underline;
+  color: #4CB6E9;
+  margin-bottom: 20px;
+  display: block;
+}
+#detail .detail__content p {
+  margin-bottom: 20px;
+}
+#detail .detail__content img {
+  display: block;
+  max-width: 600px;
+  margin-bottom: 20px;
+}
