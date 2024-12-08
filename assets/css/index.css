@@ -1,6 +1,8 @@
+#top {
+  overflow-x: hidden;
+}
 #top .c-inner__index {
   margin-bottom: 50px;
-  overflow-x: hidden;
 }
 #top .c-inner__index .p-index__about {
   position: relative;

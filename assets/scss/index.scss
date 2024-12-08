@@ -5,10 +5,10 @@
 @import "./mixin";
 
 #top{
+    overflow-x: hidden;
 
 .c-inner__index{
     margin-bottom: 50px;
-overflow-x: hidden;
     // about
     .p-index__about{
         position: relative;
