@@ -10,8 +10,7 @@
 .p-price__contents .p-price__content .p-price__img {
   height: 350px;
   width: 500px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   padding-top: 50px;
   padding-left: 50px;
 }
@@ -74,4 +73,4 @@
 }
 .p-price__contents .p-price__btn--center-W .irenovation__btn {
   width: 320px;
-}/*# sourceMappingURL=price.css.map */
+}

@@ -4,11 +4,11 @@
 @import "./function";
 @import "./mixin";
 
-// #top{}
+#top{
+    overflow-x: hidden;
 
 .c-inner__index{
     margin-bottom: 50px;
-
     // about
     .p-index__about{
         position: relative;
@@ -280,3 +280,99 @@
         }
     }
 }
+
+
+.infomation{
+    position: relative;
+    width: 100%;
+    padding: 40px 20px 30px 20px;
+    margin-bottom: 180px;
+    &__inner{
+    position: relative;
+    z-index: 4;
+    }
+    &__content{
+        background: rgba(255,255,255, 0.7);
+        padding: 40px 20px 20px 20px;
+        margin-bottom: 30px;
+    }
+    &__wrapper{
+        display: flex;
+        gap: 20px;
+        position: relative;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+    &__title{
+        width: 50%;
+        text-align: center;
+  
+    }
+    &__title-text{
+        display: inline-block;
+        .en{
+            color: $main-blue-1;
+        }
+        .ja{
+            color: $main-blue-1;
+        }
+    }
+    &__desc{
+        width: 50%;
+    }
+    &__bg{
+        overflow: hidden;
+        position:absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        ul{
+            animation: marquee-right 90s linear infinite;
+            display: flex;
+            margin: 0;
+            align-items: center;
+            padding: 0;
+            height: 100%;
+            width: max-content;
+            li{
+                width: 100%;
+                height: 100%;
+                img {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            @keyframes marquee-right {
+                from {
+                    transform: translateX(0%);
+                }
+                to {
+                    transform: translateX(-50%);
+                }
+            }
+        }
+        &::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0, 0.2);
+        }
+
+    }
+    &__btn{
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        z-index: 9;
+        background: rgba(255,255,255, 0.5);
+        display: block;
+    }
+}
+
+}
+

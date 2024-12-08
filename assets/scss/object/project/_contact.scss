@@ -1,0 +1,13 @@
+
+
+.p-contact{
+    &__title{
+    }
+    &__btns{
+        display: flex;
+        gap: 40px;
+    }
+    &__content{
+        margin-top: 40px;
+    }
+}

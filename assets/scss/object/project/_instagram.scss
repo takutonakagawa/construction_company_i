@@ -6,8 +6,76 @@
 
 
 .p-instagram{
+  margin-bottom: 180px;
+  position: relative;
+  &__title{
+    margin-bottom: 20px;
+  }
+  p{
+    margin-bottom: 40px;
+  }
   .icon{
     top: 5px;
     left: 180px;
+  }
+  &__content{
+    display: block;
+    position: relative;
+    z-index: 1;
+  }
+  &__check{
+    position: absolute;
+    top: -40px;
+    right: 180px;
+  }
+
+  &__links{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    position: relative;
+    z-index: 88;
+  }
+
+  &__item{
+    width: calc((100% - 100px) / 3);
+    a{
+      .media{
+        width: 100%;
+        margin-bottom: 20px;
+        >img{
+          width: 100%;
+        }
+      }
+      .text{
+        font-size: 24px;
+        position: relative;
+        width: 100%;
+        border-bottom: 1px solid $main-blue-2;
+        padding: 5px;
+        &::after{
+          content: url("/assets/img/common/btn-arrow.png");
+          position: absolute;
+          top: -2px;
+          right: 5px;
+        }
+      }
+    }
+  }
+  .mark1{
+    position: absolute;
+    bottom: 60px;
+    right: -180px;
+    width: 470px;
+    // height: 470px;
+    z-index: -1;
+  }
+  .mark2{
+    position: absolute;
+    top: 0;
+    left: -220px;
+    // height: 0px;
+    width:830px;
+    z-index: -1;
   }
 }
