@@ -34,6 +34,7 @@
 }
 #top .c-inner__index .p-index__business {
   margin-top: 350px;
+  position: relative;
 }
 #top .c-inner__index .p-index__business .p-index__business-imgs {
   width: 45%;
@@ -131,8 +132,16 @@
   margin-top: 50px;
   float: right;
 }
+#top .c-inner__index .p-index__business .mark-text {
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  z-index: -2;
+}
 #top .c-inner__index .p-index__achivements {
   margin-top: 1100px;
+  position: relative;
 }
 #top .c-inner__index .p-index__achivements .p-index__achivements-catch {
   margin-top: 40px;
@@ -241,8 +250,23 @@
   top: -20px;
   z-index: 1;
 }
+#top .c-inner__index .p-index__achivements .mark {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -2;
+}
+#top .c-inner__index .p-index__achivements .mark-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
 #top .c-inner__index .p-index__price {
   margin: auto;
+  position: relative;
 }
 #top .c-inner__index .p-index__price .p-index__price-title {
   margin-top: 150px;
@@ -266,6 +290,14 @@
   margin-top: 30px;
   display: flex;
   justify-content: center;
+}
+#top .c-inner__index .p-index__price .mark {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+  transform: translate(0, -50%);
 }
 #top .infomation {
   position: relative;
@@ -314,7 +346,7 @@
   width: 100%;
 }
 #top .infomation__bg ul {
-  animation: marquee-right 90s linear infinite;
+  animation: marquee-right 180s linear infinite;
   display: flex;
   margin: 0;
   align-items: center;
@@ -353,6 +385,6 @@
   margin-right: auto;
   position: relative;
   z-index: 9;
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.9);
   display: block;
 }

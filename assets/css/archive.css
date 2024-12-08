@@ -39,8 +39,10 @@
 }
 
 /* archive */
+.p-archive_inner {
+  margin-top: 50px;
+}
 .p-archive_inner .c-title-secondary--archive {
-  margin-top: 250px;
   margin-bottom: 100px;
 }
 .p-archive_inner .p-archive__tag-list {

@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="/assets/css/common.css">
     <!-- 共通css / -->
     <!-- 固有css -->
-    <link rel="stylesheet" href="/assets/css/index.css">
+    <link rel="stylesheet" href="/assets/css/detail.css">
      <!-- 固有css/ -->
 </head>
 <body>
@@ -52,21 +52,17 @@
     <!-- header / -->
 
     <!-- main内 各ページ固有ソース -->
-    <main class="l-main" id="top">
+    <main class="l-main" id="detail">
 
-        <!-- mv -->
-        <section class="p-mv p-mv--small">
-            <img class="p-mv__main" src="/assets/img/common/mv_top.png" alt="">
-            <img class="p-mv__mark rellax" src="/assets/img/common/MARK2.png" alt="">
+       <!-- mv -->
+       <section class="p-mv p-mv--small">
+        <h1 class="p-mv__title">
+            <div class="ja">記事詳細</div>
+            <div class="en">detail</div>
+        </h1>
+       </section>
+       <!-- mv / -->
 
-            <img class="p-mv__lines rellax-2" src="/assets/img/common/lines.png" alt="">
-            <h1 class="p-mv__title">
-               <div class="ja">test</div>
-               <div class="en">testtesttest</div>
-            </h1>
-            
-        </section>
-        <!-- mv / -->
 
 
        <section class="detail">
@@ -74,26 +70,47 @@
             <div class="detail__head">
                 <h1>detail title</h1>
                 <div class="detail__status">
-                    <ul>
-                        <li>
-                            <div class="key">工事費用</div>
-                            <div class="value">20000</div>
-                        </li>
-                        <li>
-                            <div class="key">現場</div>
-                            <div class="value">神戸市中央区xxxxx</div>
-                        </li>
-                    </ul>
+                    <div class="detail__info">
+                        <div class="tag">施工実績</div>
+                        <ul>
+                            <li>
+                                <div class="key">工事費用</div>
+                                <div class="value">20000</div>
+                            </li>
+                            <li>
+                                <div class="key">現場</div>
+                                <div class="value">神戸市中央区xxxxx</div>
+                            </li>
+                            <li>
+                                <div class="key">工期</div>
+                                <div class="value">3ヶ月</div>
+                            </li>
+                            <li>
+                                <div class="key">テスト</div>
+                                <div class="value">神戸市中央区xxxxx</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="detail__media">
+                        <img src="https://placehold.jp/300x240.png" alt="">
+                    </div>
                 </div>
             </div>
             <div class="detail__content">
-                <h1>これはH1です</h1>
-                <h2>これはh2です</h2>
-                <h3>これはh3です</h3>
-                <h4>これはh4です</h4>
-                <h5>これはh5です</h5>
-                <p>これは通常テキストです</p>
+                <h1>これはh1です（特大タイトル）</h1>
+                <h2>これはh2です（大タイトル）</h2>
+                <h3>これはh3です（タイトル）</h3>
+                <h4>これはh4です（中タイトル）</h4>
+                <h5>これはh5です（小タイトル）</h5>
+                <p>これは通常テキストです。これは通常テキストです。これは通常テキストです。これは通常テキストです。これは通常テキストです。
+                    これは通常テキストです。これは通常テキストです。これは通常テキストです。これは通常テキストです。これは通常テキストです。これは通常テキストです。
+                    これは通常テキストです。これは通常テキストです。これは通常テキストです。これは通常テキストです。これは通常テキストです。
+                    これは通常テキストです。これは通常テキストです。これは通常テキストです。これは通常テキストです。これは通常テキストです。
+                    これは通常テキストです。これは通常テキストです。これは通常テキストです。これは通常テキストです。これは通常テキストです。これは通常テキストです。
+                    これは通常テキストです。これは通常テキストです。これは通常テキストです。
+                </p>
                 <a href="">これはリンクです</a>
+                <img src="https://placehold.jp/300x240.png" alt="">
             </div>
             <a href="/archive.html" class="c-btn">一覧へ戻る</a>
         </div>

@@ -1,0 +1,89 @@
+@charset "utf-8";
+
+@import "./config";
+@import "./function";
+@import "./mixin";
+
+
+#detail{
+
+    .detail{
+        margin-top: 80px;
+        &__head{
+            margin-bottom: 40px;
+            line-height: 1.5;
+            h1{
+                font-size: 60px;
+                margin-bottom: 40px;
+            }
+        }
+        &__status{
+            display: flex;
+            gap: 40px;
+            .tag{
+                background-color: $main-blue-1;
+                color: #fff;
+                display: inline-block;
+                padding: 5px 10px;
+                margin-bottom: 20px;
+            }
+            ul{
+                li{
+                    font-size: 24px;
+                    display: flex;
+                    .key{
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+        &__content{
+            h1{
+                font-size: 48px;
+                margin-bottom: 20px;
+                font-weight: bold;
+                color: $main-blue-1;
+            }
+            h2{
+                font-size: 40px;
+                margin-bottom: 20px;
+                font-weight: bold;
+                display: table;
+                padding-bottom: 5px;
+                border-bottom: 5px solid $main-blue-2;
+            }
+            h3{
+                display: table;
+                font-size: 32px;
+                margin-bottom: 20px;
+                font-weight: bold;
+                padding-bottom: 5px;
+                border-bottom: 1px solid $main-blue-1;
+            }
+            h4{
+                font-size: 24px;
+                margin-bottom: 20px;
+                font-weight: bold;
+            }
+            h5{
+                font-size: 18px;
+                margin-bottom: 20px;
+                font-weight: bold;
+            }
+            a{
+                text-decoration: underline;
+                color: $main-blue-2;
+                margin-bottom: 20px;
+                display: block;
+            }
+            p{
+                margin-bottom: 20px;
+            }
+            img{
+                display: block;
+                max-width: 600px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
