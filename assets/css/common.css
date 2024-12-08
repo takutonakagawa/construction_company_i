@@ -157,9 +157,7 @@ a:hover {
 body {
   font-family: "Noto Sans JP", メイリオ, Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
   letter-spacing: -0.03em;
-  -webkit-text-size-adjust: 100%;
-     -moz-text-size-adjust: 100%;
-          text-size-adjust: 100%;
+  text-size-adjust: 100%;
   overflow-x: hidden;
 }
 @media only screen and (max-width: 820px) {
@@ -221,12 +219,12 @@ img {
 .c-title::after {
   content: "";
   position: absolute;
-  width: 70px;
-  height: 1px;
-  background-color: #004982;
-  rotate: -45deg;
-  top: -10px;
-  left: -50px;
+  height: 60px;
+  border-right: 2px solid #4CB6E9;
+  border-bottom: 2px solid #4CB6E9;
+  transform: skew(-45deg);
+  left: -20px;
+  top: -40px;
 }
 .c-title .ja {
   font-size: 20px;
@@ -292,6 +290,16 @@ img {
   background-color: #004982;
 }
 
+.c-anim-fade-in {
+  opacity: 0;
+  transform: translateY(50px); /* 初期位置は下に設定 */
+  transition: opacity 1s ease-in-out, transform 0.5s ease-in-out;
+}
+.c-anim-fade-in.is-visible {
+  opacity: 1;
+  transform: translateY(0); /* アニメーション後、元の位置に戻す */
+}
+
 .p-mv {
   height: 95vh;
   width: 100%;
@@ -353,7 +361,39 @@ img {
 }
 
 .p-recruit {
+  background-image: url("/assets/img/common/secRecBg.png");
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.p-recruit::after {
+  content: "";
+  width: 100%;
+  height: 100%;
   background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.p-recruit__title {
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 40px;
+}
+.p-recruit__title::after {
+  background-color: #fff;
+}
+.p-recruit__title .ja {
+  color: #fff;
+}
+.p-recruit__title .en {
+  color: #fff;
+}
+.p-recruit__content {
+  position: relative;
+  z-index: 1;
 }
 .p-recruit__content p {
   color: white;
@@ -363,9 +403,73 @@ img {
   background: rgba(255, 255, 255, 0.5);
 }
 
+.p-instagram {
+  margin-bottom: 180px;
+  position: relative;
+}
+.p-instagram__title {
+  margin-bottom: 20px;
+}
+.p-instagram p {
+  margin-bottom: 40px;
+}
 .p-instagram .icon {
   top: 5px;
   left: 180px;
+}
+.p-instagram__content {
+  display: block;
+  position: relative;
+  z-index: 1;
+}
+.p-instagram__check {
+  position: absolute;
+  top: -40px;
+  right: 180px;
+}
+.p-instagram__links {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  position: relative;
+  z-index: 88;
+}
+.p-instagram__item {
+  width: calc((100% - 100px) / 3);
+}
+.p-instagram__item a .media {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.p-instagram__item a .media > img {
+  width: 100%;
+}
+.p-instagram__item a .text {
+  font-size: 24px;
+  position: relative;
+  width: 100%;
+  border-bottom: 1px solid #4CB6E9;
+  padding: 5px;
+}
+.p-instagram__item a .text::after {
+  content: url("/assets/img/common/btn-arrow.png");
+  position: absolute;
+  top: -2px;
+  right: 5px;
+}
+.p-instagram .mark1 {
+  position: absolute;
+  bottom: 60px;
+  right: -180px;
+  width: 470px;
+  z-index: -1;
+}
+.p-instagram .mark2 {
+  position: absolute;
+  top: 0;
+  left: -220px;
+  width: 830px;
+  z-index: -1;
 }
 
 .p-line {
@@ -385,6 +489,11 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: -1;
+}
+
+.p-contact__btns {
+  display: flex;
+  gap: 40px;
 }
 
 .l-header {
@@ -1241,4 +1350,4 @@ img {
 
 .u-vertical_tt {
   vertical-align: text-top !important;
-}/*# sourceMappingURL=common.css.map */
+}
