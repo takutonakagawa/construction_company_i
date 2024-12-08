@@ -38,3 +38,13 @@ function checkVisibility() {
         vertical: true,
         horizontal: false
       });
+
+
+      var rellax = new Rellax('.rellax-3', {
+        speed: 2,
+        center: false,
+        wrapper: null,
+        round: true,
+        vertical: true,
+        horizontal: false
+      });
