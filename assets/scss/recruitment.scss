@@ -1,5 +1,6 @@
 /* 共通 */
 .p-recruitment {
+    margin-top: 250px;
     letter-spacing: 2px;
     text-align: left;
     .p__recruitment--inner {
@@ -11,7 +12,6 @@
             .c-slash{
                 position: absolute;
                 height: 60px;
-                border-right: 2px solid #004982;
                 border-bottom: 2px solid #004982;
                 transform: skew(-45deg);
                 left: -3%;

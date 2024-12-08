@@ -6,6 +6,10 @@
         width: 100%;
         top: -1%;
     }
+    .bg{
+        position: absolute;
+        top: 15%;
+    }
 }
 
 .about__inner{
@@ -53,6 +57,27 @@
     .about__philosophy{
         position: relative;
         margin-bottom: 300px;
+        .bg-message{
+            color: #4CB6E9;
+            opacity: 0.5;
+            letter-spacing: 5px;
+            font-size: 34px;
+            position: absolute;
+            z-index: 1;
+            font-weight: bold;
+            &--left{
+                transform:rotate(-90deg);
+                top: 46%;
+                left: -27%;
+            }
+            &--right{
+                top: 265px;
+                right: -17%;
+                transform:rotate(90deg);
+                color: #004982;
+            }
+            
+        }
         .about__philosophy-blueblock{
             background-color: #004982;
             width: 120%;
@@ -61,7 +86,7 @@
             &--left{
                 background-color: #4CB6E9;
                 position: absolute;
-                left: -20%;
+                left: -20.1%;
             }
             .about__philosophy-whiteblock{
                 height: 400px;
@@ -147,7 +172,7 @@
                     left: 27%;
                     .block__skyblue{
                         position: relative;
-                        width: 100%;
+                        width: 110%;
                         height: 60px;
                         background: linear-gradient(145deg, transparent 10%, #4CB6E9 10%);
                         margin-bottom: 70px;

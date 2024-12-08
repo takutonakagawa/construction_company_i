@@ -7,6 +7,10 @@
   width: 100%;
   top: -1%;
 }
+.p-about .bg {
+  position: absolute;
+  top: 15%;
+}
 
 .about__inner .c-title {
   margin-top: 300px;
@@ -52,6 +56,26 @@
   position: relative;
   margin-bottom: 300px;
 }
+.about__inner .about__philosophy .bg-message {
+  color: #4CB6E9;
+  opacity: 0.5;
+  letter-spacing: 5px;
+  font-size: 34px;
+  position: absolute;
+  z-index: 1;
+  font-weight: bold;
+}
+.about__inner .about__philosophy .bg-message--left {
+  transform: rotate(-90deg);
+  top: 46%;
+  left: -27%;
+}
+.about__inner .about__philosophy .bg-message--right {
+  top: 265px;
+  right: -17%;
+  transform: rotate(90deg);
+  color: #004982;
+}
 .about__inner .about__philosophy .about__philosophy-blueblock {
   background-color: #004982;
   width: 120%;
@@ -61,7 +85,7 @@
 .about__inner .about__philosophy .about__philosophy-blueblock--left {
   background-color: #4CB6E9;
   position: absolute;
-  left: -20%;
+  left: -20.1%;
 }
 .about__inner .about__philosophy .about__philosophy-blueblock .about__philosophy-whiteblock {
   height: 400px;
@@ -147,7 +171,7 @@
 }
 .about__inner .about__logo .p-about-logo__content .p-about-logo__rightside .logo__desc .block__skyblue {
   position: relative;
-  width: 100%;
+  width: 110%;
   height: 60px;
   background: linear-gradient(145deg, transparent 10%, #4CB6E9 10%);
   margin-bottom: 70px;
@@ -255,4 +279,4 @@
   display: flex;
   gap: 60px;
   float: right;
-}
+}/*# sourceMappingURL=about.css.map */

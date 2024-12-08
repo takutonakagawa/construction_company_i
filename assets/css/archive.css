@@ -4,7 +4,8 @@
 }
 .archive__mv .p-mv__main {
   margin-top: 150px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   height: 400px;
 }
 .archive__mv .archive__title {
@@ -80,7 +81,8 @@
 .p-archive_inner .p-archive__article-list .p-archive__article .article__img {
   width: 100%;
   height: 350px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .p-archive_inner .p-archive__article-list .p-archive__article .article__inner .article__inner-line01 {
   margin-top: 10px;
@@ -125,4 +127,4 @@
   color: #004982;
   text-decoration: underline;
   text-decoration-color: #4CB6E9;
-}
+}/*# sourceMappingURL=archive.css.map */
