@@ -1,7 +1,15 @@
 
 
 .p-contact{
-    &__title{
+    position: relative;
+    .contact-line{
+        position: absolute;
+        width: 100%;
+        top: -70%;
+        left: 0%;
+        rotate: 5deg;
+    }
+    &__title{   
     }
     &__btns{
         display: flex;

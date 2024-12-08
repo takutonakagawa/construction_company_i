@@ -1,6 +1,7 @@
 @charset "UTF-8";
 /* 共通 */
 .p-recruitment {
+  margin-top: 250px;
   letter-spacing: 2px;
   text-align: left;
 }
@@ -15,7 +16,6 @@
 .p-recruitment .p__recruitment--inner .c-title .c-slash {
   position: absolute;
   height: 60px;
-  border-right: 2px solid #004982;
   border-bottom: 2px solid #004982;
   transform: skew(-45deg);
   left: -3%;
@@ -63,4 +63,4 @@
   justify-content: center;
   align-items: center;
   gap: 100px;
-}
+}/*# sourceMappingURL=recruitment.css.map */

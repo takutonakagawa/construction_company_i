@@ -5,7 +5,8 @@
 }
 .contact__mv .p-mv__main {
   margin-top: 150px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   height: 400px;
 }
 .contact__mv .contact__title {
@@ -126,4 +127,4 @@
   margin-bottom: 100px;
   display: flex;
   justify-content: center;
-}
+}/*# sourceMappingURL=contact.css.map */

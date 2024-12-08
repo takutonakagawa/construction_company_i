@@ -27,7 +27,9 @@
   top: 0;
   right: -16.2%;
   z-index: -1;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0.2;
 }
 #top .c-inner__index .p-index__about .p-index__about-btn {
   float: right;
@@ -98,7 +100,8 @@
 #top .c-inner__index .p-index__business .p-index__business-imgs .index__about-img {
   width: 200px;
   height: 200px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 50%;
   position: absolute;
 }
@@ -205,7 +208,8 @@
   top: 200px;
 }
 #top .c-inner__index .p-index__achivements .p-index__achivements-list .p-index__achivements-list-left .index__achivements-img {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   position: absolute;
 }
 #top .c-inner__index .p-index__achivements .p-index__achivements-list .p-index__achivements-list-left .index__achivements-img--1 {
@@ -352,6 +356,7 @@
   align-items: center;
   padding: 0;
   height: 100%;
+  width: -moz-max-content;
   width: max-content;
 }
 #top .infomation__bg ul li {
@@ -387,4 +392,4 @@
   z-index: 9;
   background: rgba(255, 255, 255, 0.9);
   display: block;
-}
+}/*# sourceMappingURL=index.css.map */
