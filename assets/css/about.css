@@ -1,62 +1,66 @@
-.p-about {
+.greeting {
   position: relative;
 }
-.p-about .line__img {
+.greeting .line__img {
   position: absolute;
-  z-index: -1;
+  z-index: -10;
   width: 100%;
   top: -1%;
 }
-.p-about .bg {
-  position: absolute;
-  top: 15%;
-}
-
-.about__inner .c-title {
-  margin-top: 300px;
-}
-.about__inner .about__greeting {
+.greeting .greeting__inner {
   position: relative;
   margin-bottom: 680px;
+  padding: 0 100px;
 }
-.about__inner .about__greeting .ceo__img {
-  width: 680px;
-  height: 450px;
-  float: right;
+.greeting .greeting__inner .c-title {
+  margin-top: 300px;
+}
+.greeting .greeting__inner .ceo-img__inner {
+  position: relative;
+  height: 100px;
+}
+.greeting .greeting__inner .ceo-img__inner .ceo__img {
+  width: 60%;
   position: absolute;
-  left: 50%;
-  top: -30%;
+  left: 45%;
+  top: -85%;
   z-index: -1;
 }
-.about__inner .about__greeting .ceo__message {
+.greeting .greeting__inner .ceo-message__inner {
+  position: relative;
+  height: 100px;
+}
+.greeting .greeting__inner .ceo-message__inner .ceo__message {
+  padding: 20px;
   z-index: 100;
   background-color: rgba(255, 255, 255, 0.8);
-  width: 830px;
-  padding: 20px;
+  width: 77%;
   position: absolute;
-  top: 350%;
-  left: -1.2%;
+  top: 25%;
+  left: -5%;
   letter-spacing: 1.5;
   font-size: 18px;
 }
-.about__inner .about__greeting .ceo__message .ceo__message-strong {
+.greeting .greeting__inner .ceo-message__inner .ceo__message .ceo__message-strong {
   color: #4CB6E9;
   font-weight: bold;
 }
-.about__inner .about__greeting .ceo__message .ceo__name {
+.greeting .greeting__inner .ceo-message__inner .ceo__message .ceo__name {
   margin-top: 20px;
   text-align: right;
 }
-.about__inner .about__greeting .ceo__message .ceo__name .ceo__name-strong {
+.greeting .greeting__inner .ceo-message__inner .ceo__message .ceo__name .ceo__name-strong {
   font-weight: bold;
   font-size: 27px;
   margin-left: 5px;
 }
-.about__inner .about__philosophy {
+
+.philosophy__inner .about__philosophy {
   position: relative;
   margin-bottom: 300px;
+  width: 90%;
 }
-.about__inner .about__philosophy .bg-message {
+.philosophy__inner .about__philosophy .bg-message {
   color: #4CB6E9;
   opacity: 0.5;
   letter-spacing: 5px;
@@ -65,74 +69,76 @@
   z-index: 1;
   font-weight: bold;
 }
-.about__inner .about__philosophy .bg-message--left {
+.philosophy__inner .about__philosophy .bg-message--left {
   transform: rotate(-90deg);
   top: 46%;
   left: -27%;
 }
-.about__inner .about__philosophy .bg-message--right {
+.philosophy__inner .about__philosophy .bg-message--right {
   top: 265px;
   right: -17%;
   transform: rotate(90deg);
   color: #004982;
 }
-.about__inner .about__philosophy .about__philosophy-blueblock {
+.philosophy__inner .about__philosophy .about__philosophy-blueblock {
   background-color: #004982;
   width: 120%;
   height: 550px;
   position: relative;
 }
-.about__inner .about__philosophy .about__philosophy-blueblock--left {
+.philosophy__inner .about__philosophy .about__philosophy-blueblock--left {
   background-color: #4CB6E9;
   position: absolute;
   left: -20.1%;
 }
-.about__inner .about__philosophy .about__philosophy-blueblock .about__philosophy-whiteblock {
+.philosophy__inner .about__philosophy .about__philosophy-blueblock .about__philosophy-whiteblock {
   height: 400px;
   width: 90%;
   background-color: #ffffff;
   position: absolute;
   top: 14%;
 }
-.about__inner .about__philosophy .about__philosophy-blueblock .about__philosophy-whiteblock--left {
+.philosophy__inner .about__philosophy .about__philosophy-blueblock .about__philosophy-whiteblock--left {
   left: 10%;
 }
-.about__inner .about__philosophy .about__philosophy-blueblock .about__philosophy-whiteblock .c-title-secondary--about {
+.philosophy__inner .about__philosophy .about__philosophy-blueblock .about__philosophy-whiteblock .c-title-secondary--about {
   margin-bottom: 60px;
 }
-.about__inner .about__philosophy .about__philosophy-blueblock .about__philosophy-whiteblock .about__philosophy-message {
+.philosophy__inner .about__philosophy .about__philosophy-blueblock .about__philosophy-whiteblock .about__philosophy-message {
   text-align: center;
 }
-.about__inner .about__philosophy .about__philosophy-blueblock .about__philosophy-whiteblock .about__philosophy-message .philosophy-message__title {
-  display: bolo;
+.philosophy__inner .about__philosophy .about__philosophy-blueblock .about__philosophy-whiteblock .about__philosophy-message .philosophy-message__title {
   color: #004982;
   letter-spacing: 5px;
   font-size: 45px;
   font-weight: bold;
 }
-.about__inner .about__philosophy .about__philosophy-blueblock .about__philosophy-whiteblock .about__philosophy-message .philosophy-message__desc {
+.philosophy__inner .about__philosophy .about__philosophy-blueblock .about__philosophy-whiteblock .about__philosophy-message .philosophy-message__desc {
   display: block;
   margin-top: 20px;
   font-size: 20px;
   letter-spacing: 1.5;
 }
-.about__inner .about__philosophy .about__philosophy-blueblock .about__philosophy-whiteblock .about__philosophy-message .philosophy-message__desc span {
+.philosophy__inner .about__philosophy .about__philosophy-blueblock .about__philosophy-whiteblock .about__philosophy-message .philosophy-message__desc span {
   color: #4CB6E9;
 }
-.about__inner .about__logo {
+
+.logo .logo__inner {
+  padding: 0 100px;
   margin-top: 1100px;
 }
-.about__inner .about__logo .p-about-logo__title {
+.logo .logo__inner .p-about-logo__title {
   margin-bottom: 150px;
 }
-.about__inner .about__logo .p-about-logo__content {
+.logo .logo__inner .p-about-logo__content {
   display: flex;
   margin-bottom: 120px;
+  padding-left: 100px;
 }
-.about__inner .about__logo .p-about-logo__content .p-about-logo__leftside {
+.logo .logo__inner .p-about-logo__content .p-about-logo__leftside {
   width: 45%;
 }
-.about__inner .about__logo .p-about-logo__content .p-about-logo__leftside .block__logo {
+.logo .logo__inner .p-about-logo__content .p-about-logo__leftside .block__logo {
   height: 350px;
   width: 350px;
   background-color: rgba(255, 255, 255, 0.9);
@@ -141,7 +147,7 @@
   position: relative;
   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
 }
-.about__inner .about__logo .p-about-logo__content .p-about-logo__leftside .block__logo .block__skyblue {
+.logo .logo__inner .p-about-logo__content .p-about-logo__leftside .block__logo .block__skyblue {
   position: absolute;
   height: 350px;
   width: 350px;
@@ -150,7 +156,7 @@
   z-index: -1;
   left: -45px;
 }
-.about__inner .about__logo .p-about-logo__content .p-about-logo__leftside .block__logo .block__blue {
+.logo .logo__inner .p-about-logo__content .p-about-logo__leftside .block__logo .block__blue {
   position: absolute;
   height: 350px;
   width: 350px;
@@ -159,24 +165,24 @@
   z-index: -2;
   left: 45px;
 }
-.about__inner .about__logo .p-about-logo__content .p-about-logo__rightside {
-  width: 55%;
+.logo .logo__inner .p-about-logo__content .p-about-logo__rightside {
+  width: 100%;
   position: relative;
 }
-.about__inner .about__logo .p-about-logo__content .p-about-logo__rightside .logo__desc {
+.logo .logo__inner .p-about-logo__content .p-about-logo__rightside .logo__desc {
   width: 110%;
   position: absolute;
   top: -21%;
-  left: 27%;
+  left: 40%;
 }
-.about__inner .about__logo .p-about-logo__content .p-about-logo__rightside .logo__desc .block__skyblue {
+.logo .logo__inner .p-about-logo__content .p-about-logo__rightside .logo__desc .block__skyblue {
   position: relative;
-  width: 110%;
+  width: 120%;
   height: 60px;
   background: linear-gradient(145deg, transparent 10%, #4CB6E9 10%);
   margin-bottom: 70px;
 }
-.about__inner .about__logo .p-about-logo__content .p-about-logo__rightside .logo__desc .block__skyblue .block__blue {
+.logo .logo__inner .p-about-logo__content .p-about-logo__rightside .logo__desc .block__skyblue .block__blue {
   position: absolute;
   width: 100%;
   height: 60px;
@@ -185,28 +191,32 @@
   left: 5%;
   z-index: -1;
 }
-.about__inner .about__logo .p-about-logo__content .p-about-logo__rightside .logo__desc .block__skyblue p {
+.logo .logo__inner .p-about-logo__content .p-about-logo__rightside .logo__desc .block__skyblue p {
   color: #ffffff;
-  font-size: 24px;
+  font-size: 160%;
   padding-top: 5px;
-  padding-left: 90px;
+  padding-left: 11%;
   letter-spacing: 1.5px;
 }
-.about__inner .about__logo .p-about-logo__content .p-about-logo__rightside .logo__desc .block__skyblue p span {
+.logo .logo__inner .p-about-logo__content .p-about-logo__rightside .logo__desc .block__skyblue p span {
   background-color: #004982;
   color: #ffffff;
   font-size: 32px;
   padding: 4px 4px;
 }
-.about__inner .about__logo .p-about-logo__message {
+.logo .logo__inner .p-about-logo__message {
   width: 100%;
-  font-size: 24px;
+  font-size: 140%;
   text-align: center;
 }
-.about__inner .about__company .p-about-company__title {
+
+.company .company__inner {
+  padding: 100px;
+}
+.company .company__inner .p-about-company__title {
   margin-bottom: 100px;
 }
-.about__inner .about__company .p-recruitment__content {
+.company .company__inner .p-recruitment__content {
   padding: 60px;
   font-size: 20px;
   width: 90%;
@@ -215,12 +225,12 @@
   position: relative;
   margin-bottom: 300px;
 }
-.about__inner .about__company .p-recruitment__content .p-recruitment__list {
+.company .company__inner .p-recruitment__content .p-recruitment__list {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
 }
-.about__inner .about__company .p-recruitment__content .p-recruitment__list .p-recruitment__term {
+.company .company__inner .p-recruitment__content .p-recruitment__list .p-recruitment__term {
   width: 20%;
   padding-left: 20px;
   padding-top: 23px;
@@ -229,7 +239,7 @@
   font-weight: bold;
   border-bottom: solid 1.5px #4CB6E9;
 }
-.about__inner .about__company .p-recruitment__content .p-recruitment__list .p-recruitment__desc {
+.company .company__inner .p-recruitment__content .p-recruitment__list .p-recruitment__desc {
   width: 80%;
   line-height: 1.8;
   padding-top: 23px;
@@ -238,16 +248,16 @@
   margin-bottom: 10px;
   border-bottom: solid 1px #d6d6d6;
 }
-.about__inner .about__company .p-recruitment__content .block__blue {
+.company .company__inner .p-recruitment__content .block__blue {
   position: absolute;
   background-color: #004982;
-  width: 141%;
+  width: 150%;
   height: 1565px;
   top: -4.5%;
-  left: -45%;
+  left: -50%;
   z-index: -2;
 }
-.about__inner .about__company .p-recruitment__content .block__skyblue {
+.company .company__inner .p-recruitment__content .block__skyblue {
   position: absolute;
   background-color: #4CB6E9;
   width: 155%;
