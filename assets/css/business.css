@@ -1,18 +1,18 @@
-.p-business {
+.business {
   margin-top: 250px;
 }
-.p-business .business__inner {
-  width: 100%;
+.business .business__inner {
+  padding: 0 150px;
 }
-.p-business .business__inner .p-business__contents {
+.business .business__inner .p-business__contents {
   margin-top: 80px;
 }
-.p-business .business__inner .p-business__contents .p-business__content {
+.business .business__inner .p-business__contents .p-business__content {
   margin-top: 80px;
   position: relative;
   margin-bottom: 360px;
 }
-.p-business .business__inner .p-business__contents .p-business__content .p-business__title {
+.business .business__inner .p-business__contents .p-business__content .p-business__title {
   width: 50%;
   font-size: 28px;
   border-bottom: solid 1.5px;
@@ -20,35 +20,35 @@
   padding-left: 5px;
   margin-bottom: 50px;
 }
-.p-business .business__inner .p-business__contents .p-business__content--visual {
+.business .business__inner .p-business__contents .p-business__content--visual {
   width: 1000px;
   height: 400px;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.p-business .business__inner .p-business__contents .business__visual-rightside {
+.business .business__inner .p-business__contents .business__visual-rightside {
   float: right;
 }
-.p-business .business__inner .p-business__contents .clearbox {
+.business .business__inner .p-business__contents .clearbox {
   clear: both;
 }
-.p-business .business__inner .p-business__contents .p-business__desc {
+.business .business__inner .p-business__contents .p-business__desc {
   border: solid 1px #4CB6E9;
-  width: 47%;
+  width: 50%;
   padding: 15px;
   background-color: rgba(255, 255, 255, 0.7);
 }
-.p-business .business__inner .p-business__contents .business_desc--p01 {
+.business .business__inner .p-business__contents .business_desc--p01 {
   position: absolute;
   top: 90%;
-  left: 54%;
+  left: 57%;
 }
-.p-business .business__inner .p-business__contents .business_desc--p02 {
+.business .business__inner .p-business__contents .business_desc--p02 {
   position: absolute;
   top: 82%;
-  left: 0%;
+  left: -8%;
 }
-.p-business .business__inner .p-business__contents .business__design-block--construction_blue-p01 {
+.business .business__inner .p-business__contents .business__design-block--construction_blue-p01 {
   position: absolute;
   background-color: #004982;
   width: 200px;
@@ -57,7 +57,7 @@
   left: -4%;
   z-index: -1;
 }
-.p-business .business__inner .p-business__contents .business__design-block--construction_skyblue-p01 {
+.business .business__inner .p-business__contents .business__design-block--construction_skyblue-p01 {
   position: absolute;
   background-color: #4CB6E9;
   width: 300px;
@@ -66,7 +66,7 @@
   left: 61%;
   z-index: -1;
 }
-.p-business .business__inner .p-business__contents .business__design-block--construction_blue-p02 {
+.business .business__inner .p-business__contents .business__design-block--construction_blue-p02 {
   position: absolute;
   background-color: #004982;
   width: 280px;
@@ -75,7 +75,7 @@
   left: 84%;
   z-index: -1;
 }
-.p-business .business__inner .p-business__contents .business__design-block--construction_skyblue-p02 {
+.business .business__inner .p-business__contents .business__design-block--construction_skyblue-p02 {
   position: absolute;
   background-color: #4CB6E9;
   width: 300px;
@@ -84,7 +84,7 @@
   left: 13%;
   z-index: -1;
 }
-.p-business .business__inner .p-business__contents .business__design-block--construction_blue-p03 {
+.business .business__inner .p-business__contents .business__design-block--construction_blue-p03 {
   position: absolute;
   background-color: #004982;
   width: 200px;
@@ -93,7 +93,7 @@
   left: 77%;
   z-index: -1;
 }
-.p-business .business__inner .p-business__contents .business__design-block--construction_skyblue-p03 {
+.business .business__inner .p-business__contents .business__design-block--construction_skyblue-p03 {
   position: absolute;
   background-color: #4CB6E9;
   width: 300px;
@@ -102,22 +102,22 @@
   left: -8%;
   z-index: -1;
 }
-.p-business .business__inner .p-business__contents .business__btn--p01 {
+.business .business__inner .p-business__contents .business__btn--p01 {
   position: absolute;
   left: 82.2%;
   top: 134%;
 }
-.p-business .business__inner .p-business__contents .business__btn--p02 {
+.business .business__inner .p-business__contents .business__btn--p02 {
   position: absolute;
   display: flex;
-  left: 55.5%;
+  left: 48.1%;
   top: 111.2%;
   gap: 50px;
 }
-.p-business .business__inner .p-business__contents .business__btn--p02 .business__btn--detail {
+.business .business__inner .p-business__contents .business__btn--p02 .business__btn--detail {
   width: 280px;
 }
-.p-business .business__inner .p-business__contents .business__btn--p03 {
+.business .business__inner .p-business__contents .business__btn--p03 {
   position: absolute;
   left: 82.2%;
   top: 117%;

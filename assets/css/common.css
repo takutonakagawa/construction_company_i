@@ -437,6 +437,7 @@ img {
 
 .p-instagram {
   margin-bottom: 180px;
+  overflow-x: hidden;
   position: relative;
 }
 .p-instagram__title {
