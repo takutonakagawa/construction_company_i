@@ -2,11 +2,12 @@
   overflow-x: hidden;
 }
 #top .about {
-  position: relative;
-  margin-bottom: 400px;
+  margin-bottom: 250px;
+  padding-top: 1px;
 }
 #top .about .about__inner {
   padding: 0 100px;
+  position: relative;
 }
 #top .about .about__inner .p-index__about-title {
   margin-top: 250px;
@@ -19,23 +20,27 @@
 #top .about .about__inner .p-index__about-desc {
   margin-top: 50px;
   font-size: 28px;
-  width: 60%;
+  width: 70%;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 10px;
 }
 #top .about .about__inner .index__about-img {
   position: absolute;
-  width: 70%;
+  width: 90%;
   height: 500px;
-  top: 0;
-  right: -16.2%;
+  top: 5%;
+  right: -30%;
   z-index: -1;
   -o-object-fit: cover;
      object-fit: cover;
-  opacity: 0.2;
+  opacity: 0.8;
+  padding: 30px;
 }
 #top .about .about__inner .p-index__about-btn {
   float: right;
 }
 #top .business {
+  padding-top: 150px;
   position: relative;
 }
 #top .business__container {
@@ -130,6 +135,26 @@
   top: 285px;
   left: 27.5%;
 }
+#top .business .business__inner .p-index__business-imgs .business__mark {
+  position: absolute;
+  width: 15%;
+  z-index: 100;
+}
+#top .business .business__inner .p-index__business-imgs .business__mark--left {
+  top: 31.5%;
+  left: 12%;
+  transform: rotate(33deg);
+}
+#top .business .business__inner .p-index__business-imgs .business__mark--center {
+  top: 65%;
+  left: 27.6%;
+  transform: rotate(90deg);
+}
+#top .business .business__inner .p-index__business-imgs .business__mark--right {
+  top: 31.5%;
+  left: 42.5%;
+  transform: rotate(-33deg);
+}
 #top .business .business__inner .p-index__business-content {
   width: 500px;
 }
@@ -150,7 +175,9 @@
   z-index: -2;
 }
 #top .achivements {
+  padding-top: 150px;
   position: relative;
+  margin-bottom: 150px;
 }
 #top .achivements .achivements__inner {
   padding: 0 100px;
@@ -225,42 +252,28 @@
   width: 230px;
   height: 230px;
   z-index: 3;
-  top: 170px;
-  right: 20%;
-}
-#top .achivements .achivements__inner .p-index__achivements-list .p-index__achivements-list-left .index__achivements-img--2 {
-  width: 330px;
-  height: 330px;
-  z-index: 2;
-  left: 5%;
-  top: 120px;
+  top: 10px;
+  right: 3%;
 }
 #top .achivements .achivements__inner .p-index__achivements-list .p-index__achivements-list-left .index__achivements-img--3 {
   width: 380px;
   height: 350px;
   z-index: 1;
-  right: 3%;
-  top: 20px;
-}
-#top .achivements .achivements__inner .p-index__achivements-list .p-index__achivements-list-left .index__achivements-img--4 {
-  width: 260px;
-  height: 230px;
-  right: 0;
-  top: 300px;
-  z-index: 3;
+  left: -5%;
+  top: 140px;
 }
 #top .achivements .achivements__inner .p-index__achivements-list .p-index__achivements-list-left .index__achivements-img--5 {
   width: 430px;
   height: 280px;
-  left: 18%;
-  top: 150px;
+  left: 20%;
+  top: 260px;
   z-index: 2;
 }
 #top .achivements .achivements__inner .p-index__achivements-list .p-index__achivements-list-left .index__achivements-img--6 {
   width: 450px;
   height: 250px;
-  left: -5%;
-  top: -20px;
+  left: -10%;
+  top: 40px;
   z-index: 1;
 }
 #top .achivements .achivements__inner .mark {
@@ -278,7 +291,7 @@
   z-index: -1;
 }
 #top .price {
-  margin-top: 200px;
+  padding-top: 1px;
   margin-bottom: 100px;
 }
 #top .price .price__inner {
@@ -306,10 +319,21 @@
 #top .price .price__inner .price__list li {
   width: calc(50% - 15px);
 }
+#top .price .price__inner .price__list .p-index__price-img {
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 #top .price .price__inner .p-index__price-btn {
   margin-top: 30px;
   display: flex;
   justify-content: center;
+}
+#top .price .mark {
+  position: absolute;
+  z-index: -10;
+  top: 20%;
+  right: 1%;
 }
 #top .infomation {
   position: relative;

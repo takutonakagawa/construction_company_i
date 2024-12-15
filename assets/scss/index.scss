@@ -7,10 +7,11 @@
 #top{
     overflow-x: hidden;
     .about{
-        position: relative;
-        margin-bottom: 400px;
+        margin-bottom: 250px;
+        padding-top: 1px;
         .about__inner{
             padding: 0 100px;
+            position: relative;
             .p-index__about-title{
                 margin-top: 250px;
             }
@@ -22,17 +23,21 @@
             .p-index__about-desc{
                 margin-top: 50px;
                 font-size: 28px;
-                width: 60%;
+                width: 70%;
+                background: rgba(255, 255, 255, 0.7);
+                padding: 10px;
             }
             .index__about-img{
                 position: absolute;
-                width: 70%;
+                width: 90%;
                 height: 500px;
-                top: 0;
-                right: -16.2%;
+                top: 5%;
+                // right: -16.2%;
+                right: -30%;
                 z-index: -1;
                 object-fit: cover;
-                opacity: 0.2;
+                opacity: 0.8;
+                padding: 30px;
             }
             .p-index__about-btn{
                 float: right;
@@ -42,7 +47,7 @@
 
     // business
     .business{
-        // margin-top: 350px;
+        padding-top: 150px;
         position: relative;
         &__container{
             display: flex;
@@ -133,6 +138,26 @@
                     top: 285px;
                     left: 27.5%;
                 }
+                .business__mark{
+                    position: absolute;
+                    width: 15%;
+                    z-index: 100;
+                    &--left{
+                        top: 31.5%;
+                        left: 12%;
+                        transform: rotate(33deg);
+                    }
+                    &--center{
+                        top: 65%;
+                        left: 27.6%;
+                        transform: rotate(90deg);
+                    }
+                    &--right{
+                        top: 31.5%;
+                        left: 42.5%;
+                        transform: rotate(-33deg);
+                    }
+                }
             }
             .p-index__business-content{
                 // width: 55%;
@@ -159,7 +184,9 @@
 
     // achivements
     .achivements{
+        padding-top: 150px;
         position: relative;
+        margin-bottom: 150px;
         .achivements__inner{
             padding: 0 100px;
             .p-index__achivements-catch{
@@ -228,42 +255,42 @@
                             width: 230px;
                             height: 230px;
                             z-index: 3;
-                            top: 170px;
-                            right: 20%;
+                            top: 10px;
+                            right: 3%;
                         }
-                        &--2{
-                            width: 330px;
-                            height: 330px;
-                            z-index: 2;
-                            left: 5%;
-                            top: 120px;
-                        }
+                        // &--2{
+                        //     width: 330px;
+                        //     height: 330px;
+                        //     z-index: 2;
+                        //     left: 5%;
+                        //     top: 120px;
+                        // }
                         &--3{
                             width: 380px;
                             height: 350px;
                             z-index: 1;
-                            right: 3%;
-                            top: 20px;
+                            left: -5%;
+                            top: 140px;
                         }
-                        &--4{
-                            width: 260px;
-                            height: 230px;
-                            right: 0;
-                            top: 300px;
-                            z-index: 3;
-                        }
+                        // &--4{
+                        //     width: 260px;
+                        //     height: 230px;
+                        //     right: 0;
+                        //     top: 300px;
+                        //     z-index: 3;
+                        // }
                         &--5{
                             width: 430px;
                             height: 280px;
-                            left: 18%;
-                            top: 150px;
+                            left: 20%;
+                            top: 260px;
                             z-index: 2;
                         }
                         &--6{
                             width: 450px;
                             height: 250px;
-                            left: -5%;
-                            top: -20px;
+                            left: -10%;
+                            top: 40px;
                             z-index: 1;
                         }
                     }
@@ -288,7 +315,7 @@
     }
     // price
     .price{
-        margin-top: 200px;
+        padding-top: 1px;
         margin-bottom: 100px;
         .price__inner{
             padding: 0 100px;
@@ -314,8 +341,8 @@
                     width: calc(50% - 15px);
                 }
                 .p-index__price-img{
-                    // width: 49%;
-                    // padding: 30px;
+                    aspect-ratio: 1 /1;
+                    object-fit: cover;
                 }
             }
             .p-index__price-btn{
@@ -324,6 +351,12 @@
                 justify-content: center;
             }
         //  transform: translate(0, -50%);
+        }
+        .mark{
+            position: absolute;
+            z-index: -10;
+            top: 20%;
+            right: 1%;
         }
     }
 

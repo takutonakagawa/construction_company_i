@@ -10,7 +10,9 @@
     <!-- 共通css / -->
     <!-- 固有css -->
     <link rel="stylesheet" href="assets/css/about.css">
-     <!-- 固有css/ -->
+    <!-- 固有css/ -->
+    <!-- SVGファビコン -->
+    <link rel="icon" href="/assets/img/common/logo.svg" type="image/svg+xml">
 </head>
 <body>
     <div class="l-cutin">
@@ -24,7 +26,7 @@
                 </i>
                 <div class="text">
                     <div class="title">株式会社池田総合設備</div>
-                    <div class="copy">お客様の想いを形で結果として応える会社</div>
+                    <div class="copy">人の想いを形で結果として応える会社</div>
                 </div>
             </a>
             <nav class="l-header__nav">
@@ -43,6 +45,9 @@
                     </a>
                     <a href="">
                         <img src="/assets/img/common/Instagram.png" alt="">
+                    </a>
+                    <a href="">
+                        <img src="/assets/img/common/TikTok.png" alt="">
                     </a>
                 </div>
             </nav>
@@ -63,14 +68,7 @@
         </section>
         <!-- mv / -->
 
-
-
-
-            
-
-
-
-                <section class="greeting">
+                <section class="greeting" id="greeting">
                     <div class="c-inner greeting__inner">
                         <div class="c-title">
                             <span class="c-slash"></span>
@@ -105,52 +103,56 @@
                     <!-- <img class="bg" src="/assets/img/about/bg-img.png" alt=""> -->
                 </section>
 
-                <!-- <section class="philosophy">
-                    <div class="philosophy__inner">
-                        <div class="about__philosophy">
-                            <div class="bg-message bg-message--left">respond to people's wishes.</div>
-                            <div class="about__philosophy-blueblock">
-                                <div class="about__philosophy-whiteblock">
-                                    <div class="c-title-secondary c-title-secondary--about">
-                                        <div class="en">Corporate philosophy</div>
-                                        <div class="ja">企業理念</div>
-                                    </div>
-                                    <div class="about__philosophy-message">
-                                        <p class="philosophy-message__title">"人の想いを形で結果として応える会社"</p>
-                                        <p class="philosophy-message__desc">多様性の思考と工夫でお客様により良い<span>快適</span>な<span>環境</span>、<br>
+                <section class="philosophy" id="philosophy">
+                    <div class="c-inner philosophy__inner philosophy__inner--right">
+                        <div class="bgMessage bgMessage--right">respond to people's wishes.</div>
+                        <div class="blueblock">
+                            <div class="whiteblock">
+                                <div class="c-title-secondary title__about">
+                                    <div class="en">Corporate philosophy</div>
+                                    <div class="ja">企業理念</div>
+                                </div>
+                                <div class="message">
+                                    <p class="message__title">"人の想いを形で結果として応える会社"</p>
+                                    <p class="message__desc">多様性の思考と工夫でお客様により良い<span>快適</span>な<span>環境</span>、<br>
 
-                                            空間作りの提供に努め時代とともに進捗して行く世の中で<span>課題</span>を<span>解決</span>し、<br>
-                                            
-                                            さまざまなニ ズに応える会社であり、<span>人</span>・<span>地域</span>・<span>社会</span>・<span>地球</span>の貢献に努め社会の発展と共に共存できる会社を目指します。<br>
-                                            
-                                            また社員に<span>感謝</span>しできる限り多くの「<span>幸福</span>」「<span>快適な生活環境</span>」の提供に努める。</p>
-                                    </div>
+                                        空間作りの提供に努め時代とともに進捗して行く世の中で<span>課題</span>を<span>解決</span>し、<br>
+                                        
+                                        さまざまなニ ズに応える会社であり、<span>人</span>・<span>地域</span>・<span>社会</span>・<span>地球</span>の貢献に努め社会の発展と共に共存できる会社を目指します。<br>
+                                        
+                                        また社員に<span>感謝</span>しできる限り多くの「<span>幸福</span>」「<span>快適な生活環境</span>」の提供に努める。</p>
                                 </div>
                             </div>
                         </div>
+                        
                     </div>
 
-                    <div class="philosophy__inner">
-                        <div class="about__philosophy">
-                            <div class="bg-message bg-message--right">self-questioning.</div>
-                            <div class="about__philosophy-blueblock about__philosophy-blueblock--left">
-                                <div class="about__philosophy-whiteblock about__philosophy-whiteblock--left">
-                                    <div class="c-title-secondary c-title-secondary--about">
-                                        <div class="en">Management philosophy</div>
-                                        <div class="ja">経営理念</div>
-                                    </div>
-                                    <div class="about__philosophy-message">
-                                        <p class="philosophy-message__title">「自問自答」</p>
-                                        <p class="philosophy-message__desc">常に<span>選択肢</span>があり<span>決断</span>する状況に迫られる中でどのような状況下でもあらゆる<span>判断材料</span>を<span>収取</span>し<br>
-                                            <span>自分自身</span>で自分に問いかけて自分で<span>答え</span>を出して<span>最終決断</span>する。</p>
-                                    </div>
+                    <div class="c-inner philosophy__inner philosophy__inner--left">
+                        <div class="bgMessage bgMessage--left">self-questioning.</div>
+                        <div class="blueblock">
+                            <div class="whiteblock">
+                                <div class="c-title-secondary title__about">
+                                    <div class="en">Management philosophy</div>
+                                    <div class="ja">経営理念</div>
+                                </div>
+                                <div class="message">
+                                    <p class="message__title">「自問自答」</p>
+                                    <p class="message__desc">常に<span>選択肢</span>があり<span>決断</span>する状況に迫られる中でどのような状況下でもあらゆる<span>判断材料</span>を<span>収取</span>し<br>
+                                        <span>自分自身</span>で自分に問いかけて自分で<span>答え</span>を出して<span>最終決断</span>する。</p>
                                 </div>
                             </div>
                         </div>
+                        
                     </div>
-                </section> -->
 
-                <section class="logo">
+                    <div class="c-inner philosophy__inner philosophy__inner--left">
+                        <div class="bgMessage bgMessage--left">self-questioning.</div>
+                        
+                    </div>
+                    <img src="/assets/img/about/bg-img.png">
+                </section>
+
+                <section class="logo" id="logo">
                     <div class="c-inner logo__inner">
                         <div class="p-about-logo__title">
                             <div class="c-title">
@@ -205,7 +207,7 @@
                     </div>
                 </section>
 
-                <section class="company">
+                <section class="company" id="company">
                     <div class="c-inner company__inner">
                         <div class="p-about-company__title">
                             <div class="c-title">
@@ -313,7 +315,7 @@
                         </i>
                         <div class="text">
                             <div class="title">株式会社池田総合設備</div>
-                            <div class="copy">お客様の想いを形で結果として応える会社</div>
+                            <div class="copy">人の想いを形で結果として応える会社</div>
                         </div>
                     </a>
                     <div class="l-footer__sns">
@@ -325,69 +327,64 @@
                         </a>
                     </div>
                     <div class="l-footer__info">
-                        <p>000-0000-0000</p>
-                        <p>兵庫県神戸市中央区あああああ</p>
+                        <p>TEL・FAX：<a href>078-224-0730</a></p>
+                        <p>〒655-0852</a></p>
+                        <p>兵庫県神戸市垂水区名谷497-5</p>
                     </div>
                 </div>
                 <div class="l-footer__menu">
                     <ul>
                         <li>
-                            <a href="" class="main">TOP</a>
+                            <a href="/index.html" class="main">TOP</a>
                         </li>
                         <li>
-                            <a href="">TOP</a>
+                            <a href="/index.html#about">会社概要</a>
                         </li>
                         <li>
-                            <a href="">TOP</a>
+                            <a href="/index.html#business">事業内容</a>
                         </li>
                         <li>
-                            <a href="">TOP</a>
+                            <a href="/index.html#achivements">施工実績</a>
                         </li>
                         <li>
-                            <a href="">TOP</a>
+                            <a href="/index.html#price">料金案内</a>
                         </li>
                         <li>
-                            <a href="">TOP</a>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <a href="" class="main">会社概要</a>
-                        </li>
-                        <li>
-                            <a href="">TOP</a>
-                        </li>
-                        <li>
-                            <a href="">TOP</a>
-                        </li>
-                        <li>
-                            <a href="">TOP</a>
-                        </li>
-                        <li>
-                            <a href="">TOP</a>
-                        </li>
-                        <li>
-                            <a href="">TOP</a>
+                            <a href="/index.html#infomation">物件情報</a>
                         </li>
                     </ul>
                     <ul>
                         <li>
-                            <a href="" class="main">施工実績/物件案内</a>
+                            <a href="/about.html" class="main">会社概要</a>
                         </li>
                         <li>
-                            <a href="">TOP</a>
+                            <a href="/about.html#greeting">代表挨拶</a>
                         </li>
                         <li>
-                            <a href="">TOP</a>
+                            <a href="/about.html#philosophy">理念</a>
                         </li>
                         <li>
-                            <a href="">TOP</a>
+                            <a href="/about.html#logo">ロゴの由来</a>
                         </li>
                         <li>
-                            <a href="">TOP</a>
+                            <a href="/about.html#company">会社概要</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="/archive.html" class="main">施工実績/物件案内</a>
                         </li>
                         <li>
-                            <a href="">TOP</a>
+                            <a href="">ALL</a>
+                        </li>
+                        <li>
+                            <a href="">機械設備工事</a>
+                        </li>
+                        <li>
+                            <a href="">i renovation</a>
+                        </li>
+                        <li>
+                            <a href="">不動産事業</a>
                         </li>
                     </ul>
                     <ul>
@@ -395,19 +392,10 @@
                             <a href="" class="main">料金案内</a>
                         </li>
                         <li>
-                            <a href="">TOP</a>
+                            <a href="/price.html#construction">機械設備工事</a>
                         </li>
                         <li>
-                            <a href="">TOP</a>
-                        </li>
-                        <li>
-                            <a href="">TOP</a>
-                        </li>
-                        <li>
-                            <a href="">TOP</a>
-                        </li>
-                        <li>
-                            <a href="">TOP</a>
+                            <a href="/price.html#irenovation">i renovation</a>
                         </li>
                     </ul>
                     <ul>
@@ -415,19 +403,21 @@
                             <a href="" class="main">事業内容</a>
                         </li>
                         <li>
-                            <a href="">TOP</a>
+                            <a href="/business.html#construction-section">機械設備工事部</a>
                         </li>
                         <li>
-                            <a href="">TOP</a>
+                            <a href="/business.html#renovation-section">i renovation事業部</a>
                         </li>
                         <li>
-                            <a href="">TOP</a>
+                            <a href="/business.html#property-section">不動産事業部</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="" class="main">採用情報</a>
                         </li>
                         <li>
-                            <a href="">TOP</a>
-                        </li>
-                        <li>
-                            <a href="">TOP</a>
+                            <a href="/recruitment.html#recruitment">募集要項</a>
                         </li>
                     </ul>
                     <ul>
@@ -435,7 +425,7 @@
                             <a href="" class="main">お問い合わせ</a>
                         </li>
                         <li>
-                            <a href="">TOP</a>
+                            <a href="/contact.html#contact">お問合せフォーム</a>
                         </li>
                     </ul>
                 </div>
