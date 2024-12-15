@@ -339,10 +339,12 @@
                 gap: 30px;
                 li{
                     width: calc(50% - 15px);
-                }
-                .p-index__price-img{
-                    aspect-ratio: 1 /1;
-                    object-fit: cover;
+                    overflow: hidden;
+                    .p-index__price-img{
+                        width: 100%;
+                        aspect-ratio: 1 /1;
+                        object-fit: cover;
+                    }
                 }
             }
             .p-index__price-btn{

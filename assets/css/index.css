@@ -318,8 +318,10 @@
 }
 #top .price .price__inner .price__list li {
   width: calc(50% - 15px);
+  overflow: hidden;
 }
-#top .price .price__inner .price__list .p-index__price-img {
+#top .price .price__inner .price__list li .p-index__price-img {
+  width: 100%;
   aspect-ratio: 1/1;
   -o-object-fit: cover;
      object-fit: cover;
