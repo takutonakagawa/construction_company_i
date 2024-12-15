@@ -253,6 +253,9 @@ img {
   display: block;
   text-align: center;
   position: relative;
+  font-weight: bold;
+  font-size: 110%;
+  background: rgba(255, 255, 255, 0.7);
 }
 .c-btn::after {
   content: url("/assets/img/common/btn-arrow.png");
@@ -579,8 +582,9 @@ img {
 }
 .l-header__menu {
   display: flex;
-  gap: 15px;
+  gap: 10px;
   align-items: center;
+  font-size: 19px;
 }
 .l-header__menu a {
   position: relative;

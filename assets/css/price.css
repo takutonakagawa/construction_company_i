@@ -1,3 +1,7 @@
+#construction {
+  padding-top: 150px;
+}
+
 .price {
   margin-top: 250px;
 }
@@ -6,13 +10,16 @@
 }
 .price .price__inner .p-price__contents {
   margin-top: 30px;
-  margin-bottom: 300px;
+  margin-bottom: 200px;
 }
 .price .price__inner .p-price__contents .p-price__content {
   margin-bottom: 100px;
 }
 .price .price__inner .p-price__contents .p-price__content .p-price__title {
   font-size: 38px;
+}
+.price .price__inner .p-price__contents .p-price__content #irenovation {
+  padding-top: 100px;
 }
 .price .price__inner .p-price__contents .p-price__content .p-price__img {
   height: 350px;

@@ -16,9 +16,12 @@
 }
 
 /* 共通 */
+#contact {
+  padding-top: 100px;
+}
+
 .p-contact {
   text-align: center;
-  margin-top: 100px;
   position: relative;
 }
 
