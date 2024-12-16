@@ -46,6 +46,10 @@
   z-index: 10002;
   cursor: pointer;
 }
+.l-cutin .skip-button::after {
+  position: absolute;
+  top: 14px;
+}
 .l-cutin .skip-button:hover {
   background: white;
 }
