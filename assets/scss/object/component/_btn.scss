@@ -17,4 +17,10 @@
         right: -25px;
         // transform: translate(0,-50%);
     }
+    &__2lines{
+        &::after{
+            position: absolute;
+            top: 19px;
+        }
+    }
 }
