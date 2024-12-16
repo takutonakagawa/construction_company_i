@@ -32,7 +32,7 @@
                 margin-bottom: 5px;
             }
             .copy{
-                font-size: 12px;
+                font-size: 15px;
                 color: $main-blue-2;
             }
         }
@@ -40,7 +40,7 @@
   }
   &__menu{
     display: flex;
-    gap: 40px;
+    gap: 35px;
     ul{
         li{
             margin-bottom: 20px;
@@ -58,6 +58,9 @@
     gap: 15px;
     margin-bottom: 20px;
     margin-top: 80px;
+    &--tiktok{
+      width: 52px;
+    }
   }
   &__non-margin-top{
     margin-top: 0px;
