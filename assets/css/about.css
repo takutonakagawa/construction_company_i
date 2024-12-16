@@ -1,3 +1,4 @@
+
 .greeting {
   padding-top: 1px;
   position: relative;
@@ -298,6 +299,7 @@
   z-index: -1;
 }
 
+
 .p-contact {
   margin-top: 150px;
   width: 100%;
@@ -320,4 +322,4 @@
   display: flex;
   gap: 60px;
   float: right;
-}/*# sourceMappingURL=about.css.map */
+}

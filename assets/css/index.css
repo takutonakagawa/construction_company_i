@@ -31,10 +31,12 @@
   top: 5%;
   right: -30%;
   z-index: -1;
+
   -o-object-fit: cover;
      object-fit: cover;
   opacity: 0.8;
   padding: 30px;
+
 }
 #top .about .about__inner .p-index__about-btn {
   float: right;
@@ -115,8 +117,7 @@
 #top .business .business__inner .p-index__business-imgs .index__about-img {
   width: 200px;
   height: 200px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 50%;
   position: absolute;
 }
@@ -245,9 +246,11 @@
   height: 320px;
   top: 200px;
 }
+
 #top .achivements .achivements__inner .p-index__achivements-list .p-index__achivements-list-left .index__achivements-img {
   -o-object-fit: cover;
      object-fit: cover;
+
   position: absolute;
 }
 #top .achivements .achivements__inner .p-index__achivements-list .p-index__achivements-list-left .index__achivements-img--1 {
@@ -392,7 +395,6 @@
   align-items: center;
   padding: 0;
   height: 100%;
-  width: -moz-max-content;
   width: max-content;
 }
 #top .infomation__bg ul li {
@@ -428,4 +430,4 @@
   z-index: 9;
   background: rgba(255, 255, 255, 0.9);
   display: block;
-}/*# sourceMappingURL=index.css.map */
+}

@@ -157,9 +157,7 @@ a:hover {
 body {
   font-family: "Noto Sans JP", メイリオ, Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
   letter-spacing: -0.03em;
-  -webkit-text-size-adjust: 100%;
-     -moz-text-size-adjust: 100%;
-          text-size-adjust: 100%;
+  text-size-adjust: 100%;
   overflow-x: hidden;
 }
 @media only screen and (max-width: 820px) {
@@ -1399,4 +1397,4 @@ img {
 
 .u-vertical_tt {
   vertical-align: text-top !important;
-}/*# sourceMappingURL=common.css.map */
+}
