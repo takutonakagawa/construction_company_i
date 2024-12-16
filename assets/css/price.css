@@ -9,7 +9,6 @@
   padding: 0 100px;
 }
 .price .price__inner .p-price__contents {
-  margin-top: 30px;
   margin-bottom: 200px;
 }
 .price .price__inner .p-price__contents .p-price__content {
@@ -17,6 +16,7 @@
 }
 .price .price__inner .p-price__contents .p-price__content .p-price__title {
   font-size: 38px;
+  margin-bottom: 30px;
 }
 .price .price__inner .p-price__contents .p-price__content #irenovation {
   padding-top: 100px;
@@ -57,7 +57,7 @@
   margin-bottom: 50px;
 }
 .price .price__inner .p-price__contents .p-price__content .irenovation__explain .price__list {
-  width: 100%;
+  width: 120%;
   display: flex;
   margin-bottom: 25px;
 }
@@ -67,6 +67,8 @@
 }
 .price .price__inner .p-price__contents .p-price__content .irenovation__explain .irenovation__price {
   font-size: 20px;
+  width: 50%;
+  text-align: right;
 }
 .price .price__inner .p-price__contents .p-price__content .irenovation__img {
   float: right;
