@@ -1,9 +1,9 @@
-.p-business{
+.business{
     margin-top: 250px;
     .business__inner{
-        width: 100%;
+        padding: 0 150px;
         .p-business__contents{
-            margin-top: 80px;
+            padding-top: 80px;
             .p-business__content{
                 margin-top: 80px;
                 position: relative;
@@ -30,19 +30,19 @@
             }
             .p-business__desc{
                 border: solid 1px #4CB6E9;
-                width: 47%;
+                width: 50%;
                 padding: 15px;
                 background-color: rgba($color: #ffffff, $alpha: 0.7)
             }
             .business_desc--p01{
                 position: absolute;
                 top: 90%;
-                left: 54%;
+                left: 57%;
             }
             .business_desc--p02{
                 position: absolute;
                 top: 82%;
-                left: 0%;
+                left: -8%;
             }
             .business__design-block--construction_blue-p01{
                 position: absolute;
@@ -105,7 +105,7 @@
             .business__btn--p02{
                 position: absolute;
                 display: flex;
-                left: 55.5%;
+                left: 48.1%;
                 top: 111.2%;
                 gap: 50px;
                 .business__btn--detail{

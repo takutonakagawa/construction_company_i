@@ -1,19 +1,18 @@
 @charset "UTF-8";
 /* 共通 */
-.p-recruitment {
-  margin-top: 250px;
+.recruitment {
+  padding-top: 250px;
   letter-spacing: 2px;
   text-align: left;
 }
-.p-recruitment .p__recruitment--inner {
-  width: 60%;
-  margin: 0 auto;
+.recruitment .recruitment__inner {
+  padding: 0 150px;
 }
-.p-recruitment .p__recruitment--inner .c-title {
+.recruitment .recruitment__inner .c-title {
   margin-top: 100px;
   position: relative;
 }
-.p-recruitment .p__recruitment--inner .c-title .c-slash {
+.recruitment .recruitment__inner .c-title .c-slash {
   position: absolute;
   height: 60px;
   border-bottom: 2px solid #004982;
@@ -21,24 +20,24 @@
   left: -3%;
   top: -50%;
 }
-.p-recruitment .p__recruitment--inner .c-title .ja {
+.recruitment .recruitment__inner .c-title .ja {
   font-size: 24px;
   margin-bottom: 10px;
 }
-.p-recruitment .p__recruitment--inner .c-title .en {
+.recruitment .recruitment__inner .c-title .en {
   font-size: 42px;
   font-weight: bold;
 }
-.p-recruitment .p__recruitment--inner .p-recruitment__content {
+.recruitment .recruitment__inner .p-recruitment__content {
   margin-top: 70px;
   font-size: 20px;
 }
-.p-recruitment .p__recruitment--inner .p-recruitment__content .p-recruitment__list {
+.recruitment .recruitment__inner .p-recruitment__content .p-recruitment__list {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
 }
-.p-recruitment .p__recruitment--inner .p-recruitment__content .p-recruitment__list .p-recruitment__term {
+.recruitment .recruitment__inner .p-recruitment__content .p-recruitment__list .p-recruitment__term {
   width: 20%;
   padding-left: 20px;
   padding-top: 23px;
@@ -47,7 +46,7 @@
   font-weight: bold;
   border-bottom: solid 1.5px #4CB6E9;
 }
-.p-recruitment .p__recruitment--inner .p-recruitment__content .p-recruitment__list .p-recruitment__desc {
+.recruitment .recruitment__inner .p-recruitment__content .p-recruitment__list .p-recruitment__desc {
   width: 80%;
   line-height: 1.8;
   padding-top: 23px;
@@ -56,7 +55,7 @@
   margin-bottom: 10px;
   border-bottom: solid 1px #d6d6d6;
 }
-.p-recruitment .p__recruitment--inner .p-recruitment_btn {
+.recruitment .recruitment__inner .p-recruitment_btn {
   margin-top: 60px;
   margin-bottom: 60px;
   display: flex;

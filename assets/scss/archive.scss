@@ -42,13 +42,14 @@
 }
 
 /* archive */
-.p-archive_inner{
+.archive_inner{
     margin-top: 50px;
+    padding: 0 50px;
     .c-title-secondary--archive{
         margin-bottom: 100px;
     }
     .p-archive__tag-list{
-        width: 60%;
+        width: 100%;
         display: flex;
         gap: 30px;
         margin: auto;
@@ -74,45 +75,54 @@
         width: 100%;
         margin-top: 100px;
         display: flex;
-        gap: 50px;
-        .p-archive__article{
-            width: 33%;
-            .article__img{
-                width: 100%;
-                height: 350px;
-                object-fit: cover;
+        flex-wrap: wrap;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 15px;
+        li{
+            width: 32%;
+            margin-top: 50px;
+            &:nth-of-type(-n+3){
+                margin-top: 0px;
             }
-            .article__inner{
-                .article__inner-line01{
-                    margin-top: 10px;
-                    display: flex;
-                    .p-archive_article-date{
-                        margin-top: 20px;
-                    }
-                    .p-archive__tag{
-                        margin-left: 15px;
-                        text-align: center;
-                        padding: 10px 30px;
-                        background-color: gray;
-                        width: 40%;
-                        color: #ffffff;
-                        &--renovation{
-                            background-color: #4CB6E9;
-                        }
-                        &--property{
-                            background-color: #004982;
-                        }
-                        &--other{
-                            background-color: #b4b4b5;
-                        }
-                    }
-                }
-                .article__inner-line02{
+            .p-archive__article{
+                .article__img{
                     width: 100%;
-                    margin-top: 20px;
-                    .p-archive__article-title{
-                        font-size: 22px;
-                        letter-spacing: 1px;
+                    height: 350px;
+                    object-fit: cover;
+                }
+                .article__inner{
+                    .article__inner-line01{
+                        margin-top: 10px;
+                        display: flex;
+                        .p-archive_article-date{
+                            margin-top: 20px;
+                        }
+                        .p-archive__tag{
+                            margin-left: 15px;
+                            text-align: center;
+                            padding: 10px 30px;
+                            background-color: gray;
+                            width: 50%;
+                            color: #ffffff;
+                            &--renovation{
+                                background-color: #4CB6E9;
+                            }
+                            &--property{
+                                background-color: #004982;
+                            }
+                            &--other{
+                                background-color: #b4b4b5;
+                            }
+                        }
+                    }
+                    .article__inner-line02{
+                        width: 100%;
+                        margin-top: 20px;
+                        .p-archive__article-title{
+                            font-size: 22px;
+                            letter-spacing: 1px;
+                        }
                     }
                 }
             }

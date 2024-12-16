@@ -1,79 +1,90 @@
-.p-price{
+#construction{
+    padding-top: 150px;
+}
+.price{
     margin-top: 250px;
-    .p-price__contents{
-        margin-top: 30px;
-        margin-bottom: 300px;
-       .p-price__content{
-            margin-bottom: 100px;
-            .p-price__title{
-                font-size: 38px;
-            }
-            .p-price__img{
-                height: 350px;
-                width: 500px;
-                object-fit: cover;
-                padding-top: 50px;
-                padding-left: 50px;
-            }
-            .p-price__explain{
-                padding-top: 80px;
-                padding-left: 50px;
-                float: right;
-                width: 60%;
-                .p-price__subtitle{
-                    font-size: 32px;
+    .price__inner{
+        padding: 0 100px;
+        .p-price__contents{
+            
+            margin-bottom: 200px;
+           .p-price__content{
+                margin-bottom: 100px;
+                .p-price__title{
+                    font-size: 38px;
+                    margin-bottom: 30px;
                 }
-                .p-price__desc{
+                #irenovation{
+                    padding-top: 100px;
+                }
+                .p-price__img{
+                    height: 350px;
+                    width: 500px;
+                    object-fit: cover;
                     padding-top: 50px;
-                    font-size: 20px;
                 }
-                .p-price__price{
-                    padding-top: 50px;
-                    font-size: 20px;
+                .p-price__explain{
+                    padding-top: 80px;
+                    float: right;
+                    width: 50%;
+                    .p-price__subtitle{
+                        font-size: 32px;
+                    }
+                    .p-price__desc{
+                        padding-top: 50px;
+                        font-size: 20px;
+                    }
+                    .p-price__price{
+                        padding-top: 50px;
+                        font-size: 20px;
+                    }
+                    .p-price__btn--right{
+                        float: right; 
+                    }
                 }
-                .p-price__btn--right{
-                    float: right; 
+                .irenovation__explain{
+                    width: 40%;
+                    float: left;
+                    padding-top: 30px;
+                    padding-left: 0px;
+                    .irenovation__subtitle{
+                        margin-bottom: 50px;
+                    }
+                    .price__list{
+                        width: 120%;
+                        display: flex;
+                        margin-bottom: 25px;
+                    }
+                    .irenovation__price-title{
+                        width: 100%;
+                        padding-top: 0px;
+                    }
+                    .irenovation__price{
+                        font-size: 20px;
+                        width: 50%;
+                        text-align: right;
+                    }
                 }
-            }
-            .irenovation__explain{
-                width: 40%;
-                float: left;
+                .irenovation__img{
+                    float: right;
+                }
+           }
+           .p-price__btn--center{
+                width: 100%;
+                display: flex;
+                justify-content: center;
                 padding-top: 30px;
-                padding-left: 0px;
-                .irenovation__subtitle{
-                    margin-bottom: 50px;
+           }
+           .p-price__btn--center-W{
+                margin-top: 60px;
+                margin-bottom: 60px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 100px;
+                .irenovation__btn{
+                    width: 320px;
                 }
-                .price__list{
-                    width: 100%;
-                    display: flex;
-                    margin-bottom: 25px;
-                }
-                .irenovation__price-title{
-                    width: 100%;
-                    padding-top: 0px;
-                }
-                .irenovation__price{
-                    font-size: 20px;
-                }
-            }
-            .irenovation__img{
-                float: right;
-            }
-       }
-       .p-price__btn--center{
-            width: 100%;
-            display: flex;
-            justify-content: center;
-       }
-       .p-price__btn--center-W{
-            margin-top: 60px;
-            margin-bottom: 60px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 100px;
-            .irenovation__btn{
-                width: 320px;
             }
         }
     }

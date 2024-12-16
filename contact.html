@@ -10,7 +10,9 @@
     <!-- 共通css / -->
     <!-- 固有css -->
     <link rel="stylesheet" href="assets/css/contact.css">
-     <!-- 固有css/ -->
+    <!-- 固有css/ -->
+    <!-- SVGファビコン -->
+    <link rel="icon" href="/assets/img/common/logo.svg" type="image/svg+xml">
 </head>
 <body>
       <!-- header -->
@@ -22,7 +24,7 @@
                 </i>
                 <div class="text">
                     <div class="title">株式会社池田総合設備</div>
-                    <div class="copy">お客様の想いを形で結果として応える会社</div>
+                    <div class="copy">人の想いを形で結果として応える会社</div>
                 </div>
             </a>
             <nav class="l-header__nav">
@@ -42,6 +44,9 @@
                     <a href="">
                         <img src="/assets/img/common/Instagram.png" alt="">
                     </a>
+                    <a href="">
+                        <img src="/assets/img/common/TikTok.png" alt="">
+                    </a>
                 </div>
             </nav>
         </div>
@@ -55,110 +60,113 @@
                 <div class="ja">お問い合わせ</div>
                 <div class="en">Contact</div>
             </h1>
-           </section>
+        </section>
         <!-- mv / -->
-        <section class="p-contact">
+        <section class="p-contact" id="contact">
             <div>
                 <img class="p-mv__mark rellax" src="/assets/img/common/MARK2.png" alt="">
             </div>
-            <div class="c-inner p__contact--inner">
-                <h1 class="c-title-secondary">
-                    <div class="en">Contact form</div>
-                    <div class="ja">お問い合わせ</div>
-                </h1>
-                <div class="p-contact__form">
-                    <div class="c-contact__form">
-                        <label form="name">
-                            お名前
-                            <span class="c-required">※</span>
-                        </label>
-                        <div class="contact__input contact__input--compact">
-                            <input class="c-forms">
-                        </div>
-                        <div class="error_message-p01">お名前が正確に入力されていません</div>
-                    </div>
-                    <div class="c-contact__form">
-                        <label form="furigana">
-                            ふりがな
-                            <span class="c-required">※</span>
-                        </label>
-                        <div class="contact__input contact__input--compact">                           
-                            <input class="c-forms" size="43">
-                        </div>
-                        <div class="error_message-p01">ふりがなが正確に入力されていません</div>
-                    </div>
-                    <div class="c-contact__form">
-                        <label form="tel">
-                            電話番号
-                            <span class="c-required">※</span>
-                        </label>
-                        <div class="contact__input">
-                            
-                            <input class="c-forms" size="89">
-                        </div>
-                        <div class="error_message-p01">電話番号が正確に入力されていません</div>
-                    </div>
-                    <div class="c-contact__form">
-                        <label form="email">
-                            アドレス
-                            <span class="c-required">※</span>
-                        </label>
-                        <div class="contact__input">
-                            
-                            <input class="c-forms" size="89">
-                        </div>
-                        <div class="error_message-p01">アドレスが正確に入力されていません</div>
-                    </div>
-                    <div class="c-contact__form">
-                        <label form="address">
-                            住所
-                            <span class="c-required">※</span>
-                        </label>
-                        <div class="contact__input">
-                            
-                            <input class="c-forms" size="89">
-                        </div>
-                        <div class="error_message-p01">住所が正確に入力されていません</div>
-                    </div>
-                    <div class="c-contact__form">
-                        <div class="c-contact__label">
-                            種別
-                            <span class="c-required">※</span>
-                        </div>
-                        <div class="contact-items">
-                            <div class="contact-item">
-                                <input type="radio" name="contact_reason" value="採用について" id="recruitment" checked>           
-                                <label for="recruitment">採用について</label>
-                            </div>
-                            <div class="contact-item">
-                                <input type="radio" name="contact_reason" value="お仕事のご依頼" id="work_request">
-                                <label for="work_request">お仕事のご依頼</label>
-                            </div>
-                                <div class="contact-item"><input type="radio" name="contact_reason" value="ご質問" id="questions">
-                                <label for="questions">ご質問</label>
-                            </div>
-                            <div class="contact-item">
-                                <input type="radio" name="contact_reason" value="その他" id="other">
-                                <label for="other">その他</label>
-                            </div>
-                        </div>
-                        <div class="error_message-p02">種別が正確に選択されていません</div>
-                    </div>
-                    <div class="c-contact__form">
-                                    内容
-                                    <span class="c-required">※</span>
-                                    <textarea class="p-contact__content"></textarea>
+
+                
+                <div class="c-inner p__contact--inner">
+                    <h1 class="c-title-secondary">
+                        <div class="en">Contact form</div>
+                        <div class="ja">お問い合わせ</div>
+                    </h1>
+                    <div class="p-contact__form">
+                        <div class="c-contact__form">
+                            <label form="name">
+                                お名前
+                                <span class="c-required">※</span>
                             </label>
-                        <div class="error_message-p03">種別が正確に選択されていません</div>
+                            <div class="contact__input contact__input--compact">
+                                <input class="c-forms">
+                            </div>
+                            <div class="error_message-p01">お名前が正確に入力されていません</div>
+                        </div>
+                        <div class="c-contact__form">
+                            <label form="furigana">
+                                ふりがな
+                                <span class="c-required">※</span>
+                            </label>
+                            <div class="contact__input contact__input--compact">                           
+                                <input class="c-forms" size="43">
+                            </div>
+                            <div class="error_message-p01">ふりがなが正確に入力されていません</div>
+                        </div>
+                        <div class="c-contact__form">
+                            <label form="tel">
+                                電話番号
+                                <span class="c-required">※</span>
+                            </label>
+                            <div class="contact__input">
+                                
+                                <input class="c-forms" size="89">
+                            </div>
+                            <div class="error_message-p01">電話番号が正確に入力されていません</div>
+                        </div>
+                        <div class="c-contact__form">
+                            <label form="email">
+                                アドレス
+                                <span class="c-required">※</span>
+                            </label>
+                            <div class="contact__input">
+                                
+                                <input class="c-forms" size="89">
+                            </div>
+                            <div class="error_message-p01">アドレスが正確に入力されていません</div>
+                        </div>
+                        <div class="c-contact__form">
+                            <label form="address">
+                                住所
+                                <span class="c-required">※</span>
+                            </label>
+                            <div class="contact__input">
+                                
+                                <input class="c-forms" size="89">
+                            </div>
+                            <div class="error_message-p01">住所が正確に入力されていません</div>
+                        </div>
+                        <div class="c-contact__form">
+                            <div class="c-contact__label">
+                                種別
+                                <span class="c-required">※</span>
+                            </div>
+                            <div class="contact-items">
+                                <div class="contact-item">
+                                    <input type="radio" name="contact_reason" value="採用について" id="recruitment" checked>           
+                                    <label for="recruitment">採用について</label>
+                                </div>
+                                <div class="contact-item">
+                                    <input type="radio" name="contact_reason" value="お仕事のご依頼" id="work_request">
+                                    <label for="work_request">お仕事のご依頼</label>
+                                </div>
+                                    <div class="contact-item"><input type="radio" name="contact_reason" value="ご質問" id="questions">
+                                    <label for="questions">ご質問</label>
+                                </div>
+                                <div class="contact-item">
+                                    <input type="radio" name="contact_reason" value="その他" id="other">
+                                    <label for="other">その他</label>
+                                </div>
+                            </div>
+                            <div class="error_message-p02">種別が正確に選択されていません</div>
+                        </div>
+                        <div class="c-contact__form">
+                                        内容
+                                        <span class="c-required">※</span>
+                                        <textarea class="p-contact__content"></textarea>
+                                </label>
+                            <div class="error_message-p03">種別が正確に選択されていません</div>
+                        </div>
+                    </div>
+                    <div class="p-contact__privacy">
+                        <p>プライバシーポリシーが入ります。</p>
+                    </div>
+                    <div class="contact_btn">
+                        <a href="" class="c-btn">送信する</a>
                     </div>
                 </div>
-                <div class="p-contact__privacy">
-                    <p>プライバシーポリシーが入ります。</p>
-                </div>
-                <div class="contact_btn">
-                    <a href="" class="c-btn">送信する</a>
-                </div>
-            </div>
+
         </section>
 
         <!--insta -->
@@ -241,6 +249,7 @@
         <!--line / -->
     </main>
     <!-- footer -->
+    <!-- footer -->
     <footer class="l-footer">
         <div class="l-footer__container">
             <div class="l-footer__content">
@@ -251,7 +260,7 @@
                         </i>
                         <div class="text">
                             <div class="title">株式会社池田総合設備</div>
-                            <div class="copy">お客様の想いを形で結果として応える会社</div>
+                            <div class="copy">人の想いを形で結果として応える会社</div>
                         </div>
                     </a>
                     <div class="l-footer__sns">
@@ -263,69 +272,64 @@
                         </a>
                     </div>
                     <div class="l-footer__info">
-                        <p>000-0000-0000</p>
-                        <p>兵庫県神戸市中央区あああああ</p>
+                        <p>TEL・FAX：<a href>078-224-0730</a></p>
+                        <p>〒655-0852</a></p>
+                        <p>兵庫県神戸市垂水区名谷497-5</p>
                     </div>
                 </div>
                 <div class="l-footer__menu">
                     <ul>
                         <li>
-                            <a href="" class="main">TOP</a>
+                            <a href="/index.html" class="main">TOP</a>
                         </li>
                         <li>
-                            <a href="">TOP</a>
+                            <a href="/index.html#about">会社概要</a>
                         </li>
                         <li>
-                            <a href="">TOP</a>
+                            <a href="/index.html#business">事業内容</a>
                         </li>
                         <li>
-                            <a href="">TOP</a>
+                            <a href="/index.html#achivements">施工実績</a>
                         </li>
                         <li>
-                            <a href="">TOP</a>
+                            <a href="/index.html#price">料金案内</a>
                         </li>
                         <li>
-                            <a href="">TOP</a>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <a href="" class="main">会社概要</a>
-                        </li>
-                        <li>
-                            <a href="">TOP</a>
-                        </li>
-                        <li>
-                            <a href="">TOP</a>
-                        </li>
-                        <li>
-                            <a href="">TOP</a>
-                        </li>
-                        <li>
-                            <a href="">TOP</a>
-                        </li>
-                        <li>
-                            <a href="">TOP</a>
+                            <a href="/index.html#infomation">物件情報</a>
                         </li>
                     </ul>
                     <ul>
                         <li>
-                            <a href="" class="main">施工実績/物件案内</a>
+                            <a href="/about.html" class="main">会社概要</a>
                         </li>
                         <li>
-                            <a href="">TOP</a>
+                            <a href="/about.html#greeting">代表挨拶</a>
                         </li>
                         <li>
-                            <a href="">TOP</a>
+                            <a href="/about.html#philosophy">理念</a>
                         </li>
                         <li>
-                            <a href="">TOP</a>
+                            <a href="/about.html#logo">ロゴの由来</a>
                         </li>
                         <li>
-                            <a href="">TOP</a>
+                            <a href="/about.html#company">会社概要</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="/archive.html" class="main">施工実績/物件案内</a>
                         </li>
                         <li>
-                            <a href="">TOP</a>
+                            <a href="">ALL</a>
+                        </li>
+                        <li>
+                            <a href="">機械設備工事</a>
+                        </li>
+                        <li>
+                            <a href="">i renovation</a>
+                        </li>
+                        <li>
+                            <a href="">不動産事業</a>
                         </li>
                     </ul>
                     <ul>
@@ -333,19 +337,10 @@
                             <a href="" class="main">料金案内</a>
                         </li>
                         <li>
-                            <a href="">TOP</a>
+                            <a href="/price.html#construction">機械設備工事</a>
                         </li>
                         <li>
-                            <a href="">TOP</a>
-                        </li>
-                        <li>
-                            <a href="">TOP</a>
-                        </li>
-                        <li>
-                            <a href="">TOP</a>
-                        </li>
-                        <li>
-                            <a href="">TOP</a>
+                            <a href="/price.html#irenovation">i renovation</a>
                         </li>
                     </ul>
                     <ul>
@@ -353,19 +348,21 @@
                             <a href="" class="main">事業内容</a>
                         </li>
                         <li>
-                            <a href="">TOP</a>
+                            <a href="/business.html#construction-section">機械設備工事部</a>
                         </li>
                         <li>
-                            <a href="">TOP</a>
+                            <a href="/business.html#renovation-section">i renovation事業部</a>
                         </li>
                         <li>
-                            <a href="">TOP</a>
+                            <a href="/business.html#property-section">不動産事業部</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="" class="main">採用情報</a>
                         </li>
                         <li>
-                            <a href="">TOP</a>
-                        </li>
-                        <li>
-                            <a href="">TOP</a>
+                            <a href="/recruitment.html#recruitment">募集要項</a>
                         </li>
                     </ul>
                     <ul>
@@ -373,7 +370,7 @@
                             <a href="" class="main">お問い合わせ</a>
                         </li>
                         <li>
-                            <a href="">TOP</a>
+                            <a href="/contact.html#contact">お問合せフォーム</a>
                         </li>
                     </ul>
                 </div>

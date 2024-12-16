@@ -1,11 +1,11 @@
 /* 共通 */
-.p-recruitment {
-    margin-top: 250px;
+.recruitment {
+    padding-top: 250px;
     letter-spacing: 2px;
     text-align: left;
-    .p__recruitment--inner {
-        width: 60%;
-        margin: 0 auto;
+    .recruitment__inner {
+        // width: 60%;
+        padding: 0 150px;
         .c-title{
             margin-top: 100px;
             position: relative;

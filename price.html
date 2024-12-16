@@ -10,7 +10,9 @@
     <!-- 共通css / -->
     <!-- 固有css -->
     <link rel="stylesheet" href="assets/css/price.css">
-     <!-- 固有css/ -->
+    <!-- 固有css/ -->
+    <!-- SVGファビコン -->
+    <link rel="icon" href="/assets/img/common/logo.svg" type="image/svg+xml">
 </head>
 <body>
     <div class="l-cutin">
@@ -24,7 +26,7 @@
                 </i>
                 <div class="text">
                     <div class="title">株式会社池田総合設備</div>
-                    <div class="copy">お客様の想いを形で結果として応える会社</div>
+                    <div class="copy">人の想いを形で結果として応える会社</div>
                 </div>
             </a>
             <nav class="l-header__nav">
@@ -43,6 +45,9 @@
                     </a>
                     <a href="">
                         <img src="/assets/img/common/Instagram.png" alt="">
+                    </a>
+                    <a href="">
+                        <img src="/assets/img/common/TikTok.png" alt="">
                     </a>
                 </div>
             </nav>
@@ -63,7 +68,8 @@
         </section>
         <!-- mv / -->
 
-        <section class="p-price">
+        <!-- price -->
+        <section class="price" id="construction">
             <div class="c-inner price__inner">
                 <div class="c-title">
                     <span class="c-slash"></span>
@@ -73,148 +79,102 @@
 
                 <div class="p-price__contents">
                     <div class="p-price__content">
-                        <div class="p-price__title">機械工事設備</div>
-                        <img class="p-price__img" src="assets/img/common/toilet.jpg" alt="">
-                        <div class="p-price__explain">
-                            <div class="p-price__subtitle">ダミーダミーダミー</div>
-                            <div class="p-price__desc">ダミーテキストダミーテキストダミーテキストダミーテキスト
-
-                                ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキ
-                                ストダミーテキストダミーテキストダミーテキストダミーテキストダ
-                                ミーテキストダミーテキストダミーテキスト</div>
-                            <div class="p-price__price">¥100,000~</div>
-                            <div class="p-price__btn">
-                                <a href="/business.html#construction-section" class="c-btn--right">詳細へ</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="p-price__content">
-                        <img class="p-price__img" src="assets/img/common/toilet.jpg" alt="">
-                        <div class="p-price__explain">
-                            <div class="p-price__subtitle">ダミーダミーダミー</div>
-                            <div class="p-price__desc">ダミーテキストダミーテキストダミーテキストダミーテキスト
-
-                                ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキ
-                                ストダミーテキストダミーテキストダミーテキストダミーテキストダ
-                                ミーテキストダミーテキストダミーテキスト</div>
-                            <div class="p-price__price">¥100,000~</div>
-                            <div class="p-price__btn--right">
-                                <a href="/business.html#construction-section" class="c-btn">詳細へ</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="p-price__content">
-                        <img class="p-price__img" src="assets/img/common/toilet.jpg" alt="">
-                        <div class="p-price__explain">
-                            <div class="p-price__subtitle">ダミーダミーダミー</div>
-                            <div class="p-price__desc">ダミーテキストダミーテキストダミーテキストダミーテキスト
-
-                                ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキ
-                                ストダミーテキストダミーテキストダミーテキストダミーテキストダ
-                                ミーテキストダミーテキストダミーテキスト</div>
-                            <div class="p-price__price">¥100,000~</div>
-                            <div class="p-price__btn--right">
-                                <a href="/business.html#construction-section" class="c-btn">詳細へ</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="p-price__btn--center">
-                        <a href="/business.html#construction-section" class="c-btn">機械設備一覧へ</a>
-                    </div>
-                </div>
-
-                <div class="p-price__contents">
-                    <div class="p-price__content">
-                        <div class="p-price__title">i renovation</div>
+                        <div class="p-price__title" id="irenovation">i renovation</div>
                         <div class="p-price__explain irenovation__explain">
-                            <div class="p-price__subtitle irenovation__subtitle">トイレ工事</div>
+                            <div class="p-price__subtitle irenovation__subtitle">トイレ工事費</div>
                             <div class="price__list">
                                 <div class="p-price__price irenovation__price-title">タンクトイレ</div>
-                                <div class="irenovation__price">¥18,000~</div>
+                                <div class="irenovation__price">¥19,000</div>
                             </div>
                             <div class="price__list">
                                 <div class="p-price__price irenovation__price-title">タンクレストイレ</div>
-                                <div class="irenovation__price">¥20,000~</div>
+                                <div class="irenovation__price">¥22,000</div>
                             </div>
                             <div class="price__list">
                                 <div class="p-price__price irenovation__price-title">キャビネットタイプ</div>
-                                <div class="irenovation__price">¥25,000~</div>
+                                <div class="irenovation__price">¥35,000</div>
                             </div>
                             <div class="price__list">
                                 <div class="p-price__price irenovation__price-title">ウォシュレット</div>
-                                <div class="irenovation__price">¥8,000~</div>
+                                <div class="irenovation__price">¥8,000</div>
                             </div>
                             <div class="price__list">
-                                <div class="p-price__price irenovation__price-title">機能部</div>
-                                <div class="irenovation__price">¥12,000~</div>
+                                <div class="p-price__price irenovation__price-title">機能部取り替え</div>
+                                <div class="irenovation__price">¥12,000</div>
+                            </div>
+                            <div class="price__list">
+                                <div class="p-price__price irenovation__price-title">本体(60%~70%off)</div>
+                                <div class="irenovation__price">¥33,000~</div>
                             </div>
                         </div>
                         <img class="p-price__img irenovation__img" src="assets/img/common/toilet.jpg" alt="">
                         <div class="p-price__btn--center">
-                            <a href="/business.html#renovation-section" class="c-btn">詳細へ</a>
+                            <!-- <a href="/business.html#renovation-section" class="c-btn">詳細へ</a> -->
                         </div>
                     </div>
 
                     <div class="p-price__content">
                         <div class="p-price__explain irenovation__explain">
-                            <div class="p-price__subtitle irenovation__subtitle">洗面化粧台</div>
+                            <div class="p-price__subtitle irenovation__subtitle">洗面化粧台工事費</div>
                             <div class="price__list">
-                                <div class="p-price__price irenovation__price-title">洗面化粧台</div>
-                                <div class="irenovation__price">¥18,000~</div>
+                                <div class="p-price__price irenovation__price-title">W900mm</div>
+                                <div class="irenovation__price">¥19,000</div>
                             </div>
                             <div class="price__list">
-                                <div class="p-price__price irenovation__price-title">水栓取替</div>
-                                <div class="irenovation__price">¥8,000~¥15,000</div>
+                                <div class="p-price__price irenovation__price-title">W1200mm~1500mm</div>
+                                <div class="irenovation__price">¥29,000</div>
                             </div>
                             <div class="price__list">
-                                <div class="p-price__price irenovation__price-title">棚設置</div>
-                                <div class="irenovation__price">¥5,000~</div>
+                                <div class="p-price__price irenovation__price-title">W1650mm~1800mm</div>
+                                <div class="irenovation__price">¥50,000</div>
+                            </div>
+                            <div class="price__list">
+                                <div class="p-price__price irenovation__price-title">サイドキャビネット</div>
+                                <div class="irenovation__price">¥15,000/台</div>
+                            </div>
+                            <div class="price__list">
+                                <div class="p-price__price irenovation__price-title">止水栓交換</div>
+                                <div class="irenovation__price">¥6,000/ヶ</div>
+                            </div>
+                            <div class="price__list">
+                                <div class="p-price__price irenovation__price-title">本体(60%~70%off)</div>
+                                <div class="irenovation__price">¥30,000~</div>
                             </div>
                         </div>
                         <img class="p-price__img irenovation__img" src="assets/img/common/toilet.jpg" alt="">
                         <div class="p-price__btn--center">
-                            <a href="/business.html#renovation-section" class="c-btn">詳細へ</a>
+                            <!-- <a href="/business.html#renovation-section" class="c-btn">詳細へ</a> -->
                         </div>
                     </div>
 
                     <div class="p-price__content">
                         <div class="p-price__explain irenovation__explain">
-                            <div class="p-price__subtitle irenovation__subtitle">システムキッチン工事</div>
+                            <div class="p-price__subtitle irenovation__subtitle">システムキッチン工事費</div>
                             <div class="price__list">
-                                <div class="p-price__price irenovation__price-title">I型工事費セット</div>
-                                <div class="irenovation__price">¥600,000~</div>
+                                <div class="p-price__price irenovation__price-title">本体(60%~70%off)</div>
+                                <div class="irenovation__price">¥130,000~</div>
                             </div>
                             <div class="price__list">
-                                <div class="p-price__price irenovation__price-title">L型工事費セット</div>
-                                <div class="irenovation__price">¥700,000</div>
+                                <div class="p-price__price irenovation__price-title">キッチン組立施工費</div>
+                                <div class="irenovation__price">¥40,000~¥150,000</div>
                             </div>
                             <div class="price__list">
-                                <div class="p-price__price irenovation__price-title">対面型工事費セット</div>
-                                <div class="irenovation__price">¥800,000~</div>
+                                <div class="p-price__price irenovation__price-title">解体費</div>
+                                <div class="irenovation__price">¥30,000~¥50,000</div>
                             </div>
+                        </div>
+                        <img class="p-price__img irenovation__img" src="assets/img/common/toilet.jpg" alt="">
+                        <div class="p-price__btn--center">
+                            <!-- <a href="/business.html#renovation-section" class="c-btn">詳細へ</a> -->
+                        </div>
+                    </div>
+
+                    <div class="p-price__content">
+                        <div class="p-price__explain irenovation__explain">
+                            <div class="p-price__subtitle irenovation__subtitle">ユニットバス工事費</div>
                             <div class="price__list">
-                                <div class="p-price__price irenovation__price-title">ミニキッチン</div>
+                                <div class="p-price__price irenovation__price-title">本体(40%~75%off)</div>
                                 <div class="irenovation__price">¥300,000~</div>
-                            </div>
-                            <div class="price__list">
-                                <div class="p-price__price irenovation__price-title">ブロックキッチン</div>
-                                <div class="irenovation__price">¥150,000~</div>
-                            </div>
-                        </div>
-                        <img class="p-price__img irenovation__img" src="assets/img/common/toilet.jpg" alt="">
-                        <div class="p-price__btn--center">
-                            <a href="/business.html#renovation-section" class="c-btn">詳細へ</a>
-                        </div>
-                    </div>
-
-                    <div class="p-price__content">
-                        <div class="p-price__explain irenovation__explain">
-                            <div class="p-price__subtitle irenovation__subtitle">ユニットバス工事</div>
-                            <div class="price__list">
-                                <div class="p-price__price irenovation__price-title">UB本体</div>
-                                <div class="irenovation__price">¥250,000~</div>
                             </div>
                             <div class="price__list">
                                 <div class="p-price__price irenovation__price-title">UB解体撤去</div>
@@ -231,37 +191,29 @@
                         </div>
                         <img class="p-price__img irenovation__img" src="assets/img/common/toilet.jpg" alt="">
                         <div class="p-price__btn--center">
-                            <a href="/business.html#renovation-section" class="c-btn">詳細へ</a>
+                            <!-- <a href="/business.html#renovation-section" class="c-btn">詳細へ</a> -->
                         </div>
                     </div>
 
                     <div class="p-price__content">
                         <div class="p-price__explain irenovation__explain">
-                            <div class="p-price__subtitle irenovation__subtitle">給湯器工事</div>
+                            <div class="p-price__subtitle irenovation__subtitle">給湯器工事費</div>
                             <div class="price__list">
-                                <div class="p-price__price irenovation__price-title">ガス給湯専用</div>
-                                <div class="irenovation__price">¥50,000~150,000</div>
+                                <div class="p-price__price irenovation__price-title">給油専用</div>
+                                <div class="irenovation__price">¥23,000</div>
                             </div>
                             <div class="price__list">
-                                <div class="p-price__price irenovation__price-title">追い炊きオート</div>
-                                <div class="irenovation__price">¥90,000~200,000</div>
+                                <div class="p-price__price irenovation__price-title">追い炊き機能</div>
+                                <div class="irenovation__price">¥28,000</div>
                             </div>
                             <div class="price__list">
-                                <div class="p-price__price irenovation__price-title">フルオート</div>
-                                <div class="irenovation__price">¥150,000~250,000</div>
-                            </div>
-                            <div class="price__list">
-                                <div class="p-price__price irenovation__price-title">エコ給湯</div>
-                                <div class="irenovation__price">¥200,000~</div>
-                            </div>
-                            <div class="price__list">
-                                <div class="p-price__price irenovation__price-title">設置工事費</div>
-                                <div class="irenovation__price">¥20,000~80,000</div>
+                                <div class="p-price__price irenovation__price-title">エコキュート</div>
+                                <div class="irenovation__price">¥80,000</div>
                             </div>
                         </div>
                         <img class="p-price__img irenovation__img" src="assets/img/common/toilet.jpg" alt="">
                         <div class="p-price__btn--center">
-                            <a href="/business.html#renovation-section" class="c-btn">詳細へ</a>
+                            <!-- <a href="/business.html#renovation-section" class="c-btn">詳細へ</a> -->
                         </div>
                     </div>
 
@@ -270,20 +222,20 @@
                             <div class="p-price__subtitle irenovation__subtitle">【壁】内装工事費</div>
                             <div class="price__list">
                                 <div class="p-price__price irenovation__price-title">量産品</div>
-                                <div class="irenovation__price">¥850~1,100</div>
+                                <div class="irenovation__price">¥950/㎡</div>
                             </div>
                             <div class="price__list">
                                 <div class="p-price__price irenovation__price-title">千番台</div>
-                                <div class="irenovation__price">¥950~1,500</div>
+                                <div class="irenovation__price">¥1,200/㎡</div>
                             </div>
                             <div class="price__list">
                                 <div class="p-price__price irenovation__price-title">エコカラット</div>
-                                <div class="irenovation__price">¥9,600~</div>
+                                <div class="irenovation__price">¥9,600~/㎡</div>
                             </div>
                         </div>
                         <img class="p-price__img irenovation__img" src="assets/img/common/toilet.jpg" alt="">
                         <div class="p-price__btn--center">
-                            <a href="/business.html#renovation-section" class="c-btn">詳細へ</a>
+                            <!-- <a href="/business.html#renovation-section" class="c-btn">詳細へ</a> -->
                         </div>
                     </div>
 
@@ -292,50 +244,58 @@
                             <div class="p-price__subtitle irenovation__subtitle">【床】内装工事費</div>
                             <div class="price__list">
                                 <div class="p-price__price irenovation__price-title">CF</div>
-                                <div class="irenovation__price">¥2,200~4,500</div>
+                                <div class="irenovation__price">¥3,000/㎡</div>
                             </div>
                             <div class="price__list">
                                 <div class="p-price__price irenovation__price-title">フロアタイル</div>
-                                <div class="irenovation__price">¥2,500~</div>
+                                <div class="irenovation__price">¥4,500/㎡</div>
                             </div>
                             <div class="price__list">
                                 <div class="p-price__price irenovation__price-title">タイルカーペット</div>
-                                <div class="irenovation__price">¥2,300~</div>
+                                <div class="irenovation__price">¥2,500/㎡</div>
                             </div>
                             <div class="price__list">
                                 <div class="p-price__price irenovation__price-title">長尺</div>
-                                <div class="irenovation__price">¥1,450~4,500~</div>
+                                <div class="irenovation__price">¥3,500/㎡</div>
                             </div>
                             <div class="price__list">
                                 <div class="p-price__price irenovation__price-title">フローリング</div>
-                                <div class="irenovation__price">¥4,000~</div>
+                                <div class="irenovation__price">¥3,000/㎡</div>
+                            </div>
+                            <div class="price__list">
+                                <div class="p-price__price irenovation__price-title">フローリング捲り</div>
+                                <div class="irenovation__price">¥2,100/㎡</div>
+                            </div>
+                            <div class="price__list">
+                                <div class="p-price__price irenovation__price-title">カーペット捲り</div>
+                                <div class="irenovation__price">¥1,500/㎡</div>
                             </div>
                         </div>
                         <img class="p-price__img irenovation__img" src="assets/img/common/toilet.jpg" alt="">
                         <div class="p-price__btn--center">
-                            <a href="/business.html#renovation-section" class="c-btn">詳細へ</a>
+                            <!-- <a href="/business.html#renovation-section" class="c-btn">詳細へ</a> -->
                         </div>
                     </div>
 
                     <div class="p-price__content">
                         <div class="p-price__explain irenovation__explain">
-                            <div class="p-price__subtitle irenovation__subtitle">エアコン工事</div>
+                            <div class="p-price__subtitle irenovation__subtitle">エアコン工事費</div>
                             <div class="price__list">
                                 <div class="p-price__price irenovation__price-title">壁掛け</div>
-                                <div class="irenovation__price">¥19,000</div>
+                                <div class="irenovation__price">¥20,000</div>
                             </div>
                             <div class="price__list">
                                 <div class="p-price__price irenovation__price-title">業務用</div>
-                                <div class="irenovation__price">¥80,000~</div>
+                                <div class="irenovation__price">¥80,000</div>
                             </div>
                             <div class="price__list">
                                 <div class="p-price__price irenovation__price-title">化粧カバー</div>
-                                <div class="irenovation__price">¥5,000~</div>
+                                <div class="irenovation__price">¥4,000/1m</div>
                             </div>
                         </div>
                         <img class="p-price__img irenovation__img" src="assets/img/common/toilet.jpg" alt="">
                         <div class="p-price__btn--center">
-                            <a href="/business.html#renovation-section" class="c-btn">詳細へ</a>
+                            <!-- <a href="/business.html#renovation-section" class="c-btn">詳細へ</a> -->
                         </div>
                     </div>
                     <div class="p-price__btn--center-W">
@@ -348,6 +308,7 @@
 
             </div>
         </section>
+        <!-- price / -->
 
 
     
@@ -406,7 +367,7 @@
                         </i>
                         <div class="text">
                             <div class="title">株式会社池田総合設備</div>
-                            <div class="copy">お客様の想いを形で結果として応える会社</div>
+                            <div class="copy">人の想いを形で結果として応える会社</div>
                         </div>
                     </a>
                     <div class="l-footer__sns">
@@ -418,69 +379,64 @@
                         </a>
                     </div>
                     <div class="l-footer__info">
-                        <p>000-0000-0000</p>
-                        <p>兵庫県神戸市中央区あああああ</p>
+                        <p>TEL・FAX：<a href>078-224-0730</a></p>
+                        <p>〒655-0852</a></p>
+                        <p>兵庫県神戸市垂水区名谷497-5</p>
                     </div>
                 </div>
                 <div class="l-footer__menu">
                     <ul>
                         <li>
-                            <a href="" class="main">TOP</a>
+                            <a href="/index.html" class="main">TOP</a>
                         </li>
                         <li>
-                            <a href="">TOP</a>
+                            <a href="/index.html#about">会社概要</a>
                         </li>
                         <li>
-                            <a href="">TOP</a>
+                            <a href="/index.html#business">事業内容</a>
                         </li>
                         <li>
-                            <a href="">TOP</a>
+                            <a href="/index.html#achivements">施工実績</a>
                         </li>
                         <li>
-                            <a href="">TOP</a>
+                            <a href="/index.html#price">料金案内</a>
                         </li>
                         <li>
-                            <a href="">TOP</a>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <a href="" class="main">会社概要</a>
-                        </li>
-                        <li>
-                            <a href="">TOP</a>
-                        </li>
-                        <li>
-                            <a href="">TOP</a>
-                        </li>
-                        <li>
-                            <a href="">TOP</a>
-                        </li>
-                        <li>
-                            <a href="">TOP</a>
-                        </li>
-                        <li>
-                            <a href="">TOP</a>
+                            <a href="/index.html#infomation">物件情報</a>
                         </li>
                     </ul>
                     <ul>
                         <li>
-                            <a href="" class="main">施工実績/物件案内</a>
+                            <a href="/about.html" class="main">会社概要</a>
                         </li>
                         <li>
-                            <a href="">TOP</a>
+                            <a href="/about.html#greeting">代表挨拶</a>
                         </li>
                         <li>
-                            <a href="">TOP</a>
+                            <a href="/about.html#philosophy">理念</a>
                         </li>
                         <li>
-                            <a href="">TOP</a>
+                            <a href="/about.html#logo">ロゴの由来</a>
                         </li>
                         <li>
-                            <a href="">TOP</a>
+                            <a href="/about.html#company">会社概要</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="/archive.html" class="main">施工実績/物件案内</a>
                         </li>
                         <li>
-                            <a href="">TOP</a>
+                            <a href="">ALL</a>
+                        </li>
+                        <li>
+                            <a href="">機械設備工事</a>
+                        </li>
+                        <li>
+                            <a href="">i renovation</a>
+                        </li>
+                        <li>
+                            <a href="">不動産事業</a>
                         </li>
                     </ul>
                     <ul>
@@ -488,19 +444,10 @@
                             <a href="" class="main">料金案内</a>
                         </li>
                         <li>
-                            <a href="">TOP</a>
+                            <a href="/price.html#construction">機械設備工事</a>
                         </li>
                         <li>
-                            <a href="">TOP</a>
-                        </li>
-                        <li>
-                            <a href="">TOP</a>
-                        </li>
-                        <li>
-                            <a href="">TOP</a>
-                        </li>
-                        <li>
-                            <a href="">TOP</a>
+                            <a href="/price.html#irenovation">i renovation</a>
                         </li>
                     </ul>
                     <ul>
@@ -508,19 +455,21 @@
                             <a href="" class="main">事業内容</a>
                         </li>
                         <li>
-                            <a href="">TOP</a>
+                            <a href="/business.html#construction-section">機械設備工事部</a>
                         </li>
                         <li>
-                            <a href="">TOP</a>
+                            <a href="/business.html#renovation-section">i renovation事業部</a>
                         </li>
                         <li>
-                            <a href="">TOP</a>
+                            <a href="/business.html#property-section">不動産事業部</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="" class="main">採用情報</a>
                         </li>
                         <li>
-                            <a href="">TOP</a>
-                        </li>
-                        <li>
-                            <a href="">TOP</a>
+                            <a href="/recruitment.html#recruitment">募集要項</a>
                         </li>
                     </ul>
                     <ul>
@@ -528,7 +477,7 @@
                             <a href="" class="main">お問い合わせ</a>
                         </li>
                         <li>
-                            <a href="">TOP</a>
+                            <a href="/contact.html#contact">お問合せフォーム</a>
                         </li>
                     </ul>
                 </div>

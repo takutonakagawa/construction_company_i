@@ -1,49 +1,65 @@
 #top {
   overflow-x: hidden;
 }
-#top .c-inner__index {
-  margin-bottom: 50px;
+#top .about {
+  margin-bottom: 250px;
+  padding-top: 1px;
 }
-#top .c-inner__index .p-index__about {
+#top .about .about__inner {
+  padding: 0 100px;
   position: relative;
 }
-#top .c-inner__index .p-index__about .p-index__about-title {
+#top .about .about__inner .p-index__about-title {
   margin-top: 250px;
 }
-#top .c-inner__index .p-index__about .p-index__about-catch {
+#top .about .about__inner .p-index__about-catch {
   margin-top: 50px;
   font-weight: bold;
   font-size: 40px;
 }
-#top .c-inner__index .p-index__about .p-index__about-desc {
+#top .about .about__inner .p-index__about-desc {
   margin-top: 50px;
   font-size: 28px;
-  width: 60%;
-}
-#top .c-inner__index .p-index__about .index__about-img {
-  position: absolute;
   width: 70%;
-  height: 500px;
-  top: 0;
-  right: -16.2%;
-  z-index: -1;
-  object-fit: cover;
-  opacity: 0.2;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 10px;
 }
-#top .c-inner__index .p-index__about .p-index__about-btn {
+#top .about .about__inner .index__about-img {
+  position: absolute;
+  width: 90%;
+  height: 500px;
+  top: 5%;
+  right: -30%;
+  z-index: -1;
+
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0.8;
+  padding: 30px;
+
+}
+#top .about .about__inner .p-index__about-btn {
   float: right;
 }
-#top .c-inner__index .p-index__business {
-  margin-top: 350px;
+#top .business {
+  padding-top: 150px;
   position: relative;
 }
-#top .c-inner__index .p-index__business .p-index__business-imgs {
-  width: 45%;
-  height: 100%;
+#top .business__container {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+#top .business .business__inner {
+  padding: 0 100px;
+}
+#top .business .business__inner .p-index__business-imgs {
+  width: 850px;
+  height: 500px;
   position: relative;
   z-index: -1;
 }
-#top .c-inner__index .p-index__business .p-index__business-imgs .block__title {
+#top .business .business__inner .p-index__business-imgs .block__title {
   z-index: 3;
   position: absolute;
   font-size: 19px;
@@ -51,15 +67,15 @@
   top: -10px;
   color: #ffffff;
 }
-#top .c-inner__index .p-index__business .p-index__business-imgs .block__title--property {
+#top .business .business__inner .p-index__business-imgs .block__title--property {
   top: 459px;
-  left: -9%;
+  left: -5%;
 }
-#top .c-inner__index .p-index__business .p-index__business-imgs .block__title--renovation {
+#top .business .business__inner .p-index__business-imgs .block__title--renovation {
   top: 459px;
-  left: 72%;
+  left: 62%;
 }
-#top .c-inner__index .p-index__business .p-index__business-imgs .block__blue {
+#top .business .business__inner .p-index__business-imgs .block__blue {
   text-align: center;
   background-color: #004982;
   width: 27%;
@@ -70,15 +86,16 @@
   top: -25px;
   transform: skew(-30deg);
 }
-#top .c-inner__index .p-index__business .p-index__business-imgs .block__blue--property {
-  left: -18%;
+#top .business .business__inner .p-index__business-imgs .block__blue--property {
+  left: -8%;
   top: 445px;
 }
-#top .c-inner__index .p-index__business .p-index__business-imgs .block__blue--renovation {
-  left: 70%;
+#top .business .business__inner .p-index__business-imgs .block__blue--renovation {
+  left: 60%;
   top: 445px;
+  width: 34%;
 }
-#top .c-inner__index .p-index__business .p-index__business-imgs .block__skyblue {
+#top .business .business__inner .p-index__business-imgs .block__skyblue {
   position: absolute;
   background-color: #4CB6E9;
   width: 27%;
@@ -88,111 +105,135 @@
   top: -15px;
   transform: skew(-30deg);
 }
-#top .c-inner__index .p-index__business .p-index__business-imgs .block__skyblue--property {
-  left: -21%;
+#top .business .business__inner .p-index__business-imgs .block__skyblue--property {
+  left: -11%;
   top: 456px;
 }
-#top .c-inner__index .p-index__business .p-index__business-imgs .block__skyblue--renovation {
-  left: 67%;
+#top .business .business__inner .p-index__business-imgs .block__skyblue--renovation {
+  left: 57%;
   top: 456px;
+  width: 34%;
 }
-#top .c-inner__index .p-index__business .p-index__business-imgs .index__about-img {
+#top .business .business__inner .p-index__business-imgs .index__about-img {
   width: 200px;
   height: 200px;
   object-fit: cover;
   border-radius: 50%;
   position: absolute;
 }
-#top .c-inner__index .p-index__business .p-index__business-imgs .index__about-img--construction {
+#top .business .business__inner .p-index__business-imgs .index__about-img--construction {
   left: 20%;
 }
-#top .c-inner__index .p-index__business .p-index__business-imgs .index__about-img--property {
-  left: -14.8%;
+#top .business .business__inner .p-index__business-imgs .index__about-img--property {
+  left: -4.8%;
   top: 300px;
 }
-#top .c-inner__index .p-index__business .p-index__business-imgs .index__about-img--renovation {
-  left: 54.7%;
+#top .business .business__inner .p-index__business-imgs .index__about-img--renovation {
+  left: 44.7%;
   top: 300px;
 }
-#top .c-inner__index .p-index__business .p-index__business-imgs .index__about-message {
+#top .business .business__inner .p-index__business-imgs .index__about-message {
   position: absolute;
   font-size: 18px;
   top: 285px;
   left: 27.5%;
 }
-#top .c-inner__index .p-index__business .p-index__business-content {
-  width: 55%;
-  float: right;
+#top .business .business__inner .p-index__business-imgs .business__mark {
+  position: absolute;
+  width: 15%;
+  z-index: 100;
 }
-#top .c-inner__index .p-index__business .p-index__business-content .p-index__business-desc {
+#top .business .business__inner .p-index__business-imgs .business__mark--left {
+  top: 31.5%;
+  left: 12%;
+  transform: rotate(33deg);
+}
+#top .business .business__inner .p-index__business-imgs .business__mark--center {
+  top: 65%;
+  left: 27.6%;
+  transform: rotate(90deg);
+}
+#top .business .business__inner .p-index__business-imgs .business__mark--right {
+  top: 31.5%;
+  left: 42.5%;
+  transform: rotate(-33deg);
+}
+#top .business .business__inner .p-index__business-content {
+  width: 500px;
+}
+#top .business .business__inner .p-index__business-content .p-index__business-desc {
   margin-top: 30px;
   font-size: 20px;
   letter-spacing: 1px;
 }
-#top .c-inner__index .p-index__business .p-index__business-content .p-index__business-btn {
+#top .business .business__inner .p-index__business-content .p-index__business-btn {
   margin-top: 50px;
   float: right;
 }
-#top .c-inner__index .p-index__business .mark-text {
+#top .business .business__inner .mark-text {
   position: absolute;
   top: 100px;
   left: 50%;
   transform: translate(-50%, 0%);
   z-index: -2;
 }
-#top .c-inner__index .p-index__achivements {
-  margin-top: 1100px;
+#top .achivements {
+  padding-top: 150px;
   position: relative;
+  margin-bottom: 150px;
 }
-#top .c-inner__index .p-index__achivements .p-index__achivements-catch {
+#top .achivements .achivements__inner {
+  padding: 0 100px;
+}
+#top .achivements .achivements__inner .p-index__achivements-catch {
   margin-top: 40px;
   width: 100%;
   font-size: 30px;
   letter-spacing: 1.5px;
 }
-#top .c-inner__index .p-index__achivements .p-index__achivements-list {
+#top .achivements .achivements__inner .p-index__achivements-list {
   width: 100%;
   margin-top: 50px;
   height: 550px;
 }
-#top .c-inner__index .p-index__achivements .p-index__achivements-list--float-off {
+#top .achivements .achivements__inner .p-index__achivements-list--float-off {
   clear: both;
 }
-#top .c-inner__index .p-index__achivements .p-index__achivements-list .p-index__achivements-list-right {
+#top .achivements .achivements__inner .p-index__achivements-list .p-index__achivements-list-right {
   width: 47%;
   float: right;
   padding-top: 60px;
 }
-#top .c-inner__index .p-index__achivements .p-index__achivements-list .p-index__achivements-list-right .p-index__achivements-category {
+#top .achivements .achivements__inner .p-index__achivements-list .p-index__achivements-list-right .p-index__achivements-category {
   font-size: 32px;
   border-bottom: 1px solid #004982;
   padding-bottom: 20px;
   margin-bottom: 20px;
 }
-#top .c-inner__index .p-index__achivements .p-index__achivements-list .p-index__achivements-list-right .p-index__achivements-desc {
+#top .achivements .achivements__inner .p-index__achivements-list .p-index__achivements-list-right .p-index__achivements-desc {
   font-size: 20px;
   letter-spacing: 1px;
 }
-#top .c-inner__index .p-index__achivements .p-index__achivements-list .p-index__achivements-list-right .p-index__achivements-btn {
+#top .achivements .achivements__inner .p-index__achivements-list .p-index__achivements-list-right .p-index__achivements-btn {
   margin-top: 60px;
   float: right;
 }
-#top .c-inner__index .p-index__achivements .p-index__achivements-list .p-index__achivements-list-left {
+#top .achivements .achivements__inner .p-index__achivements-list .p-index__achivements-list-left {
   width: 47%;
   position: relative;
 }
-#top .c-inner__index .p-index__achivements .p-index__achivements-list .p-index__achivements-list-left .block__skyblue {
+#top .achivements .achivements__inner .p-index__achivements-list .p-index__achivements-list-left .block__skyblue {
   position: absolute;
   width: 180px;
   height: 180px;
   background-color: #4CB6E9;
 }
-#top .c-inner__index .p-index__achivements .p-index__achivements-list .p-index__achivements-list-left .block__skyblue--1 {
+#top .achivements .achivements__inner .p-index__achivements-list .p-index__achivements-list-left .block__skyblue--1 {
   width: 360px;
   height: 220px;
   right: 0;
 }
-#top .c-inner__index .p-index__achivements .p-index__achivements-list .p-index__achivements-list-left .block__blue {
+#top .achivements .achivements__inner .p-index__achivements-list .p-index__achivements-list-left .block__blue {
   position: absolute;
   right: 0;
   top: 260px;
@@ -200,105 +241,106 @@
   height: 200px;
   background-color: #004982;
 }
-#top .c-inner__index .p-index__achivements .p-index__achivements-list .p-index__achivements-list-left .block__blue--1 {
+#top .achivements .achivements__inner .p-index__achivements-list .p-index__achivements-list-left .block__blue--1 {
   left: 0;
   height: 320px;
   top: 200px;
 }
-#top .c-inner__index .p-index__achivements .p-index__achivements-list .p-index__achivements-list-left .index__achivements-img {
-  object-fit: cover;
+
+#top .achivements .achivements__inner .p-index__achivements-list .p-index__achivements-list-left .index__achivements-img {
+  -o-object-fit: cover;
+     object-fit: cover;
+
   position: absolute;
 }
-#top .c-inner__index .p-index__achivements .p-index__achivements-list .p-index__achivements-list-left .index__achivements-img--1 {
+#top .achivements .achivements__inner .p-index__achivements-list .p-index__achivements-list-left .index__achivements-img--1 {
   width: 230px;
   height: 230px;
   z-index: 3;
-  top: 170px;
-  right: 20%;
+  top: 10px;
+  right: 3%;
 }
-#top .c-inner__index .p-index__achivements .p-index__achivements-list .p-index__achivements-list-left .index__achivements-img--2 {
-  width: 330px;
-  height: 330px;
-  z-index: 2;
-  left: 5%;
-  top: 120px;
-}
-#top .c-inner__index .p-index__achivements .p-index__achivements-list .p-index__achivements-list-left .index__achivements-img--3 {
+#top .achivements .achivements__inner .p-index__achivements-list .p-index__achivements-list-left .index__achivements-img--3 {
   width: 380px;
   height: 350px;
   z-index: 1;
-  right: 3%;
-  top: 20px;
+  left: -5%;
+  top: 140px;
 }
-#top .c-inner__index .p-index__achivements .p-index__achivements-list .p-index__achivements-list-left .index__achivements-img--4 {
-  width: 260px;
-  height: 230px;
-  right: 0;
-  top: 300px;
-  z-index: 3;
-}
-#top .c-inner__index .p-index__achivements .p-index__achivements-list .p-index__achivements-list-left .index__achivements-img--5 {
+#top .achivements .achivements__inner .p-index__achivements-list .p-index__achivements-list-left .index__achivements-img--5 {
   width: 430px;
   height: 280px;
-  left: 18%;
-  top: 150px;
+  left: 20%;
+  top: 260px;
   z-index: 2;
 }
-#top .c-inner__index .p-index__achivements .p-index__achivements-list .p-index__achivements-list-left .index__achivements-img--6 {
+#top .achivements .achivements__inner .p-index__achivements-list .p-index__achivements-list-left .index__achivements-img--6 {
   width: 450px;
   height: 250px;
-  left: -5%;
-  top: -20px;
+  left: -10%;
+  top: 40px;
   z-index: 1;
 }
-#top .c-inner__index .p-index__achivements .mark {
+#top .achivements .achivements__inner .mark {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: -2;
 }
-#top .c-inner__index .p-index__achivements .mark-text {
+#top .achivements .achivements__inner .mark-text {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: -1;
 }
-#top .c-inner__index .p-index__price {
-  margin: auto;
+#top .price {
+  padding-top: 1px;
+  margin-bottom: 100px;
+}
+#top .price .price__inner {
+  padding: 0 100px;
   position: relative;
 }
-#top .c-inner__index .p-index__price .p-index__price-title {
+#top .price .price__inner .p-index__price-title {
   margin-top: 150px;
 }
-#top .c-inner__index .p-index__price .p-index__price-catch {
+#top .price .price__inner .p-index__price-catch {
   margin-top: 40px;
   width: 100%;
   font-size: 30px;
   letter-spacing: 1.5px;
 }
-#top .c-inner__index .p-index__price .p-index__price-list {
+#top .price .price__inner .price__list {
   width: 100%;
   margin-top: 40px;
   text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
 }
-#top .c-inner__index .p-index__price .p-index__price-list .p-index__price-img {
-  width: 49%;
-  padding: 30px;
+#top .price .price__inner .price__list li {
+  width: calc(50% - 15px);
+  overflow: hidden;
 }
-#top .c-inner__index .p-index__price .p-index__price-btn {
+#top .price .price__inner .price__list li .p-index__price-img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#top .price .price__inner .p-index__price-btn {
   margin-top: 30px;
   display: flex;
   justify-content: center;
 }
-#top .c-inner__index .p-index__price .mark {
+#top .price .mark {
   position: absolute;
-  top: 50%;
-  left: 0;
-  width: 100%;
-  z-index: -1;
-  transform: translate(0, -50%);
+  z-index: -10;
+  top: 20%;
+  right: 1%;
 }
 #top .infomation {
   position: relative;
