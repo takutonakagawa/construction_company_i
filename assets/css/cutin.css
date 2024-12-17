@@ -8,8 +8,7 @@
   z-index: 10000; /* コンテンツの上に表示 */
   background: white; /* 初期は白背景 */
   opacity: 0; /* 初期透明度 */
-  transition: opacity 2s ease-in; /* フェードインアニメーション */
-  transition: opacity 2s ease-out; /* フェードアウトのトランジション */
+  transition: opacity 2s ease-in, opacity 2s ease-out; /* フェードイン・フェードアウト */
 }
 .l-cutin #cutin {
   width: 100%;
@@ -38,6 +37,38 @@
   color: #004982;
   font-size: 4rem;
 }
+.l-cutin #center-message span {
+  opacity: 0; /* 初期状態は透明 */
+  display: inline-block;
+  animation: fadeIn 0.5s ease-in forwards;
+}
+.l-cutin #center-message span:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.l-cutin #center-message span:nth-child(2) {
+  animation-delay: 0.5s;
+}
+.l-cutin #center-message span:nth-child(3) {
+  animation-delay: 0.9s;
+}
+.l-cutin #center-message span:nth-child(4) {
+  animation-delay: 1.3s;
+}
+.l-cutin #center-message span:nth-child(5) {
+  animation-delay: 1.7s;
+}
+.l-cutin #center-message span:nth-child(6) {
+  animation-delay: 2.1s;
+}
+.l-cutin #center-message span:nth-child(7) {
+  animation-delay: 2.5s;
+}
+.l-cutin #center-message span:nth-child(8) {
+  animation-delay: 2.9s;
+}
+.l-cutin #center-message span:nth-child(9) {
+  animation-delay: 3.3s;
+}
 .l-cutin .skip-button {
   position: absolute;
   bottom: 20%;
@@ -53,7 +84,6 @@
 .l-cutin .skip-button:hover {
   background: white;
 }
-
 .l-cutin.show {
   opacity: 1; /* 表示状態 */
 }
@@ -62,11 +92,22 @@
   display: none; /* 初期は非表示 */
 }
 
-/* ヘッダー */
-/* フッター */
+/* ヘッダー・フッター */
 .l-header,
 .l-footer {
   display: none; /* 初期状態で非表示 */
   opacity: 0; /* フェードイン前の透明状態 */
-  transition: opacity 1s ease-in; /* フェードイン用 */
+  transition: opacity 1s ease-in;
+}
+
+/* フェードイン用アニメーション */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px); /* 下からフェードイン */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }/*# sourceMappingURL=cutin.css.map */
