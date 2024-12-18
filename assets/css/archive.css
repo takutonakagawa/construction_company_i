@@ -40,97 +40,94 @@
 }
 
 /* archive */
-.archive_inner {
+.archive__inner {
   margin-top: 50px;
   padding: 0 50px;
 }
-.archive_inner .c-title-secondary--archive {
+.archive__inner .c-title-secondary--archive {
   margin-bottom: 100px;
 }
-.archive_inner .p-archive__tag-list {
+.archive__tag-list {
   width: 100%;
   display: flex;
   gap: 30px;
-  margin: auto;
-  margin-bottom: 30px;
+  margin: 0 auto 30px;
 }
-.archive_inner .p-archive__tag-list .p-archive__tag {
+.archive__tag-list .archive__tag {
   text-align: center;
   padding: 10px 30px;
   background-color: gray;
   width: 25%;
   color: #ffffff;
 }
-.archive_inner .p-archive__tag-list .p-archive__tag--renovation {
+.archive__tag-list .archive__tag--renovation {
   background-color: #4CB6E9;
 }
-.archive_inner .p-archive__tag-list .p-archive__tag--property {
+.archive__tag-list .archive__tag--property {
   background-color: #004982;
 }
-.archive_inner .p-archive__tag-list .p-archive__tag--other {
+.archive__tag-list .archive__tag--other {
   background-color: #b4b4b5;
 }
-.archive_inner .p-archive__article-list {
+.archive__article-list {
   width: 100%;
   margin-top: 100px;
   display: flex;
   flex-wrap: wrap;
-  flex-wrap: wrap;
-  justify-content: space-between;
   gap: 15px;
 }
-.archive_inner .p-archive__article-list li {
+.archive__article-list .archive__article-item {
   width: 32%;
   margin-top: 50px;
 }
-.archive_inner .p-archive__article-list li:nth-of-type(-n+3) {
-  margin-top: 0px;
+.archive__article-list .archive__article-item:nth-of-type(-n+3) {
+  margin-top: 0;
 }
-.archive_inner .p-archive__article-list li .p-archive__article .article__img {
+.archive__article-list .archive__article-item .archive__article .archive__article-img {
   width: 100%;
   height: 350px;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.archive_inner .p-archive__article-list li .p-archive__article .article__inner .article__inner-line01 {
+.archive__article-list .archive__article-item .archive__article .archive__article-content .archive__article-line01 {
   margin-top: 10px;
   display: flex;
+  align-items: center;
 }
-.archive_inner .p-archive__article-list li .p-archive__article .article__inner .article__inner-line01 .p-archive_article-date {
+.archive__article-list .archive__article-item .archive__article .archive__article-content .archive__article-line01 .archive__article-date {
   margin-top: 20px;
 }
-.archive_inner .p-archive__article-list li .p-archive__article .article__inner .article__inner-line01 .p-archive__tag {
+.archive__article-list .archive__article-item .archive__article .archive__article-content .archive__article-line01 .archive__tag {
   margin-left: 15px;
   text-align: center;
   padding: 10px 30px;
   background-color: gray;
-  width: 50%;
   color: #ffffff;
 }
-.archive_inner .p-archive__article-list li .p-archive__article .article__inner .article__inner-line01 .p-archive__tag--renovation {
+.archive__article-list .archive__article-item .archive__article .archive__article-content .archive__article-line01 .archive__tag--renovation {
   background-color: #4CB6E9;
 }
-.archive_inner .p-archive__article-list li .p-archive__article .article__inner .article__inner-line01 .p-archive__tag--property {
+.archive__article-list .archive__article-item .archive__article .archive__article-content .archive__article-line01 .archive__tag--property {
   background-color: #004982;
 }
-.archive_inner .p-archive__article-list li .p-archive__article .article__inner .article__inner-line01 .p-archive__tag--other {
+.archive__article-list .archive__article-item .archive__article .archive__article-content .archive__article-line01 .archive__tag--other {
   background-color: #b4b4b5;
 }
-.archive_inner .p-archive__article-list li .p-archive__article .article__inner .article__inner-line02 {
+.archive__article-list .archive__article-item .archive__article .archive__article-content .archive__article-line02 {
   width: 100%;
   margin-top: 20px;
 }
-.archive_inner .p-archive__article-list li .p-archive__article .article__inner .article__inner-line02 .p-archive__article-title {
+.archive__article-list .archive__article-item .archive__article .archive__article-content .archive__article-line02 .archive__article-title {
   font-size: 22px;
   letter-spacing: 1px;
 }
-.archive_inner .p-archive__pagenation {
+.archive__pagination {
   width: 100%;
   margin-top: 100px;
   text-align: center;
   font-size: 18px;
 }
-.archive_inner .p-archive__pagenation span {
+.archive__pagination span {
   font-size: 22px;
   color: #004982;
   text-decoration: underline;
