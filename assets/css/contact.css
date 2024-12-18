@@ -1,97 +1,40 @@
 @charset "UTF-8";
-/* mv */
-.contact__mv {
-  height: 300px;
-}
-.contact__mv .p-mv__main {
-  margin-top: 150px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  height: 400px;
-}
-.contact__mv .contact__title {
-  position: absolute;
-  bottom: -30%;
-  left: 8%;
-}
-
 /* 共通 */
 #contact {
   padding-top: 100px;
 }
 
-.p-contact {
+.contact {
   text-align: center;
   position: relative;
 }
-
-.p__contact--inner {
+.contact__bg {
+  text-align: center;
+}
+.contact__inner {
   max-width: 800px;
   margin: 0 auto;
 }
-
-/* フォーム */
-.c-contact__form {
+.contact__form {
+  text-align: left;
+}
+.contact__form-item {
   position: relative;
   margin-bottom: 55px;
   display: flex;
   align-items: center;
 }
-.c-contact__form label {
+.contact__form-item .contact__label {
   display: block;
   width: 85px;
 }
-.c-contact__form .c-contact__label {
-  width: 85px;
-}
-.c-contact__form .contact-items {
-  display: flex;
-}
-.c-contact__form .contact-items .contact-item {
-  margin-left: 20px;
-  display: flex;
-}
-.c-contact__form .contact-items .contact-item:nth-of-type(1) {
-  margin-left: 0;
-}
-.c-contact__form .contact-items .contact-item label {
-  width: auto;
-}
-.c-contact__form .error_message-p01 {
-  position: absolute;
-  left: 11%;
-  top: 110%;
-  color: red;
-}
-.c-contact__form .error_message-p02 {
-  position: absolute;
-  left: 11%;
-  top: 140%;
-  color: red;
-}
-.c-contact__form .error_message-p03 {
-  position: absolute;
-  left: 11%;
-  top: 102%;
-  color: red;
-}
-
-.p-contact__form {
-  text-align: left;
-}
-
-.c-required {
-  color: red;
-  font-size: 50%;
-}
-
-.contact__input {
+.contact__form-item .contact__input {
   width: calc(100% - 100px);
 }
-.contact__input--compact {
+.contact__form-item .contact__input--compact {
   width: calc((100% - 100px) / 2);
 }
-.contact__input .c-forms {
+.contact__form-item .contact__input .c-forms {
   width: 100%;
   margin: auto;
   padding: 10px;
@@ -99,16 +42,52 @@
   border-radius: 0.4em;
   font-size: 16px;
 }
-
-.p-contact__category {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-  left: 11%;
+.contact__form-item .contact__radio-group {
+  display: flex;
 }
-
-.p-contact__content {
+.contact__form-item .contact__radio-group .contact__radio-item {
+  margin-left: 20px;
+  display: flex;
+}
+.contact__form-item .contact__radio-group .contact__radio-item:first-of-type {
+  margin-left: 0;
+}
+.contact__form-item .contact__radio-group .contact__radio-item label {
+  width: auto;
+}
+.contact__form-item .contact__error {
+  position: absolute;
+  color: red;
+}
+.contact__form-item .contact__error--name {
+  left: 11%;
+  top: 110%;
+}
+.contact__form-item .contact__error--furigana {
+  left: 11%;
+  top: 110%;
+}
+.contact__form-item .contact__error--tel {
+  left: 11%;
+  top: 110%;
+}
+.contact__form-item .contact__error--email {
+  left: 11%;
+  top: 110%;
+}
+.contact__form-item .contact__error--address {
+  left: 11%;
+  top: 110%;
+}
+.contact__form-item .contact__error--category {
+  left: 11%;
+  top: 140%;
+}
+.contact__form-item .contact__error--content {
+  left: 11%;
+  top: 102%;
+}
+.contact__textarea {
   padding: 10px;
   font-size: 16px;
   margin: auto;
@@ -119,15 +98,18 @@
   border: 1px solid #4CB6E9;
   border-radius: 0.4em;
 }
-
-.p-contact__privacy {
+.contact__privacy {
   margin-top: 60px;
   border: solid 1px;
   margin-bottom: 30px;
 }
-
-.contact_btn {
+.contact__btn {
   margin-bottom: 100px;
   display: flex;
   justify-content: center;
+}
+
+.c-required {
+  color: red;
+  font-size: 50%;
 }/*# sourceMappingURL=contact.css.map */
