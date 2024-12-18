@@ -1,7 +1,3 @@
-#construction {
-  padding-top: 150px;
-}
-
 .price {
   margin-top: 250px;
 }
@@ -12,11 +8,8 @@
   margin-bottom: 200px;
 }
 .price .price__inner .p-price__contents .p-price__content {
+  margin-top: 50px;
   margin-bottom: 100px;
-}
-.price .price__inner .p-price__contents .p-price__content .p-price__title {
-  font-size: 38px;
-  margin-bottom: 30px;
 }
 .price .price__inner .p-price__contents .p-price__content #irenovation {
   padding-top: 100px;

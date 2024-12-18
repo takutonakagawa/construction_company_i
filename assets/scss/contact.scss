@@ -5,158 +5,258 @@
 @import "./function";
 @import "./mixin";
 
-/* mv */
-.contact__mv{
-    height: 300px;
-    .p-mv__main{
-        margin-top: 150px;
-        object-fit: cover;
-        height: 400px;
-    }
-    .contact__title{
-        position: absolute;
-        bottom: -30%;
-        left: 8%;
-    }
-}
-
-
 /* 共通 */
-#contact{
+#contact {
     padding-top: 100px;
 }
-.p-contact{
+
+.contact {
     text-align: center;
     position: relative;
-}
-.p__contact--inner{
-    max-width: 800px;
-    margin: 0 auto;
-}
 
-/* フォーム */
-.c-contact__form{
-    position: relative;
-    margin-bottom: 55px;
-    display: flex;
-    align-items: center;
-    label{
-        display: block;
-        width: 85px;
+    &__bg {
+        text-align: center;
     }
-    .c-contact__label{
-        width: 85px;
+
+    &__inner {
+        max-width: 800px;
+        margin: 0 auto;
     }
-    .contact-items{
-        display: flex;
-        .contact-item{
-            margin-left: 20px;
+
+    &__form {
+        text-align: left;
+
+        &-item {
+            position: relative;
+            margin-bottom: 55px;
             display: flex;
-            &:nth-of-type(1){
-                margin-left: 0;
+            align-items: center;
+
+            .contact__label {
+                display: block;
+                width: 85px;
             }
-            label{
-                width: auto;
+
+            .contact__input {
+                width: calc(100% - 100px);
+
+                &--compact {
+                    width: calc((100% - 100px) / 2);
+                }
+
+                .c-forms {
+                    width: 100%;
+                    margin: auto;
+                    padding: 10px;
+                    border: 1px solid #4CB6E9;
+                    border-radius: 0.4em;
+                    font-size: 16px;
+                }
+            }
+
+            .contact__radio-group {
+                display: flex;
+
+                .contact__radio-item {
+                    margin-left: 20px;
+                    display: flex;
+
+                    &:first-of-type {
+                        margin-left: 0;
+                    }
+
+                    label {
+                        width: auto;
+                    }
+                }
+            }
+
+            .contact__error {
+                position: absolute;
+                color: red;
+
+                &--name {
+                    left: 11%;
+                    top: 110%;
+                }
+
+                &--furigana {
+                    left: 11%;
+                    top: 110%;
+                }
+
+                &--tel {
+                    left: 11%;
+                    top: 110%;
+                }
+
+                &--email {
+                    left: 11%;
+                    top: 110%;
+                }
+
+                &--address {
+                    left: 11%;
+                    top: 110%;
+                }
+
+                &--category {
+                    left: 11%;
+                    top: 140%;
+                }
+
+                &--content {
+                    left: 11%;
+                    top: 102%;
+                }
             }
         }
     }
-    .error_message-p01{
-        position: absolute;
-        left: 11%;
-        top: 110%;
-        color: red;
+
+    &__textarea {
+        padding: 10px;
+        font-size: 16px;
+        margin: auto;
+        resize: none;
+        width: 680px;
+        line-height: 1;
+        height: 20rem;
+        border: 1px solid #4CB6E9;
+        border-radius: 0.4em;
     }
-    .error_message-p02{
-        position: absolute;
-        left: 11%;
-        top: 140%;
-        color: red;
+
+    &__privacy {
+        margin-top: 60px;
+        border: solid 1px;
+        margin-bottom: 30px;
     }
-    .error_message-p03{
-        position: absolute;
-        left: 11%;
-        top: 102%;
-        color: red;
+
+    &__btn {
+        margin-bottom: 100px;
+        display: flex;
+        justify-content: center;
     }
 }
 
-.p-contact__form{
-    text-align: left;
-}
-
-.c-required{
+.c-required {
     color: red;
     font-size: 50%;
 }
 
-.contact__input{
-    width: calc(100% - 100px);
-    &--compact{
-        width: calc((100% - 100px) / 2);
-    }
-    .c-forms{
-        width: 100%;
-        margin: auto;
-        padding: 10px;
-    
-        border: 1px solid #4CB6E9;
-        border-radius: 0.4em;
-        font-size: 16px;
-    }
-}
-
-
-.p-contact__category{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    left: 11%;
-}
-
-.p-contact__content{
-    padding: 10px;
-    font-size: 16px;
-    margin: auto;
-    resize: none;
-    width: 680px;
-    line-height: 1;
-    height: 20rem;
-    border: 1px solid #4CB6E9;
-    border-radius: 0.4em;
-}
-
-.p-contact__privacy{
-    margin-top: 60px;
-    border: solid 1px;
-    margin-bottom: 30px;
-}
-
- .contact_btn{
-    margin-bottom: 100px;
-    display: flex;
-    justify-content: center;
- }
-
-// .c-btn{
-//     font-size: 20px;
-//     padding: 25px 110px;
-//     border: #4CB6E9 1px solid;
+// 以下bem命名前のコードを残しております。問題なければ削除致します。
+// /* 共通 */
+// #contact{
+//     padding-top: 100px;
+// }
+// .p-contact{
 //     text-align: center;
-//     color: #004982;
-//     display: inline-block;
-//     text-decoration: none;
 //     position: relative;
-//     .c-arrow{
-//     position: absolute;
-//     width: 60px;
-//     height: 15px;
-//     border-right: 2px solid #004982;
-//     border-bottom: 2px solid #004982;
-//     transform: skew(45deg);
-//     display: inline-block;
-//     left: 86%;
-//     top: 30%;
+// }
+// .p__contact--inner{
+//     max-width: 800px;
+//     margin: 0 auto;
+// }
+
+// /* フォーム */
+// .c-contact__form{
+//     position: relative;
+//     margin-bottom: 55px;
+//     display: flex;
+//     align-items: center;
+//     label{
+//         display: block;
+//         width: 85px;
+//     }
+//     .c-contact__label{
+//         width: 85px;
+//     }
+//     .contact-items{
+//         display: flex;
+//         .contact-item{
+//             margin-left: 20px;
+//             display: flex;
+//             &:nth-of-type(1){
+//                 margin-left: 0;
+//             }
+//             label{
+//                 width: auto;
+//             }
+//         }
+//     }
+//     .error_message-p01{
+//         position: absolute;
+//         left: 11%;
+//         top: 110%;
+//         color: red;
+//     }
+//     .error_message-p02{
+//         position: absolute;
+//         left: 11%;
+//         top: 140%;
+//         color: red;
+//     }
+//     .error_message-p03{
+//         position: absolute;
+//         left: 11%;
+//         top: 102%;
+//         color: red;
 //     }
 // }
 
+// .p-contact__form{
+//     text-align: left;
+// }
+
+// .c-required{
+//     color: red;
+//     font-size: 50%;
+// }
+
+// .contact__input{
+//     width: calc(100% - 100px);
+//     &--compact{
+//         width: calc((100% - 100px) / 2);
+//     }
+//     .c-forms{
+//         width: 100%;
+//         margin: auto;
+//         padding: 10px;
+    
+//         border: 1px solid #4CB6E9;
+//         border-radius: 0.4em;
+//         font-size: 16px;
+//     }
+// }
+
+
+// .p-contact__category{
+//     position: absolute;
+//     top: 0;
+//     bottom: 0;
+//     margin: auto;
+//     left: 11%;
+// }
+
+// .p-contact__content{
+//     padding: 10px;
+//     font-size: 16px;
+//     margin: auto;
+//     resize: none;
+//     width: 680px;
+//     line-height: 1;
+//     height: 20rem;
+//     border: 1px solid #4CB6E9;
+//     border-radius: 0.4em;
+// }
+
+// .p-contact__privacy{
+//     margin-top: 60px;
+//     border: solid 1px;
+//     margin-bottom: 30px;
+// }
+
+//  .contact_btn{
+//     margin-bottom: 100px;
+//     display: flex;
+//     justify-content: center;
+//  }
