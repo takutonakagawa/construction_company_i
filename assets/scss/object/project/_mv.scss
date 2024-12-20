@@ -103,13 +103,14 @@
             }
         }
     }
-    &--price{
+    &--contact{
         margin-top: 100px;
         height: 400px;
-        background-image: url("/assets/img/contact/mv-contact.png");
+        background-image: url("/assets/img/contact/mv-contact.jpeg");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+        object-fit: contain;
         .p-mv{
 
             &__main{
