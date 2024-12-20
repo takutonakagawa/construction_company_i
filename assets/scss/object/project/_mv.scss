@@ -103,6 +103,33 @@
             }
         }
     }
+    &--price{
+        margin-top: 100px;
+        height: 400px;
+        background-image: url("/assets/img/contact/mv-contact.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        .p-mv{
+
+            &__main{
+
+            }
+            &__title{
+                .ja{
+                    font-size: 40px;
+                    color: $main-blue-1;
+
+                }
+                .en{
+                    font-size: 120px;
+                    font-weight: bold;
+                    color: $main-blue-2;
+                    line-height: 1;
+                }
+            }
+        }
+    }
 }
 
 

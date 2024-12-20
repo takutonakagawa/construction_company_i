@@ -388,6 +388,24 @@ img {
   color: #4CB6E9;
   line-height: 1;
 }
+.p-mv--price {
+  margin-top: 100px;
+  height: 400px;
+  background-image: url("/assets/img/contact/mv-contact.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.p-mv--price .p-mv__title .ja {
+  font-size: 40px;
+  color: #004982;
+}
+.p-mv--price .p-mv__title .en {
+  font-size: 120px;
+  font-weight: bold;
+  color: #4CB6E9;
+  line-height: 1;
+}
 
 .p-lead-sec {
   padding: 65px 50px;
