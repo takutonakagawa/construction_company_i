@@ -12,6 +12,12 @@
   }
 }
 
+@mixin md {
+  @media only screen and (max-width: $breakpoint_lg_max) {
+    @content;
+  }
+}
+
 @mixin lg {
   @media only screen and (max-width: $breakpoint_lg_max) {
     @content;

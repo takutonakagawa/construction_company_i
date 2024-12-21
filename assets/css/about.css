@@ -65,9 +65,14 @@
   z-index: -1;
   width: calc(1280px + (100vw - 1280px) / 2);
 }
+@media only screen and (max-width: 1319px) {
+  .philosophy__inner .blueblock {
+    background-color: aqua;
+  }
+}
 .philosophy__inner .blueblock--reverse {
   background-color: #4CB6E9;
-  margin-left: calc((100vw - 1280px) / 2 * -1);
+  margin-left: calc(-1 * (100vw - 1280px) / 2);
 }
 .philosophy__inner .whiteblock {
   width: 100%;
@@ -143,8 +148,7 @@
 .philosophy__bg {
   position: absolute;
   left: 0;
-  bottom: 50%;
-  transform: translate(0, 35%);
+  top: 80%;
   z-index: -2;
 }
 

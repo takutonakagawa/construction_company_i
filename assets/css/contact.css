@@ -1,4 +1,20 @@
 @charset "UTF-8";
+
+/* mv */
+.contact__mv {
+  height: 300px;
+}
+.contact__mv .p-mv__main {
+  margin-top: 150px;
+  object-fit: cover;
+  height: 400px;
+}
+.contact__mv .contact__title {
+  position: absolute;
+  bottom: -30%;
+  left: 8%;
+}
+
 /* 共通 */
 #contact {
   padding-top: 100px;
@@ -107,6 +123,7 @@
   margin-bottom: 100px;
   display: flex;
   justify-content: center;
+
 }
 
 .c-required {

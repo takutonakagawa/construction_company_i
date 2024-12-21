@@ -23,8 +23,7 @@
 .business .business__inner .p-business__contents .p-business__content--visual {
   width: 1000px;
   height: 400px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .business .business__inner .p-business__contents .business__visual-rightside {
   float: right;
@@ -123,4 +122,4 @@
   position: absolute;
   left: 82.2%;
   top: 117%;
-}/*# sourceMappingURL=business.css.map */
+}
