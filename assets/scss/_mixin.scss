@@ -13,7 +13,7 @@
 }
 
 @mixin md {
-  @media only screen and (max-width: $breakpoint_lg_max) {
+  @media only screen and (max-width: $breakpoint_md_max) {
     @content;
   }
 }
@@ -24,11 +24,6 @@
   }
 }
 
-// @mixin xlg {
-//   @media only screen and (max-width: $breakpoint_lg_max) {
-//     @content;
-//   }
-// }
 
 
 @mixin font($size, $base: 10) {
