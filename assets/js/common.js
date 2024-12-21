@@ -48,3 +48,25 @@ function checkVisibility() {
         vertical: true,
         horizontal: false
       });
+
+
+      var rellax = new Rellax('.rellax-4', {
+        speed: 2,
+        center: false,
+        wrapper: null,
+        round: true,
+        vertical: true,
+        horizontal: true
+      });
+
+
+
+      // scrollreavel
+
+        // ScrollReveal().reveal('.fade-right', {
+        //   delay: 300, // アニメーション開始までの時間
+        //   duration: 1600, // アニメーション完了にかかる時間
+        //   origin: 'right', // 要素がどの方向から来るか
+        //   distance: '100%', // 移動する距離
+        //   reset: true // フレームインの度に動かすか
+        // });
