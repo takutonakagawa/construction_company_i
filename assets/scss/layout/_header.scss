@@ -10,6 +10,10 @@
   top: 0;
   left: 0;
   z-index: 9999;
+  opacity: 0.9;
+  @include xs{
+    height: 60px;
+  }
   &__container{
     display: flex;
     justify-content: space-between;
@@ -20,15 +24,29 @@
         justify-content: center;
         gap: 10px;
         align-items: center;
+        @include xs{
+          
+        }
+        i{
+          @include xs{
+            width: 40px;
+          }
+        }
         .text{
             .title{
                 color: $main-blue-1;
                 font-size: 24px;
                 margin-bottom: 5px;
+                @include xs{
+                  font-size: 18px;
+                }
             }
             .copy{
                 font-size: 15px;
                 color: $main-blue-2;
+                @include xs{
+                  font-size: 12px;
+                }
             }
         }
     }
@@ -38,6 +56,9 @@
     display: flex;
     align-items: center;
     gap: 15px;
+    @include lg{
+      display: none;
+    }
   }
   &__menu{
     display: flex;
@@ -71,6 +92,115 @@
     a{
         display: block;
         width: 30px;
+    }
+  }
+  &__sp{
+    display: none;
+    background-color: #fff; /* 背景色 */
+    padding: 20px; /* 内側の余白 */
+    position: fixed;
+    top: 100px;
+    right: -100%;
+    width: 250px;
+    transition: all 0.3s;
+    height: 100%;
+    z-index: 100;
+    @include lg{
+      display: flex;
+      flex-direction: column;
+      // align-items: center;
+      gap: 40px;
+      // justify-content: space-between;
+    }
+    @include xs{
+      top: 60px;
+    }
+    &.is-open{
+      right: 0;
+    }
+    &__sp-menu {
+      
+
+       &__sp-list {
+            margin-bottom: 10px; /* メニューアイテムの間隔 */
+
+            a {
+                text-decoration: none;
+                color: #333; /* テキストの色 */
+                font-size: 16px; /* フォントサイズ */
+                transition: color 0.3s ease; /* 色変更時のアニメーション */
+
+                &:hover {
+                }
+            }
+        }
+    }
+
+   &__sp-sns {
+        margin-top: 20px; /* SNSリンクの上にスペースを追加 */
+        display: flex;
+        gap: 10px; /* アイコン間のスペース */
+
+        a {
+            display: block;
+        }
+
+        img {
+            width: 30px; /* SNSアイコンのサイズ */
+            height: auto;
+            transition: transform 0.3s ease; /* ホバー時の変化 */
+
+            &:hover {
+                transform: scale(1.1); /* ホバー時にアイコンを少し拡大 */
+            }
+        }
+    }
+  }
+  &__ham{
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px; /* 幅を調整 */
+    height: 25px; /* 高さを調整 */
+    cursor: pointer;
+    @include lg{
+      display: flex;
+    }
+    span {
+      display: block;
+      height: 2px; /* スパンの高さ */
+      background-color: $main-blue-1; /* 背景色を黒に */
+      border-radius: 5px; /* 丸みをつける */
+      transition: all 0.3s ease; /* アニメーションを追加 */
+  }
+  &.open {
+    span:nth-child(1) {
+        transform: translateY(11px) rotate(45deg); /* 上のバーを斜めに */
+    }
+
+    span:nth-child(2) {
+        opacity: 0; /* 中央のバーを消す */
+    }
+
+    span:nth-child(3) {
+        transform: translateY(-11px) rotate(-45deg); /* 下のバーを斜めに */
+    }
+}
+  }
+  &__sp-menu{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+  }
+  &__sp-list{
+    padding: 10px 0;
+    border-bottom: 1px solid $main-blue-2;
+  }
+  &__sp-sns{
+    display: flex;
+    gap: 15px;
+    a{
+      width: 30px;
     }
   }
 }

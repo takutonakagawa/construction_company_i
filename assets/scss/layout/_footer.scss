@@ -25,15 +25,26 @@
         justify-content: center;
         gap: 10px;
         align-items: center;
+        i{
+          @include xs{
+            width: 40px;
+          }
+        }
         .text{
             .title{
                 color: $main-blue-1;
                 font-size: 24px;
                 margin-bottom: 5px;
+                @include lg{
+                  font-size: 18px;
+                }
             }
             .copy{
                 font-size: 15px;
                 color: $main-blue-2;
+                @include lg{
+                  font-size: 12px;
+                }
             }
         }
     }
@@ -41,13 +52,32 @@
   &__menu{
     display: flex;
     gap: 35px;
+    margin-top: 20px;
+    @media screen and (max-width: 1190px) {
+      flex-direction: column;
+      gap: 15px;
+    }
+    @include xs{
+      margin-top: 60px;
+    }
     ul{
         li{
             margin-bottom: 20px;
+            @include md{
+              margin-bottom: 0;
+            }
+            &:not(:nth-of-type(1)){
+              @media screen and (max-width: 1190px) {
+                display: none;
+              }
+            }
             >a{
-                font-size: 14px;
+                font-size: 12px;
                 &.main{
                     font-size: 18px;
+                    @include xs{
+                      font-size: 14px;
+                    }
                 }
             }
         }
@@ -58,12 +88,28 @@
     gap: 15px;
     margin-bottom: 20px;
     margin-top: 80px;
+    @include xs{
+    
+      margin-top: 140px;
+    }
     &--tiktok{
-      width: 52px;
+      width: 50px;
+    }
+    a{
+      @include xs{
+        width: 30px;
+      }
     }
   }
   &__non-margin-top{
     margin-top: 0px;
+  }
+  &__info{
+    p{
+      @include xs{
+        font-size: 12px;
+      }
+    }
   }
   .copyright{
     font-size: 12px;
