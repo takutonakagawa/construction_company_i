@@ -18,15 +18,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // スキップボタンのクリックイベント
     skipButton.addEventListener('click', () => {
-        console.log('Skip button clicked');
-
         // 動画終了時と同じ処理を実行
         fadeOutCutin();
     });
 
     // 動画終了時にフェードアウトを開始
     video.addEventListener('ended', () => {
-        console.log('Video ended');
 
         // フェードアウト処理を実行
         fadeOutCutin();
@@ -39,7 +36,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // フェードアウト後の処理
         cutinContainer.addEventListener('transitionend', () => {
-            console.log('Transition ended');
             cutinContainer.style.display = 'none'; // 動画コンテナを非表示
 
             // ヘッダーをフェードイン

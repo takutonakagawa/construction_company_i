@@ -70,3 +70,12 @@ function checkVisibility() {
         //   distance: '100%', // 移動する距離
         //   reset: true // フレームインの度に動かすか
         // });
+
+
+
+        // ハンバーガーメニュー
+        document.querySelector('.l-header__ham').addEventListener('click', function () {
+          this.classList.toggle('open');
+          document.querySelector(".l-header__sp").classList.toggle("is-open");
+      });
+      

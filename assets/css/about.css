@@ -148,7 +148,7 @@
 .philosophy__bg {
   position: absolute;
   left: 0;
-  top: 80%;
+  top: 90%;
   z-index: -2;
 }
 
@@ -252,6 +252,7 @@
 .company {
   margin-top: 100px;
   padding: 0 100px;
+  overflow-x: hidden;
 }
 .company .company__inner .p-about-company__title {
   margin-bottom: 100px;

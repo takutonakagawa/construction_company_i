@@ -10,6 +10,15 @@
     width: 100%;
     background-color: $main-blue-1;
     position: relative;
+    @include lg{
+        height: 80vh;
+    }
+    @include md{
+        height: 60vh;
+    }
+    @include xs{
+        height: 400px;
+    }
     &__main{
         position: absolute;
         width: 100%;
@@ -17,6 +26,9 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%,-50%);
+        @include xs{
+            transform: translate(-50%, calc(-50% - 50px));
+        }
     }
     &__mark{
         position: absolute;
@@ -24,9 +36,14 @@
         right: 0;
         top: 5vw;
         width: 18vw;
+        &--2{
+            right: auto;
+            left: 0;
+            top: 2vw;
+
+        }
     }
     &__title{
-
         position: absolute;
         left: 10%;
         bottom: 30%;
@@ -34,6 +51,12 @@
         font-weight: bold;
         line-height: 1.5;
         z-index: 10;
+        background: rgba(255,255,255, 0.8);
+        padding: 20px;
+        @include xs{
+            left: 20px;
+            bottom: 25%;
+        }
         .core{
             font-size: 4.3vw;
             color: $main-blue-2;
@@ -48,13 +71,18 @@
         .ja{
             font-size: 40px;
             color: $main-blue-1;
-
+            @include xs{
+                font-size: 32px;
+            }
         }
         .en{
             font-size: 120px;
             font-weight: bold;
             color: $main-blue-2;
             line-height: 1;
+            @include xs{
+                font-size: 60px;
+            }
         }
     }
     &__lines{
