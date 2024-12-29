@@ -23,7 +23,14 @@
 .business .business__inner .p-business__contents .p-business__content--visual {
   width: 1000px;
   height: 400px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.business .business__inner .p-business__contents #renovation-section {
+  padding-top: 150px;
+}
+.business .business__inner .p-business__contents #property-section {
+  padding-top: 150px;
 }
 .business .business__inner .p-business__contents .business__visual-rightside {
   float: right;
@@ -122,4 +129,4 @@
   position: absolute;
   left: 82.2%;
   top: 117%;
-}
+}/*# sourceMappingURL=business.css.map */

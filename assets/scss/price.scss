@@ -20,6 +20,9 @@
                     width: 500px;
                     object-fit: cover;
                     padding-top: 50px;
+                    &--contain{
+                        object-fit: contain;
+                    }
                 }
                 .p-price__explain{
                     padding-top: 80px;

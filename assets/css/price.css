@@ -25,6 +25,10 @@
      object-fit: cover;
   padding-top: 50px;
 }
+.price .price__inner .p-price__contents .p-price__content .p-price__img--contain {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
 .price .price__inner .p-price__contents .p-price__content .p-price__explain {
   padding-top: 80px;
   float: right;
