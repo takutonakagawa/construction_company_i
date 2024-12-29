@@ -446,7 +446,7 @@ img {
 }
 
 .p-recruit {
-  background-image: url("/assets/img/common/secRecBg.png");
+  background-image: url("../img/common/secRecBg.png");
   position: relative;
   background-position: center;
   background-repeat: no-repeat;
