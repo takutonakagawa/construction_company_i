@@ -264,7 +264,7 @@
   margin: auto;
   background-color: #ffffff;
   position: relative;
-  margin-bottom: 300px;
+  margin-bottom: 100px;
 }
 .company .company__inner .p-recruitment__content .p-recruitment__list {
   display: flex;
@@ -308,6 +308,38 @@
   z-index: -1;
 }
 
+#access {
+  padding-top: 150px;
+}
+
+.access {
+  padding: 0 100px;
+}
+.access__inner .access__contents {
+  display: flex;
+  margin-top: 30px;
+}
+.access__inner .access__contents--desc {
+  width: 50%;
+}
+.access__inner .access__contents--desc dl {
+  display: flex;
+  flex-wrap: wrap;
+  width: 95%;
+  margin-bottom: 15px;
+}
+.access__inner .access__contents--desc dl dt {
+  width: 30%;
+  font-weight: bold;
+  padding: 10px;
+  border-bottom: solid 1.5px #4CB6E9;
+}
+.access__inner .access__contents--desc dl dd {
+  width: 65%;
+  padding: 10px;
+  border-bottom: solid 1px #d6d6d6;
+}
+
 .p-contact {
   margin-top: 150px;
   width: 100%;
@@ -330,4 +362,4 @@
   display: flex;
   gap: 60px;
   float: right;
-}
+}/*# sourceMappingURL=about.css.map */
