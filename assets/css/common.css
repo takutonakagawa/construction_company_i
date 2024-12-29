@@ -242,7 +242,7 @@ img {
   background: rgba(255, 255, 255, 0.7);
 }
 .c-btn::after {
-  content: url("/assets/img/common/btn-arrow.png");
+  content: url("../img/common/btn-arrow.png");
   position: absolute;
   top: 10px;
   right: -25px;
