@@ -1,3 +1,7 @@
+#price {
+  padding-top: 150px;
+}
+
 .price {
   margin-top: 250px;
 }
@@ -17,7 +21,8 @@
 .price .price__inner .p-price__contents .p-price__content .p-price__img {
   height: 350px;
   width: 500px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   padding-top: 50px;
 }
 .price .price__inner .p-price__contents .p-price__content .p-price__explain {
@@ -81,4 +86,4 @@
 }
 .price .price__inner .p-price__contents .p-price__btn--center-W .irenovation__btn {
   width: 320px;
-}
+}/*# sourceMappingURL=price.css.map */
