@@ -10,6 +10,7 @@
   }
 
   .greeting{
+        margin-top: 100px;
         padding-top: 180px;
         position: relative;
         .line__img{
@@ -286,7 +287,7 @@
                 margin: auto;
                 background-color: #ffffff;
                 position: relative;
-                margin-bottom: 300px;
+                margin-bottom: 100px;
                 .p-recruitment__list{
                     display: flex;
                     flex-wrap: wrap;
@@ -331,6 +332,40 @@
             }
         }
     }
+
+
+#access{
+    padding-top: 150px;
+}
+.access{
+    padding: 0 100px;
+    &__inner{
+        .access__contents{
+            display: flex;
+            margin-top: 30px;
+            &--desc{
+                width: 50%;
+                dl{
+                    display: flex;
+                    flex-wrap: wrap;
+                    width: 95%;
+                    margin-bottom: 15px;
+                    dt{
+                        width: 30%;
+                        font-weight: bold;
+                        padding: 10px;
+                        border-bottom: solid 1.5px #4CB6E9;
+                    }
+                    dd{
+                        width: 65%;
+                        padding: 10px;
+                        border-bottom: solid 1px #d6d6d6;
+                    }
+                }
+            }
+        } 
+    }
+}
     
 
 .p-contact{
