@@ -52,8 +52,12 @@
   margin-left: 5px;
 }
 
+#philosophy {
+  padding-top: 150px;
+}
+
 .philosophy {
-  margin-top: 180px;
+  margin-top: 100px;
   position: relative;
 }
 .philosophy__inner {
