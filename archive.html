@@ -88,358 +88,68 @@
         
                 <!-- article -->
                 <ul class="archive__article-list">
-                    <li class="archive__article-item">
-                        <div class="archive__article">
-                            <a href="/detail.html">
-                                <img class="archive__article-img" src="assets/img/common/toilet.jpg" alt="">
-                                <div class="archive__article-content">
-                                    <div class="archive__article-line01">
-                                        <div class="archive__article-date">2024/01/01</div>
-                                        <div class="archive__tag archive__tag--renovation">ダミートイレ</div>
-                                    </div>
-                                    <div class="archive__article-line02">
-                                        <div class="archive__article-title">
-                                            兵庫県神戸市の⚪︎⚪︎の⚪︎⚪︎案件を担当させて頂きました。
+                    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+                        <li class="archive__article-item">
+                            <div class="archive__article">
+                                <a href="<?php the_permalink(); ?>">
+                                    <!-- アイキャッチ画像 -->
+                                    <?php if (has_post_thumbnail()) : ?>
+                                        <img class="archive__article-img" src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'medium'); ?>" alt="<?php the_title(); ?>">
+                                    <?php else : ?>
+                                        <img class="archive__article-img" src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/common/toilet.jpg'); ?>" alt="No Image">
+                                    <?php endif; ?>
+                
+                                    <div class="archive__article-content">
+                                        <div class="archive__article-line01">
+                                            <!-- 投稿日時 -->
+                                            <div class="archive__article-date">
+                                                <?php echo get_the_date('Y/m/d'); ?>
+                                            </div>
+                
+                                            <!-- カテゴリ -->
+                                            <?php $categories = get_the_category(); ?>
+                                            <?php if (!empty($categories)) : ?>
+                                                <?php foreach ($categories as $category) : ?>
+                                                    <div class="archive__tag archive__tag--<?php echo esc_attr($category->slug); ?>">
+                                                        <?php echo esc_html($category->name); ?>
+                                                    </div>
+                                                <?php endforeach; ?>
+                                            <?php endif; ?>
+                                        </div>
+                
+                                        <div class="archive__article-line02">
+                                            <!-- タイトル -->
+                                            <div class="archive__article-title">
+                                                <?php the_title(); ?>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </a>
-                        </div>
-                    </li>
-                    <li class="archive__article-item">
-                        <div class="archive__article">
-                            <a href="/detail.html">
-                                <img class="archive__article-img" src="assets/img/common/toilet.jpg" alt="">
-                                <div class="archive__article-content">
-                                    <div class="archive__article-line01">
-                                        <div class="archive__article-date">2024/01/01</div>
-                                        <div class="archive__tag archive__tag--renovation">ダミートイレ</div>
-                                    </div>
-                                    <div class="archive__article-line02">
-                                        <div class="archive__article-title">
-                                            兵庫県神戸市の⚪︎⚪︎の⚪︎⚪︎案件を担当させて頂きました。
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </li>
-                    <li class="archive__article-item">
-                        <div class="archive__article">
-                            <a href="/detail.html">
-                                <img class="archive__article-img" src="assets/img/common/toilet.jpg" alt="">
-                                <div class="archive__article-content">
-                                    <div class="archive__article-line01">
-                                        <div class="archive__article-date">2024/01/01</div>
-                                        <div class="archive__tag archive__tag--renovation">ダミートイレ</div>
-                                    </div>
-                                    <div class="archive__article-line02">
-                                        <div class="archive__article-title">
-                                            兵庫県神戸市の⚪︎⚪︎の⚪︎⚪︎案件を担当させて頂きました。
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </li>
-                    <li class="archive__article-item">
-                        <div class="archive__article">
-                            <a href="/detail.html">
-                                <img class="archive__article-img" src="assets/img/common/toilet.jpg" alt="">
-                                <div class="archive__article-content">
-                                    <div class="archive__article-line01">
-                                        <div class="archive__article-date">2024/01/01</div>
-                                        <div class="archive__tag archive__tag--renovation">ダミートイレ</div>
-                                    </div>
-                                    <div class="archive__article-line02">
-                                        <div class="archive__article-title">
-                                            兵庫県神戸市の⚪︎⚪︎の⚪︎⚪︎案件を担当させて頂きました。
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </li>
-                    <li class="archive__article-item">
-                        <div class="archive__article">
-                            <a href="/detail.html">
-                                <img class="archive__article-img" src="assets/img/common/toilet.jpg" alt="">
-                                <div class="archive__article-content">
-                                    <div class="archive__article-line01">
-                                        <div class="archive__article-date">2024/01/01</div>
-                                        <div class="archive__tag archive__tag--renovation">ダミートイレ</div>
-                                    </div>
-                                    <div class="archive__article-line02">
-                                        <div class="archive__article-title">
-                                            兵庫県神戸市の⚪︎⚪︎の⚪︎⚪︎案件を担当させて頂きました。
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </li>
-                    <li class="archive__article-item">
-                        <div class="archive__article">
-                            <a href="/detail.html">
-                                <img class="archive__article-img" src="assets/img/common/toilet.jpg" alt="">
-                                <div class="archive__article-content">
-                                    <div class="archive__article-line01">
-                                        <div class="archive__article-date">2024/01/01</div>
-                                        <div class="archive__tag archive__tag--renovation">ダミートイレ</div>
-                                    </div>
-                                    <div class="archive__article-line02">
-                                        <div class="archive__article-title">
-                                            兵庫県神戸市の⚪︎⚪︎の⚪︎⚪︎案件を担当させて頂きました。
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </li>
-                    <li class="archive__article-item">
-                        <div class="archive__article">
-                            <a href="/detail.html">
-                                <img class="archive__article-img" src="assets/img/common/toilet.jpg" alt="">
-                                <div class="archive__article-content">
-                                    <div class="archive__article-line01">
-                                        <div class="archive__article-date">2024/01/01</div>
-                                        <div class="archive__tag archive__tag--renovation">ダミートイレ</div>
-                                    </div>
-                                    <div class="archive__article-line02">
-                                        <div class="archive__article-title">
-                                            兵庫県神戸市の⚪︎⚪︎の⚪︎⚪︎案件を担当させて頂きました。
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </li>
-                    <li class="archive__article-item">
-                        <div class="archive__article">
-                            <a href="/detail.html">
-                                <img class="archive__article-img" src="assets/img/common/toilet.jpg" alt="">
-                                <div class="archive__article-content">
-                                    <div class="archive__article-line01">
-                                        <div class="archive__article-date">2024/01/01</div>
-                                        <div class="archive__tag archive__tag--renovation">ダミートイレ</div>
-                                    </div>
-                                    <div class="archive__article-line02">
-                                        <div class="archive__article-title">
-                                            兵庫県神戸市の⚪︎⚪︎の⚪︎⚪︎案件を担当させて頂きました。
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </li>
+                                </a>
+                            </div>
+                        </li>
+                    <?php endwhile; else : ?>
+                        <p>記事が見つかりませんでした。</p>
+                    <?php endif; ?>
                 </ul>
+                
         
                 <!-- pagination -->
                 <div class="archive__pagination">
-                    <p>前へ&nbsp;&nbsp;<span>1</span>&nbsp;&nbsp;2&nbsp;&nbsp;3&nbsp;&nbsp;…&nbsp;&nbsp;10&nbsp;&nbsp;次へ</p>
-                </div>
+    <?php
+    echo paginate_links(array(
+        'total' => $wp_query->max_num_pages, // 総ページ数
+        'current' => max(1, get_query_var('paged')), // 現在のページ番号
+        'prev_text' => '前へ', // 「前へ」リンクのテキスト
+        'next_text' => '次へ', // 「次へ」リンクのテキスト
+        'type' => 'list', // <ul> タグで出力
+    ));
+    ?>
+</div>
             </div>
         </section>
         <!-- archive / -->
 
-        <!-- 以下bem命名前のコードを残しております。問題なければ削除致します。 -->
-        <!-- <section class="p-archive">
-            <div class="c-inner archive_inner">
-                <div class="c-title-secondary c-title-secondary--archive">
-                    <div class="en">nwes</div>
-                    <div class="ja">情報一覧</div>
-                </div>
-                <div class="p-archive__tag-list">
-                    <div class="p-archive__tag">ALL</div>
-                    <div class="p-archive__tag p-archive__tag--renovation">ダミートイレ</div>
-                    <div class="p-archive__tag p-archive__tag--renovation">ダミーお風呂</div>
-                    <div class="p-archive__tag p-archive__tag--renovation">ダミーキッチン</div>
-                </div>
-                <div class="p-archive__tag-list">
-                    <div class="p-archive__tag p-archive__tag--property">賃貸物件</div>
-                    <div class="p-archive__tag p-archive__tag--property">新築物件</div>
-                    <div class="p-archive__tag p-archive__tag--property">中古物件</div>
-                    <div class="p-archive__tag p-archive__tag--other">その他</div>
-                </div>
-
-                <ul class="p-archive__article-list">
-                    <li>
-                        <div class="p-archive__article">
-                            <a href="/detail.html">
-                                <img class="article__img" src="assets/img/common/toilet.jpg" alt="">
-                                <div class="article__inner">
-                                    <div class="article__inner-line01">
-                                        <div class="p-archive_article-date">2024/01/01</div>
-                                        <div class="p-archive__tag p-archive__tag--renovation">ダミートイレ</div>
-                                    </div>
-                                    <div class="article__inner-line02">
-                                        <div class="p-archive__article-title">
-                                            兵庫県神戸市の⚪︎⚪︎の⚪︎⚪︎案件を担当させて頂きました。
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="p-archive__article">
-                            <a href="/detail.html">
-                                <img class="article__img" src="assets/img/common/toilet.jpg" alt="">
-                                <div class="article__inner">
-                                    <div class="article__inner-line01">
-                                        <div class="p-archive_article-date">2024/01/01</div>
-                                        <div class="p-archive__tag p-archive__tag--renovation">ダミートイレ</div>
-                                    </div>
-                                    <div class="article__inner-line02">
-                                        <div class="p-archive__article-title">
-                                            兵庫県神戸市の⚪︎⚪︎の⚪︎⚪︎案件を担当させて頂きました。
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="p-archive__article">
-                            <a href="/detail.html">
-                                <img class="article__img" src="assets/img/common/toilet.jpg" alt="">
-                                <div class="article__inner">
-                                    <div class="article__inner-line01">
-                                        <div class="p-archive_article-date">2024/01/01</div>
-                                        <div class="p-archive__tag p-archive__tag--renovation">ダミートイレ</div>
-                                    </div>
-                                    <div class="article__inner-line02">
-                                        <div class="p-archive__article-title">
-                                            兵庫県神戸市の⚪︎⚪︎の⚪︎⚪︎案件を担当させて頂きました。
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="p-archive__article">
-                            <a href="/detail.html">
-                                <img class="article__img" src="assets/img/common/toilet.jpg" alt="">
-                                <div class="article__inner">
-                                    <div class="article__inner-line01">
-                                        <div class="p-archive_article-date">2024/01/01</div>
-                                        <div class="p-archive__tag p-archive__tag--renovation">ダミートイレ</div>
-                                    </div>
-                                    <div class="article__inner-line02">
-                                        <div class="p-archive__article-title">
-                                            兵庫県神戸市の⚪︎⚪︎の⚪︎⚪︎案件を担当させて頂きました。
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </li>
-                    
-                    <li>
-                        <div class="p-archive__article">
-                            <a href="/detail.html">
-                                <img class="article__img" src="assets/img/common/toilet.jpg" alt="">
-                                <div class="article__inner">
-                                    <div class="article__inner-line01">
-                                        <div class="p-archive_article-date">2024/01/01</div>
-                                        <div class="p-archive__tag p-archive__tag--renovation">ダミートイレ</div>
-                                    </div>
-                                    <div class="article__inner-line02">
-                                        <div class="p-archive__article-title">
-                                            兵庫県神戸市の⚪︎⚪︎の⚪︎⚪︎案件を担当させて頂きました。
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="p-archive__article">
-                            <a href="/detail.html">
-                                <img class="article__img" src="assets/img/common/toilet.jpg" alt="">
-                                <div class="article__inner">
-                                    <div class="article__inner-line01">
-                                        <div class="p-archive_article-date">2024/01/01</div>
-                                        <div class="p-archive__tag p-archive__tag--renovation">ダミートイレ</div>
-                                    </div>
-                                    <div class="article__inner-line02">
-                                        <div class="p-archive__article-title">
-                                            兵庫県神戸市の⚪︎⚪︎の⚪︎⚪︎案件を担当させて頂きました。
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="p-archive__article">
-                            <a href="/detail.html">
-                                <img class="article__img" src="assets/img/common/toilet.jpg" alt="">
-                                <div class="article__inner">
-                                    <div class="article__inner-line01">
-                                        <div class="p-archive_article-date">2024/01/01</div>
-                                        <div class="p-archive__tag p-archive__tag--renovation">ダミートイレ</div>
-                                    </div>
-                                    <div class="article__inner-line02">
-                                        <div class="p-archive__article-title">
-                                            兵庫県神戸市の⚪︎⚪︎の⚪︎⚪︎案件を担当させて頂きました。
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="p-archive__article">
-                            <a href="/detail.html">
-                                <img class="article__img" src="assets/img/common/toilet.jpg" alt="">
-                                <div class="article__inner">
-                                    <div class="article__inner-line01">
-                                        <div class="p-archive_article-date">2024/01/01</div>
-                                        <div class="p-archive__tag p-archive__tag--renovation">ダミートイレ</div>
-                                    </div>
-                                    <div class="article__inner-line02">
-                                        <div class="p-archive__article-title">
-                                            兵庫県神戸市の⚪︎⚪︎の⚪︎⚪︎案件を担当させて頂きました。
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="p-archive__article">
-                            <a href="/detail.html">
-                                <img class="article__img" src="assets/img/common/toilet.jpg" alt="">
-                                <div class="article__inner">
-                                    <div class="article__inner-line01">
-                                        <div class="p-archive_article-date">2024/01/01</div>
-                                        <div class="p-archive__tag p-archive__tag--renovation">ダミートイレ</div>
-                                    </div>
-                                    <div class="article__inner-line02">
-                                        <div class="p-archive__article-title">
-                                            兵庫県神戸市の⚪︎⚪︎の⚪︎⚪︎案件を担当させて頂きました。
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </li>
-                </ul>
-
-                <div class="p-archive__pagenation">
-                    <p>前へ&nbsp;&nbsp;<span>1</span>&nbsp;&nbsp;2&nbsp;&nbsp;3&nbsp;&nbsp;…&nbsp;&nbsp;10&nbsp;&nbsp;次へ</p>
-                </div>
-        </section> -->
-
+      
               <!--コンタクト -->
               <section class="p-contact p-lead-sec">
                 <img class="contact-line" src="/assets/img/common/lineBg.png" alt="">

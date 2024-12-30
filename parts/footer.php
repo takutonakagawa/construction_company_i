@@ -51,37 +51,37 @@
                     <li><a href="<?php echo esc_url(home_url('/about/#philosophy')); ?>">理念</a></li>
                     <li><a href="<?php echo esc_url(home_url('/about/#logo')); ?>">ロゴの由来</a></li>
                     <li><a href="<?php echo esc_url(home_url('/about/#company')); ?>">会社概要</a></li>
+                    <li><a href="<?php echo esc_url(home_url('/about/#access')); ?>">アクセス</a></li>
                 </ul>
                 <ul>
-                    <li><a href="<?php echo esc_url(home_url('/archive/')); ?>" class="main">施工実績/物件案内</a></li>
-                    <li><a href="#">ALL</a></li>
-                    <li><a href="#">機械設備工事</a></li>
-                    <li><a href="#">アイリノベ<br>(i renovation)</a></li>
-                    <li><a href="#">不動産事業</a></li>
+                    <li><a href="<?php echo esc_url(home_url('/posts-select/')); ?>" class="main">施工実績/物件案内</a></li>
+                    <li><a href="<?php echo esc_url(home_url('/posts/')); ?>">ALL</a></li>
+                    <li><a href="<?php echo esc_url(home_url('/equipment/')); ?>">機械設備工事</a></li>
+                    <li><a href="<?php echo esc_url(home_url('/irenovation/')); ?>">アイリノベ<br>(i renovation)</a></li>
+                    <li><a href="<?php echo esc_url(home_url('/estate/')); ?>">不動産事業</a></li>
                 </ul>
                 <ul>
-                    <li><a href="#" class="main">料金案内</a></li>
-                    <li><a href="<?php echo esc_url(home_url('/price/#construction')); ?>">機械設備工事</a></li>
-                    <li><a href="<?php echo esc_url(home_url('/price/#irenovation')); ?>">アイリノベ<br>(i renovation)</a></li>
+                    <li><a href="<?php echo esc_url(home_url('/price/')); ?>" class="main">料金案内</a></li>
+                    <li><a href="<?php echo esc_url(home_url('/price/#price')); ?>">料金一覧</a></li>
                 </ul>
                 <ul>
-                    <li><a href="#" class="main">事業内容</a></li>
+                    <li><a href="<?php echo esc_url(home_url('/buisiness/')); ?>" class="main">事業内容</a></li>
                     <li><a href="<?php echo esc_url(home_url('/business/#construction-section')); ?>">機械設備工事部</a></li>
                     <li><a href="<?php echo esc_url(home_url('/business/#renovation-section')); ?>">アイリノベ<br>(i renovation)事業部</a></li>
                     <li><a href="<?php echo esc_url(home_url('/business/#property-section')); ?>">不動産事業部</a></li>
                 </ul>
                 <ul>
-                    <li><a href="#" class="main">採用情報</a></li>
+                    <li><a href="<?php echo esc_url(home_url('/recruitment/')); ?>" class="main">採用情報</a></li>
                     <li><a href="<?php echo esc_url(home_url('/recruitment/#recruitment')); ?>">募集要項</a></li>
                 </ul>
                 <ul>
-                    <li><a href="#" class="main">お問い合わせ</a></li>
+                    <li><a href="<?php echo esc_url(home_url('/contact/')); ?>" class="main">お問い合わせ</a></li>
                     <li><a href="<?php echo esc_url(home_url('/contact/#contact')); ?>">お問合せフォーム</a></li>
                 </ul>
             </div>
         </div>
     </div>
 
-    <div class="copyright">コピーライトコピーライト</div>
+    <div class="copyright">Copyright © 2025</div>
 </footer>
 <!-- footer / -->

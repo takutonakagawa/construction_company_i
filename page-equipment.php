@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>実績・物件一覧</title>
+
+ 
+    <!-- 共通css -->
+    <link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri() . '/assets/css/common.css'); ?>">
+    <!-- 共通css / -->
+    <!-- 固有css -->
+    <link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri() . '/assets/css/archive.css'); ?>">
+
+    <!-- SVGファビコン -->
+    <link rel="icon" href="/assets/img/common/logo.svg" type="image/svg+xml">
+</head>
+<body>
+    <!-- header -->
+    <?php get_template_part('parts/header'); ?>
+    <!-- header / -->
+
+    <main id="archive" class="l-main">
+        <!-- mv -->
+        <section class="p-mv p-mv--small">
+                <h1 class="p-mv__title">
+                    <span class="ja">施工実績 / 物件案内</span><br>
+                    <span class="en">archive/property</span>
+                </h1>
+        </section>
+        <!-- mv / -->
+
+        <!-- archive -->
+        <section class="archive">
+    <div class="c-inner archive__inner">
+        <!-- title -->
+        <div class="c-title-secondary c-title-secondary--archive">
+            <div class="en">news</div>
+            <div class="ja">情報一覧</div>
+        </div>
+
+        <!-- tag -->
+        <div class="archive__tag-list">
+    <div class="archive__tag archive__tag--property">
+        <a href="<?php echo esc_url(get_post_type_archive_link('post')); ?>">ALL</a>
+    </div>
+    <?php
+    $categories = get_categories();
+    $other_category = null;
+
+    foreach ($categories as $category) {
+        if ($category->name === 'その他') {
+            $other_category = $category; // 「その他」のカテゴリを保持
+        } else {
+            // 「その他」以外のカテゴリを出力
+            ?>
+            <div class="archive__tag archive__tag--<?php echo esc_attr($category->slug); ?>">
+                <a href="<?php echo esc_url('/' . $category->slug); ?>">
+                    <?php echo esc_html($category->name); ?>
+                </a>
+            </div>
+            <?php
+        }
+    }
+
+    // 「その他」のカテゴリを最後に出力
+    if ($other_category) : ?>
+        <div class="archive__tag archive__tag--<?php echo esc_attr($other_category->slug); ?> archive__tag--other">
+            <a href="<?php echo esc_url('/' . $other_category->slug); ?>">
+                <?php echo esc_html($other_category->name); ?>
+            </a>
+        </div>
+    <?php endif; ?>
+</div>
+
+
+        <!-- article -->
+        <ul class="archive__article-list">
+    <?php
+    $args = array(
+        'post_type' => 'post', // 投稿タイプ
+        'posts_per_page' => 9, // 1ページあたりの投稿数
+        'paged' => get_query_var('paged', 1), // ページ番号
+        'category_name' => 'equipment', // カテゴリスラッグを指定
+    );
+    $query = new WP_Query($args);
+
+    if ($query->have_posts()) :
+        while ($query->have_posts()) : $query->the_post(); ?>
+            <li class="archive__article-item">
+                <div class="archive__article">
+                    <a href="<?php the_permalink(); ?>">
+                        <!-- アイキャッチ画像 -->
+                        <?php if (has_post_thumbnail()) : ?>
+                            <img class="archive__article-img" src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'medium'); ?>" alt="<?php the_title(); ?>">
+                        <?php else : ?>
+                            <img class="archive__article-img" src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/archive/no-image.png'); ?>" alt="No Image">
+                        <?php endif; ?>
+
+                        <div class="archive__article-content">
+                            <div class="archive__article-line01">
+                                <!-- 投稿日時 -->
+                                <div class="archive__article-date">
+                                    <?php echo get_the_date('Y/m/d'); ?>
+                                </div>
+
+                                <!-- カテゴリ -->
+                                <?php $categories = get_the_category(); ?>
+                                <?php if (!empty($categories)) : ?>
+                                    <?php 
+                                    // カテゴリ名が「その他」の場合にクラスを変更
+                                    $additional_class = ($categories[0]->name === 'その他') ? ' archive__tag--other' : '';
+                                    ?>
+                                    <div class="archive__tag archive__tag--<?php echo esc_attr($categories[0]->slug); ?><?php echo $additional_class; ?>">
+                                        <?php echo esc_html($categories[0]->name); ?>
+                                    </div>
+                                <?php endif; ?>
+                            </div>
+                            <div class="archive__article-line02">
+                                <!-- タイトル -->
+                                <div class="archive__article-title">
+                                    <?php the_title(); ?>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </li>
+        <?php endwhile; ?>
+    <?php else : ?>
+        <p>投稿が見つかりませんでした。</p>
+    <?php endif; ?>
+
+    <?php wp_reset_postdata(); ?>
+</ul>
+
+<!-- ページネーション -->
+<div class="archive__pagination">
+    <?php
+    echo paginate_links(array(
+        'total' => $query->max_num_pages,
+        'current' => max(1, get_query_var('paged')),
+        'format' => '?paged=%#%',
+        'show_all' => false,
+        'prev_text' => '前へ',
+        'next_text' => '次へ',
+        'type' => 'list',
+    ));
+    ?>
+</div>
+
+
+
+        <!-- pagination -->
+        <div class="archive__pagination">
+            <?php
+            echo paginate_links(array(
+                'total' => $wp_query->max_num_pages, // 総ページ数
+                'current' => max(1, get_query_var('paged')), // 現在のページ番号
+                'prev_text' => '前へ', // 「前へ」リンクのテキスト
+                'next_text' => '次へ', // 「次へ」リンクのテキスト
+                'type' => 'list', // <ul> タグで出力
+            ));
+            ?>
+        </div>
+    </div>
+</section>
+
+        <!-- archive / -->
+
+        <!--コンタクト -->
+        <?php get_template_part('parts/contact'); ?>
+        <!--コンタクト / -->
+
+        <!-- リクルート -->
+        <?php get_template_part('parts/recruit'); ?>
+        <!-- リクルート / -->
+    </main>
+
+    <!-- footer -->
+    <?php get_template_part('parts/footer'); ?>
+    <!-- footer / -->
+
+    <!-- 共通JS -->
+    <script src="<?php echo esc_url(get_template_directory_uri() . '/assets/js/_vendor/rellax.js'); ?>"></script>
+    <script src="<?php echo esc_url(get_template_directory_uri() . '/assets/js/common.js'); ?>"></script>
+    <!-- 共通JS -->
+</body>
+</html>
