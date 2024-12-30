@@ -19,7 +19,7 @@
     <!-- cutin -->
     <div class="l-cutin">
         <video id="cutin" autoplay muted playsinline>
-            <source src="/assets/video/cutin.mp4" type="video/mp4">
+            <source src="<?php echo esc_url(get_template_directory_uri() . '/assets/video/cutin.mp4'); ?>" type="video/mp4">
         </video>
 
         <div id="center-message">
@@ -45,10 +45,10 @@
 
         <!-- mv -->
         <section class="p-mv p-mv--top">
-            <img class="p-mv__main" src="/assets/img/common/mv_top.png" alt="">
-            <img class="p-mv__mark rellax" src="/assets/img/common/MARK2.png" alt="">
+            <img class="p-mv__main" src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/common/mv_top.png'); ?>" alt="">
+            <img class="p-mv__mark rellax" src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/common/MARK2.png'); ?>" alt="">
 
-            <img class="p-mv__lines rellax-2" src="/assets/img/common/lines.png" alt="">
+            <img class="p-mv__lines rellax-2" src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/common/lines.png'); ?>" alt="">
             <h1 class="p-mv__title">
                 <span class="core">水</span>・<span class="core">空気</span>・<span class="core">住む</span>の<span class="kanji">未来</span>を<span class="kanji">創</span>る。<br>
                 <span class="professional">プロフェッショナル</span>の<span class="kanji">力</span>で、<span class="kanji">社会</span>に<span class="kanji">貢献</span>を。
@@ -162,7 +162,7 @@
                             </p>
                         </div>
                         <div class="p-index__achivements-btn">
-                            <a href="<?php echo esc_url(home_url('/archive/')); ?>" class="c-btn">実績一覧へ<span class="c-arrow"></span></a>
+                            <a href="<?php echo esc_url(home_url('/equipment/')); ?>" class="c-btn">機械設備工事一覧へ<span class="c-arrow"></span></a>
                         </div>
                     </div>
                     <div class="p-index__achivements-list-left">
@@ -183,7 +183,7 @@
                             </p>
                         </div>
                         <div class="p-index__achivements-btn">
-                            <a href="<?php echo esc_url(home_url('/archive/')); ?>" class="c-btn">実績一覧へ<span class="c-arrow"></span></a>
+                            <a href="<?php echo esc_url(home_url('/irenovation/')); ?>" class="c-btn">アイリノベ一覧へ<span class="c-arrow"></span></a>
                         </div>
                     </div>
                     <div class="p-index__achivements-list-left">
@@ -265,7 +265,7 @@
                 </div>
 
             </div>
-            <a href="/archive.html" class="c-btn infomation__btn c-anim-fade-in">物件一覧へ</a>
+            <a href="<?php echo esc_url(home_url('/estate/')); ?>" class="c-btn infomation__btn c-anim-fade-in">物件一覧へ</a>
             <div class="infomation__bg">
                 <ul>
                     <li>

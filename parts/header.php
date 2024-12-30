@@ -23,7 +23,7 @@
                     <a href="<?php echo esc_url(home_url('/about/')); ?>" class="<?php echo is_page('about') ? 'is-current' : ''; ?>">会社概要</a>
                 </li>
                 <li class="l-header__list">
-                    <a href="<?php echo esc_url(home_url('/archive/')); ?>" class="<?php echo is_page('archive') ? 'is-current' : ''; ?>">施工実績 / 物件案内</a>
+                    <a href="<?php echo esc_url(home_url('/posts-select/')); ?>" class="<?php echo is_page('posts') ? 'is-current' : ''; ?>">施工実績 / 物件案内</a>
                 </li>
                 <li class="l-header__list">
                     <a href="<?php echo esc_url(home_url('/price/')); ?>" class="<?php echo is_page('price') ? 'is-current' : ''; ?>">料金案内</a>

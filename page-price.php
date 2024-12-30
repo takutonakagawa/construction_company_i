@@ -35,7 +35,7 @@
         <!-- mv / -->
 
         <!-- price -->
-        <section class="price" id="construction">
+        <section class="price" id="price">
             <div class="c-inner price__inner">
                 <div class="c-title">
                     <span class="c-slash"></span>
@@ -176,115 +176,92 @@
                                     <div class="irenovation__price">¥80,000</div>
                                 </div>
                             </div>
-                            <img class="p-price__img irenovation__img" src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/common/business_renovation.jpeg'); ?>" alt="">
+                            <img class="p-price__img irenovation__img" src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/price/price-wh.jpg'); ?>" alt="">
                             <div class="p-price__btn--center">
                             </div>
                         </div>
 
                         <div class="p-price__content">
-                        <div class="p-price__explain irenovation__explain">
-                            <div class="p-price__subtitle irenovation__subtitle">給湯器工事費</div>
-                            <div class="price__list">
-                                <div class="p-price__price irenovation__price-title">給湯専用</div>
-                                <div class="irenovation__price">¥23,000</div>
+                            <div class="p-price__explain irenovation__explain">
+                                <div class="p-price__subtitle irenovation__subtitle">【壁】内装工事費</div>
+                                <div class="price__list">
+                                    <div class="p-price__price irenovation__price-title">量産品</div>
+                                    <div class="irenovation__price">¥950/㎡</div>
+                                </div>
+                                <div class="price__list">
+                                    <div class="p-price__price irenovation__price-title">千番台</div>
+                                    <div class="irenovation__price">¥1,200/㎡</div>
+                                </div>
+                                <div class="price__list">
+                                    <div class="p-price__price irenovation__price-title">エコカラット</div>
+                                    <div class="irenovation__price">¥9,600~/㎡</div>
+                                </div>
                             </div>
-                            <div class="price__list">
-                                <div class="p-price__price irenovation__price-title">追い炊き機能</div>
-                                <div class="irenovation__price">¥28,000</div>
-                            </div>
-                            <div class="price__list">
-                                <div class="p-price__price irenovation__price-title">エコキュート</div>
-                                <div class="irenovation__price">¥80,000</div>
+                            <img class="p-price__img irenovation__img" src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/price/price-wall.jpg'); ?>" alt="">
+                            <div class="p-price__btn--center">
+                                <!-- <a href="/business.html#renovation-section" class="c-btn">詳細へ</a> -->
                             </div>
                         </div>
-                        <img class="p-price__img irenovation__img" src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/common/business_renovation.jpeg'); ?>" alt="">
-                        
-                        <div class="p-price__btn--center">
-                            <!-- <a href="/business.html#renovation-section" class="c-btn">詳細へ</a> -->
-                        </div>
-                    </div>
 
-                    <div class="p-price__content">
-                        <div class="p-price__explain irenovation__explain">
-                            <div class="p-price__subtitle irenovation__subtitle">【壁】内装工事費</div>
-                            <div class="price__list">
-                                <div class="p-price__price irenovation__price-title">量産品</div>
-                                <div class="irenovation__price">¥950/㎡</div>
+                        <div class="p-price__content">
+                            <div class="p-price__explain irenovation__explain">
+                                <div class="p-price__subtitle irenovation__subtitle">【床】内装工事費</div>
+                                <div class="price__list">
+                                    <div class="p-price__price irenovation__price-title">クッションフロア</div>
+                                    <div class="irenovation__price">¥3,000/㎡</div>
+                                </div>
+                                <div class="price__list">
+                                    <div class="p-price__price irenovation__price-title">フロアタイル</div>
+                                    <div class="irenovation__price">¥4,500/㎡</div>
+                                </div>
+                                <div class="price__list">
+                                    <div class="p-price__price irenovation__price-title">タイルカーペット</div>
+                                    <div class="irenovation__price">¥2,500/㎡</div>
+                                </div>
+                                <div class="price__list">
+                                    <div class="p-price__price irenovation__price-title">長尺シート</div>
+                                    <div class="irenovation__price">¥3,500/㎡</div>
+                                </div>
+                                <div class="price__list">
+                                    <div class="p-price__price irenovation__price-title">フローリング</div>
+                                    <div class="irenovation__price">¥3,000/㎡</div>
+                                </div>
+                                <div class="price__list">
+                                    <div class="p-price__price irenovation__price-title">フローリング捲り</div>
+                                    <div class="irenovation__price">¥2,100/㎡</div>
+                                </div>
+                                <div class="price__list">
+                                    <div class="p-price__price irenovation__price-title">カーペット捲り</div>
+                                    <div class="irenovation__price">¥1,500/㎡</div>
+                                </div>
                             </div>
-                            <div class="price__list">
-                                <div class="p-price__price irenovation__price-title">千番台</div>
-                                <div class="irenovation__price">¥1,200/㎡</div>
-                            </div>
-                            <div class="price__list">
-                                <div class="p-price__price irenovation__price-title">エコカラット</div>
-                                <div class="irenovation__price">¥9,600~/㎡</div>
+                            <img class="p-price__img irenovation__img" src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/price/price-floor.jpg'); ?>" alt="">
+                            <div class="p-price__btn--center">
+                                <!-- <a href="/business.html#renovation-section" class="c-btn">詳細へ</a> -->
                             </div>
                         </div>
-                        <img class="p-price__img irenovation__img" src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/common/business_renovation.jpeg'); ?>" alt="">
-                        <div class="p-price__btn--center">
-                            <!-- <a href="/business.html#renovation-section" class="c-btn">詳細へ</a> -->
-                        </div>
-                    </div>
 
-                    <div class="p-price__content">
-                        <div class="p-price__explain irenovation__explain">
-                            <div class="p-price__subtitle irenovation__subtitle">【床】内装工事費</div>
-                            <div class="price__list">
-                                <div class="p-price__price irenovation__price-title">クッションフロア</div>
-                                <div class="irenovation__price">¥3,000/㎡</div>
+                        <div class="p-price__content">
+                            <div class="p-price__explain irenovation__explain">
+                                <div class="p-price__subtitle irenovation__subtitle">エアコン工事費</div>
+                                <div class="price__list">
+                                    <div class="p-price__price irenovation__price-title">壁掛け</div>
+                                    <div class="irenovation__price">¥20,000</div>
+                                </div>
+                                <div class="price__list">
+                                    <div class="p-price__price irenovation__price-title">業務用</div>
+                                    <div class="irenovation__price">¥80,000</div>
+                                </div>
+                                <div class="price__list">
+                                    <div class="p-price__price irenovation__price-title">化粧カバー</div>
+                                    <div class="irenovation__price">¥4,000/1m</div>
+                                </div>
                             </div>
-                            <div class="price__list">
-                                <div class="p-price__price irenovation__price-title">フロアタイル</div>
-                                <div class="irenovation__price">¥4,500/㎡</div>
-                            </div>
-                            <div class="price__list">
-                                <div class="p-price__price irenovation__price-title">タイルカーペット</div>
-                                <div class="irenovation__price">¥2,500/㎡</div>
-                            </div>
-                            <div class="price__list">
-                                <div class="p-price__price irenovation__price-title">長尺シート</div>
-                                <div class="irenovation__price">¥3,500/㎡</div>
-                            </div>
-                            <div class="price__list">
-                                <div class="p-price__price irenovation__price-title">フローリング</div>
-                                <div class="irenovation__price">¥3,000/㎡</div>
-                            </div>
-                            <div class="price__list">
-                                <div class="p-price__price irenovation__price-title">フローリング捲り</div>
-                                <div class="irenovation__price">¥2,100/㎡</div>
-                            </div>
-                            <div class="price__list">
-                                <div class="p-price__price irenovation__price-title">カーペット捲り</div>
-                                <div class="irenovation__price">¥1,500/㎡</div>
+                            <img class="p-price__img irenovation__img" src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/price/price-ac.jpg'); ?>" alt="">
+                            <div class="p-price__btn--center">
+                                <!-- <a href="/business.html#renovation-section" class="c-btn">詳細へ</a> -->
                             </div>
                         </div>
-                        <img class="p-price__img irenovation__img" src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/common/business_renovation.jpeg'); ?>" alt="">
-                        <div class="p-price__btn--center">
-                            <!-- <a href="/business.html#renovation-section" class="c-btn">詳細へ</a> -->
-                        </div>
-                    </div>
-
-                    <div class="p-price__content">
-                        <div class="p-price__explain irenovation__explain">
-                            <div class="p-price__subtitle irenovation__subtitle">エアコン工事費</div>
-                            <div class="price__list">
-                                <div class="p-price__price irenovation__price-title">壁掛け</div>
-                                <div class="irenovation__price">¥20,000</div>
-                            </div>
-                            <div class="price__list">
-                                <div class="p-price__price irenovation__price-title">業務用</div>
-                                <div class="irenovation__price">¥80,000</div>
-                            </div>
-                            <div class="price__list">
-                                <div class="p-price__price irenovation__price-title">化粧カバー</div>
-                                <div class="irenovation__price">¥4,000/1m</div>
-                            </div>
-                        </div>
-                        <img class="p-price__img irenovation__img" src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/common/business_renovation.jpeg'); ?>" alt="">
-                        <div class="p-price__btn--center">
-                            <!-- <a href="/business.html#renovation-section" class="c-btn">詳細へ</a> -->
-                        </div>
-                    </div>
 
                     <div class="p-price__btn--center-W">
                         <a href="/business.html#renovation-section" class="c-btn irenovation__btn">アイリノベ(i renovation)一覧へ<span class="c-arrow"></span></a>
