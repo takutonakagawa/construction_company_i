@@ -14,6 +14,16 @@
     &__btns{
         display: flex;
         gap: 40px;
+        @include xs{
+            display: block;
+        }
+        .c-btn{
+            &:first-of-type{
+                @include xs{
+                    margin-bottom: 20px;
+                }
+            }
+        }
     }
     &__content{
         margin-top: 40px;

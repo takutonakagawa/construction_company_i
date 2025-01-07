@@ -16,14 +16,25 @@
         transform: skew(-45deg);
         left: -20px;
         top: -40px;
+        @include xs{
+            height: 40px;
+            left: -10px;
+            top: -25px;
+        }
     }
     .ja{
         font-size: 20px;
         margin-bottom: 5px;
+        @include xs{
+            font-size: 18px;
+        }
     }
     .en{
         font-size: 32px;
         font-weight: bold;
+        @include xs{
+            font-size: 24px;
+        }
     }
     .icon{
         position: absolute;

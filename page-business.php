@@ -59,7 +59,7 @@ Template Name: Business Page
                                 （新築、改修等の給排水衛生設備・空調設備・換気設備・防災設備・プラント設備を設計から申請、施工を一括管理）</p>
                         </div>
                         <div class="business__btn--p01">
-                            <a href="/archive.html" class="c-btn">実績一覧へ<span class="c-arrow"></span></a>
+                            <a href="<?php echo esc_url(home_url('/equipment/')); ?>" class="c-btn">設備工事一覧へ<span class="c-arrow"></span></a>
                         </div>
                         <div class="business__design-block--construction_blue-p01"></div>
                         <div class="business__design-block--construction_skyblue-p01"></div>
@@ -80,7 +80,7 @@ Template Name: Business Page
                         </div>
                         <div class="business__btn--p02">
                             <a href="https://i--renovation.com/" class="c-btn c-btn__2lines business__btn--detail" >アイリノベ<br>(i renovation)特設サイトへ<span class="c-arrow"></span></a>
-                            <a href="/archive.html" class="c-btn">実績一覧へ<span class="c-arrow"></span></a>
+                            <a href="<?php echo esc_url(home_url('/irenovation/')); ?>" class="c-btn">アイリノベ一覧へ<span class="c-arrow"></span></a>
                         </div>
                         <div class="business__design-block--construction_blue-p02"></div>
                         <div class="business__design-block--construction_skyblue-p02"></div>
@@ -95,7 +95,7 @@ Template Name: Business Page
                                 ライフスタイルに合わせた空間のご提案をさせていただきます。</p>
                         </div>
                         <div class="business__btn--p03">
-                            <a href="/archive.html" class="c-btn">実績一覧へ<span class="c-arrow"></span></a>
+                            <a href="<?php echo esc_url(home_url('/estate/')); ?>" class="c-btn">不動産事業一覧へ<span class="c-arrow"></span></a>
                         </div>
                         <div class="business__design-block--construction_blue-p03"></div>
                         <div class="business__design-block--construction_skyblue-p03"></div>
