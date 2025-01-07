@@ -9,11 +9,21 @@
 
 .p-lead-sec{
     padding: 65px 50px;
-    
+    @include xs{
+        padding: 40px 20px;
+    }
     &__content{
         display: flex;
         gap: 40px;
         justify-content: space-between;
         align-items: end;
+        @include md{
+            display: block;
+        }
+    }
+    &__btns{
+        @include md{
+            margin-top: 20px;
+        }
     }
 }

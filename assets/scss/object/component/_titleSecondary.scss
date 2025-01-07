@@ -8,6 +8,9 @@
         font-weight: bold;
         color: $main-blue-2;
         opacity: 45%;
+        @include xs{
+            font-size: 24px;
+        }
     }
     .ja {
         position: absolute;
@@ -16,6 +19,9 @@
         transform: translate(-50%, -50%);
         font-size: 24px;
         color: #333;
+        @include xs{
+            font-size: 20px;
+        }
         &::after {
             content: '';
             position: absolute;

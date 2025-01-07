@@ -212,13 +212,30 @@ img {
   left: -20px;
   top: -40px;
 }
+@media only screen and (max-width: 767px) {
+  .c-title::after {
+    height: 40px;
+    left: -10px;
+    top: -25px;
+  }
+}
 .c-title .ja {
   font-size: 20px;
   margin-bottom: 5px;
 }
+@media only screen and (max-width: 767px) {
+  .c-title .ja {
+    font-size: 18px;
+  }
+}
 .c-title .en {
   font-size: 32px;
   font-weight: bold;
+}
+@media only screen and (max-width: 767px) {
+  .c-title .en {
+    font-size: 24px;
+  }
 }
 .c-title .icon {
   position: absolute;
@@ -240,6 +257,14 @@ img {
   font-weight: bold;
   font-size: 110%;
   background: rgba(255, 255, 255, 0.7);
+}
+@media only screen and (max-width: 767px) {
+  .c-btn {
+    width: 100%;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 .c-btn::after {
   content: url("../img/common/btn-arrow.png");
@@ -264,6 +289,11 @@ img {
   color: #4CB6E9;
   opacity: 45%;
 }
+@media only screen and (max-width: 767px) {
+  .c-title-secondary .en {
+    font-size: 24px;
+  }
+}
 .c-title-secondary .ja {
   position: absolute;
   top: 105%;
@@ -271,6 +301,11 @@ img {
   transform: translate(-50%, -50%);
   font-size: 24px;
   color: #333;
+}
+@media only screen and (max-width: 767px) {
+  .c-title-secondary .ja {
+    font-size: 20px;
+  }
 }
 .c-title-secondary .ja::after {
   content: "";
@@ -438,11 +473,26 @@ img {
 .p-lead-sec {
   padding: 65px 50px;
 }
+@media only screen and (max-width: 767px) {
+  .p-lead-sec {
+    padding: 40px 20px;
+  }
+}
 .p-lead-sec__content {
   display: flex;
   gap: 40px;
   justify-content: space-between;
   align-items: end;
+}
+@media only screen and (max-width: 1000px) {
+  .p-lead-sec__content {
+    display: block;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .p-lead-sec__btns {
+    margin-top: 20px;
+  }
 }
 
 .p-recruit {
@@ -566,6 +616,11 @@ img {
 .p-line .c-title {
   margin-bottom: 60px;
 }
+@media only screen and (max-width: 1000px) {
+  .p-line .c-title {
+    margin-bottom: 40px;
+  }
+}
 .p-line .icon {
   top: 5px;
   left: 70px;
@@ -592,6 +647,16 @@ img {
 .p-contact__btns {
   display: flex;
   gap: 40px;
+}
+@media only screen and (max-width: 767px) {
+  .p-contact__btns {
+    display: block;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .p-contact__btns .c-btn:first-of-type {
+    margin-bottom: 20px;
+  }
 }
 .p-contact__content {
   margin-top: 40px;

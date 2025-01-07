@@ -9,6 +9,9 @@
     position: relative;
     .c-title{
         margin-bottom: 60px;
+        @include md{
+            margin-bottom: 40px;
+        }
     }
     .icon{
         top: 5px;

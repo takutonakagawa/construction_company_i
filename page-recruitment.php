@@ -22,7 +22,7 @@
 
     <!-- header / -->
 
-    <main class="l-main" id="recruitment">
+    <main class="l-main" id="recruitment-page">
         <!-- mv -->
         <section class="p-mv">
             <img class="p-mv__main" src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/recruitment/mv-recruitment.png'); ?>" alt="">

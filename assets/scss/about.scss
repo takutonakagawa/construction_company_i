@@ -13,6 +13,9 @@
         margin-top: 100px;
         padding-top: 180px;
         position: relative;
+        @include xs{
+            padding-top: 0;
+        }
         .line__img{
             position: absolute;
             z-index: -10;
@@ -22,8 +25,10 @@
 
         &__inner{
             position: relative;
-            
             padding: 0 40px;
+            @include lg{
+                padding: 0;
+            }
             .c-title{
                 // margin-top: 300px;
             }
@@ -32,6 +37,12 @@
                 display: flex;
                 justify-content: space-between;
                 position: relative;
+                @include xs{
+                    // display: block;
+                    flex-direction: column-reverse;
+                    position: static;
+                    margin-top: 20px;
+                }
             }
             .ceo-img__inner{
                 width: 600px;
@@ -39,6 +50,13 @@
                 right: 0;
                 top: -140px;
                 z-index: -1;
+                @include md{
+                    width: 480px;
+                }
+                @include xs{
+                    width: 100%;
+                    position: static;
+                }
                 .ceo__img{
               
                 }
@@ -46,6 +64,9 @@
             .ceo-message__inner{
                 position: relative;
                 width: 70%;
+                @include xs{
+                    width: 100%;
+                }
                 .ceo__message{
                     padding: 20px;
                     z-index: 100;
@@ -73,6 +94,9 @@
 
 #philosophy{
     padding-top: 150px;
+    @include xs{
+        padding-top: 0;
+    }
 }
 .philosophy{
    margin-top: 100px;
@@ -87,11 +111,26 @@
                 z-index: -1;
                 width: calc(1280px + ((100vw - 1280px) / 2));
                 @include lg{
-                    background-color: aqua;
+                    
+                }
+                @include xs{
+                    height: 450px;
                 }
                 &--reverse{
                     background-color: $main-blue-2;
                     margin-left: calc(-1 * ((100vw - 1280px) / 2));
+                    @include lg{
+                        margin-left: calc(-1 * ((100vw - 1000px) / 2)) ;
+                        width: calc(1000px + ((100vw - 1000px) / 2));
+                    }
+                    @include md{
+                        margin-left: calc(-1 * ((100vw - 767px) / 2)) ;
+                        width: calc(767px + ((100vw - 767px) / 2));
+                    }
+                    @include xs{
+                        margin-left: calc(-1 * ((100vw - 100%) / 2)) ;
+                        width: calc(100% + ((100vw - 100%) / 2));
+                    }
                 }
             }
             .whiteblock{
@@ -102,23 +141,18 @@
                 transform: translate(0, -50%);
                 left: 0px;
                 padding: 30px;
+                @include xs{
+                    padding: 15px;
+                }
             }
         &--left{
             position: absolute;
             top: 800px;
             left: 0%;
             .blueblock{
-                background-color: $main-blue-2;
-                width: 84vw;
-                height: 100%;
-                position: relative;
+
                 .whiteblock{
-                    width: 80vw;
-                    background-color: #ffffff;
-                    position: absolute;
-                    top: 14%;
-                    right: 0;
-                    padding-bottom: 130px;
+
                 }
             }
         }
@@ -130,13 +164,17 @@
             z-index: 1;
             font-weight: bold;
             position: absolute;
-
+            @include xs{
+              font-size: 18px;
+            }
             &--right{
                 transform:rotate(-90deg);
                 top: 46%;
-                // left: calc((100vw - 1280px) / 2);
                 left: -350px;
                 white-space: nowrap;
+                @include xs{
+                    display: none;
+                }
             }
             &--left{
                 color: $main-blue-1;
@@ -144,6 +182,9 @@
                 top: 48%;
                 right: -220px;
                 white-space: nowrap;
+                @include xs{
+                    display: none;
+                }
             }
         }
         .title__about{
@@ -157,11 +198,18 @@
                 font-size: 45px;
                 font-weight: bold;
                 margin-bottom: 20px;
+                @include xs{
+                    font-size: 24px;
+                    margin-bottom: 10px;
+                }
             }
             &__desc{
                 display: block;
                 font-size: 20px;
                 letter-spacing: 1.5;
+                @include xs{
+                    font-size: 16px;
+                }
                 span{
                     color: $main-blue-2;
                 }

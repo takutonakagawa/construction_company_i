@@ -44,7 +44,7 @@
                     下記より事業をお選びください
                 </p>
                 <ul class="category-list">
-                    <li class="category-item">
+                    <li class="category-item category-item--all">
                         <a href="<?php echo esc_url(home_url('/posts/')); ?>">ALL</a>
                     </li>
                     <li class="category-item">
@@ -56,7 +56,7 @@
                     <li class="category-item">
                         <a href="<?php echo esc_url(home_url('/estate/')); ?>">不動産事業</a>
                     </li>
-                    <li class="category-item">
+                    <li class="category-item category-item--other">
                         <a href="<?php echo esc_url(home_url('/other/')); ?>">その他</a>
                     </li>
                 </ul>

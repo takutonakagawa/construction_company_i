@@ -294,7 +294,8 @@
                     </li>
                 </ul>
             </div>
-
+            
+            <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/top/info_mark.png'); ?>" alt="" class="mark">
         </section>
         <!-- info / -->
         
