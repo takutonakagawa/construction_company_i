@@ -1,5 +1,12 @@
+@charset "utf-8";
+
+@import "./config";
+@import "./function";
+@import "./mixin";
+
+
 #recruitment{
-    padding-top: 150px;
+    // padding-top: 150px;
 }
 .recruitment {
     margin-top: 150px;
@@ -8,6 +15,9 @@
 
     &__inner {
         padding: 0 150px;
+        @include md{
+            padding: 0;
+        }
     }
 
     &__content {
@@ -18,21 +28,29 @@
             display: flex;
             flex-wrap: wrap;
             width: 100%;
-
+            line-height: 1.8;
             &-term {
-                width: 20%;
-                padding: 23px 0 23px 20px;
-                margin-bottom: 10px;
+                width: 175px;
+                padding: 23px 20px;
                 font-weight: bold;
                 border-bottom: solid 1.5px #4CB6E9;
+                @include xs{
+                    font-size: 16px;
+                    padding: 10px;
+                    width: 120px;
+                }
             }
 
             &-desc {
-                width: 80%;
+                width: calc(100% - 175px);
                 line-height: 1.8;
-                padding: 23px 0 23px 45px;
-                margin-bottom: 10px;
+                padding: 23px 20px;
                 border-bottom: solid 1px #d6d6d6;
+                @include xs{
+                    font-size: 16px;
+                    padding: 10px;
+                    width: calc(100% - 120px);
+                }
             }
         }
     }
@@ -42,7 +60,11 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 100px;
+        gap: 60px;
+        @include xs{
+            flex-direction: column;
+            gap: 40px;
+        }
     }
 }
 

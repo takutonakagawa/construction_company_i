@@ -214,9 +214,9 @@ img {
 }
 @media only screen and (max-width: 767px) {
   .c-title::after {
-    height: 40px;
-    left: -10px;
-    top: -25px;
+    height: 25px;
+    left: -2px;
+    top: -14px;
   }
 }
 .c-title .ja {

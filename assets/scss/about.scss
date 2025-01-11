@@ -4,6 +4,9 @@
 @import "./function";
 @import "./mixin";
   
+main{
+    overflow-x: hidden;
+}
 
   #about{
     
@@ -229,82 +232,179 @@
         padding-top: 100px;
     }
     .logo{
+        overflow: hidden;
         .logo__inner{
             padding-top: 100px;
             padding: 0 100px;
             margin-top: 100px;
-            margin-bottom: 100px;
+            @include lg{
+                padding: 0;
+            }
             .p-about-logo__title{
                 margin-bottom: 150px;
+                @include md{
+                    margin-bottom: 60px;
+                }
             }
             .p-about-logo__content{
                 display: flex;
+                align-items: center;
                 margin-bottom: 120px;
                 padding-left: 100px;
+                @include lg{
+                    padding-left: 0;
+                }
+                @include md{
+                    display: block;
+                }
                 .p-about-logo__leftside{
                     width: 45%;
+                    @include md{
+                        margin-bottom: 60px;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+                    @include xs{
+                        width: calc(100% - 30px);
+                        max-width: 450px;
+                    }
                     .block__logo{
-                        height: 350px;
                         width: 350px;
+                        aspect-ratio: 1 /1 ;
                         background-color: rgba(255, 255, 255, 0.9);
                         margin: 0 auto;
                         display: flex;
                         position: relative;
                         box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+                        @media screen and (max-width: 1180px) {
+                            width: 300px;
+                        }
+                        @include md{
+
+                        }
+                        @include xs{
+                            width: 100%;
+                        }
                         .block__skyblue{
                             position: absolute;
-                            height: 350px;
+                            aspect-ratio: 1 /1 ;
                             width: 350px;
                             background-color: $main-blue-2;
                             top: -45px;
                             z-index: -1;
                             left: -45px;
+                            @media screen and (max-width: 1180px) {
+                                width: 300px;
+                            }
+                            @include md{
+                              top: -20px;
+                              left: -20px;
+                            }
+                            @include xs{
+                                width: 100%;
+                            }
                         }
                         .block__blue{
                             position: absolute;
-                            height: 350px;
+                            aspect-ratio: 1 /1 ;
                             width: 350px;
                             background-color: $main-blue-1;
                             top: 45px;
                             z-index: -2;
                             left: 45px;
+                            @media screen and (max-width: 1180px) {
+                                width: 300px;
+                            }
+                            @include md{
+                                top: 20px;
+                                left: 20px;
+                            }
+                            @include xs{
+                                width: 100%;
+                            }
                         }
                     }
                 }
                 .p-about-logo__rightside{
                     width: 100%;
                     position: relative;
+                    @include lg{
+                        width: 55%;
+                    }
+                    @include md{
+                        width: 100%;
+                    }
                     .logo__desc{
-                        width: 110%;
-                        position: absolute;
-                        top: -21%;
-                        left: 17%;
+
+                        @include lg{
+
+                        }
                         .block__skyblue{
                             position: relative;
-                            width: 60vw;
+                            width: calc(100% + ((100vw - 1280px) / 2));
                             height: 60px;
-                            background: linear-gradient(145deg, transparent 10%, $main-blue-2 10%);
+                            background: linear-gradient(145deg, transparent 10%, $main-blue-1 10%);
                             margin-bottom: 70px;
+                            margin-left: calc((100vw - 1280px) / 2);
+                            @media screen and (max-width: 1540px) {
+                                margin-left: calc((100vw - 1080px) / 2);
+                                background: linear-gradient(145deg, transparent 11%, $main-blue-1 10%);
+                            }
+                            @include lg{
+                                width: calc(100% + ((100vw - 800px) / 2));
+                            }
+                            @include md{
+                                width: calc(100% + ((100vw - 100%) / 2));
+                                margin-left: calc((100vw - 100%) / 2);
+                            }
+                            @include xs{
+                                background: $main-blue-1;
+                                margin-left: 0;
+                                height: 40px;
+                                width: 100%;
+                                margin-bottom: 30px;
+                            }
                             .block__blue{
                                 position: absolute;
                                 width: 100%;
                                 height: 60px;
-                                background: linear-gradient(145deg, transparent 10%, $main-blue-1 10%);
-                                top: 40%;
-                                left: 5%;
+                                background: linear-gradient(145deg, transparent 10%, $main-blue-2 10%);
+                                top: 18%;
+                                left: 1%;
                                 z-index: -1;
+                                @media screen and (max-width: 1540px) {
+                                    background: linear-gradient(145deg, transparent 11%, $main-blue-2 10%);
+                                }
+                                @include xs{
+                                    background: $main-blue-2;
+                                    left: 10px;
+                                    top: 10px;
+                                    height: 40px;
+                                }
                             }
                             p{
                                 color: #ffffff;
-                                font-size: 160%;
-                                padding-top: 5px;
-                                padding-left: 11%;
+                                font-size: 24px;
+                                padding-top: 10px;
+                                padding-left: 12%;
                                 letter-spacing: 1.5px;
+                                @include lg{
+                                    font-size: 20px;
+                                }
+                                @include xs{
+                                    font-size: 14px;
+                                    padding-left: 20px;
+                                    display: block;
+                                    text-align: center;
+                                }
                                 span{
                                     background-color: $main-blue-1;
                                     color: #ffffff;
                                     font-size: 32px;
                                     padding: 4px 4px;
+                                    @include xs{
+                                        font-size: 18px;
+                                    }
                                 }
                             }
                         }
@@ -321,15 +421,20 @@
     }
     
     #company{
-        padding-top: 150px;
+    
     }
     .company{
         margin-top: 100px;
         padding: 0 100px;
-        overflow-x: hidden;
+        @include xs{
+            padding: 0 20px;
+        }
         .company__inner{
             .p-about-company__title{
                 margin-bottom: 100px;
+                @include md{
+                    margin-bottom: 40px;
+                }
             }
             .p-recruitment__content{
                 padding: 60px;
@@ -339,28 +444,44 @@
                 background-color: #ffffff;
                 position: relative;
                 margin-bottom: 100px;
+                @include md{
+                    width: 100%;
+                    padding: 0px;
+                }
                 .p-recruitment__list{
                     display: flex;
                     flex-wrap: wrap;
                     width: 100%;
                     .p-recruitment__term{
-                        width: 20%;
-                        padding-left: 20px;
-                        padding-top: 23px;
-                        padding-bottom: 23px;
-                        margin-bottom: 10px;
+                        width: 175px;
+                        padding: 23px 20px;
                         font-weight: bold;
                         border-bottom: solid 1.5px $main-blue-2;
+                        min-width: 150px;
+                        @include xs{
+                            font-size: 14px;
+                            width: 115px;
+                            min-width: 115px;
+                            letter-spacing: 1px;
+                            padding: 10px;
+                        }
+
                     }
                     .p-recruitment__desc{
-                        width: 80%;
+                        width: calc(100% - 175px);
                         line-height: 1.8;
-                        padding-top: 23px;
-                        padding-left: 45px;
-                        padding-bottom: 23px;
-                        margin-bottom: 10px;
+                        padding: 23px 20px;
                         border-bottom: solid 1px #d6d6d6;
+                        @include xs{
+                            font-size: 14px;
+                            width: calc(100% - 115px);
+                            padding: 10px;
+                        }
                     }
+                }
+                .p-recruitment__term{
+                    letter-spacing: 2px;
+                    line-height: 1.8;
                 }
                 .block__blue{
                     position: absolute;
@@ -370,6 +491,9 @@
                     top: -4.5%;
                     left: -50%;
                     z-index: -2;
+                    @include md{
+                        display: none;
+                    }
                 }
                 .block__skyblue{
                     position: absolute;
@@ -379,6 +503,9 @@
                     top: -8%;
                     left: 6%;
                     z-index: -1;
+                    @include md{
+                        display: none;
+                    }
                 }
             }
         }
@@ -389,18 +516,27 @@
     padding-top: 150px;
 }
 .access{
-    padding: 0 100px;
     &__inner{
         .access__contents{
             display: flex;
             margin-top: 30px;
+            @include xs{
+                display: block;
+            }
             &--desc{
                 width: 50%;
+                @include xs{
+                    width: 100%;
+                }
                 dl{
                     display: flex;
                     flex-wrap: wrap;
                     width: 95%;
                     margin-bottom: 15px;
+                    line-height: 1.8;
+                    @include xs{
+                        width: 100%;
+                    }
                     dt{
                         width: 30%;
                         font-weight: bold;
@@ -412,6 +548,16 @@
                         padding: 10px;
                         border-bottom: solid 1px #d6d6d6;
                     }
+                }
+            }
+            &--map{
+                width: 50%;
+                @include xs{
+                    width: 100%;
+                }
+                >iframe{
+                    width: 100%;
+                    aspect-ratio: 4 / 3;
                 }
             }
         } 
