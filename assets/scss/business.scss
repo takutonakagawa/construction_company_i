@@ -1,9 +1,30 @@
+@charset "utf-8";
+
+@import "./config";
+@import "./function";
+@import "./mixin";
+
 .business{
     margin-top: 250px;
+    @include lg{
+        margin-top: 120px;
+    }
+    @include xs{
+        margin-top: 100px;
+    }
     .business__inner{
         padding: 0 150px;
+        @include md{
+            padding: 0 40px;
+        }
+        @include xs{
+            padding: 0 20px;
+        }
         .p-business__contents{
             padding-top: 80px;
+            @include xs{
+                padding-top: 40px;
+            }
             .p-business__content{
                 margin-top: 80px;
                 position: relative;
@@ -15,12 +36,19 @@
                     padding-bottom: 7px;
                     padding-left: 5px;
                     margin-bottom: 50px;
+                    @include lg{
+                        width: 65%;
+                    }
+                    @include md{
+                        width: 65%;
+                    }
                 }
             }
             .p-business__content--visual{
                 width: 1000px;
                 height: 400px;
                 object-fit: cover;
+
             }
             #renovation-section{
                 padding-top: 150px;
@@ -40,16 +68,40 @@
                 padding: 15px;
                 background-color: rgba($color: #ffffff, $alpha: 0.7);
                 font-weight: bold;
+                @include lg{
+                    width: 70%;
+                }
+                @include md{
+                    width: 70%;
+                }
+                @include xs{
+                    width: 70%;
+                }
             }
             .business_desc--p01{
                 position: absolute;
                 top: 90%;
                 left: 57%;
+                @include lg{
+                    left: 45%;
+                }
+                @include md{
+                    left: 30%;
+                }
+                @include xs{
+                    left: 30%;
+                }
             }
             .business_desc--p02{
                 position: absolute;
                 top: 82%;
                 left: -8%;
+                @include xs{
+                    left: 0%;
+                }
+                @include md{
+                    left: 2%;
+                }
             }
             .business__design-block--construction_blue-p01{
                 position: absolute;
@@ -59,6 +111,12 @@
                 top: 80%;
                 left: -4%;
                 z-index: -1;
+                @include lg{
+                    left: -7%;
+                }
+                @include xs{
+                    left: -4%;
+                }
             }
             .business__design-block--construction_skyblue-p01{
                 position: absolute;
@@ -68,6 +126,17 @@
                 top: 7%;
                 left: 61%;
                 z-index: -1;
+                @include lg{
+                    left: 70%;
+                }
+                @include md{
+                    left: 60%;
+                    top: 12%;
+                }
+                @include xs{
+                    left: 58%;
+                    top: 10%;
+                }
             }.business__design-block--construction_blue-p02{
                 position: absolute;
                 background-color: #004982;
@@ -76,6 +145,18 @@
                 top: 3%;
                 left: 84%;
                 z-index: -1;
+                @include lg{
+                    top: 20%;
+                    left: 72%;
+                }
+                @include md{
+                    left: 65%;
+                    top: 32%;
+                }
+                @include xs{
+                    top: 33%;
+                    left: 60%;
+                }
             }
             .business__design-block--construction_skyblue-p02{
                 position: absolute;
@@ -85,6 +166,16 @@
                 top: 37%;
                 left: 13%;
                 z-index: -1;
+                @include lg{
+                    left: -6%;
+                }
+                @include md{
+                    top: 50%;
+                }
+                @include xs{
+                    left: -3%;
+                    top: 50%;
+                }
             }
             .business__design-block--construction_blue-p03{
                 position: absolute;
@@ -94,6 +185,12 @@
                 top: 30%;
                 left: 77%;
                 z-index: -1;
+                @include lg{
+                    left: 85%;
+                }
+                @include xs{
+                    left: 73%;
+                }
             }
             .business__design-block--construction_skyblue-p03{
                 position: absolute;
@@ -103,11 +200,31 @@
                 top: 55%;
                 left: -8%;
                 z-index: -1;
+                @include lg{
+                    top: 60%;
+                }
+                @include xs{
+                    left: -4%;
+                    top: 60%;
+                }
             }
             .business__btn--p01{
                 position: absolute;
                 left: 82.2%;
                 top: 134%;
+                @include lg{
+                    left: 80%;
+                    top: 138%;
+                }
+                @include md{
+                    left: 64.4%;
+                    top: 142%;
+                }
+                @include xs{
+                    width: 30%;
+                    left: 70%;
+                    top: 142%;
+                }
             }
             .business__btn--p02{
                 position: absolute;
@@ -116,14 +233,48 @@
                 top: 111.2%;
                 gap: 50px;
                 align-items: center;
+                @include lg{
+                    top: 118%;
+                    left: 17%;
+                }
+                @include md{
+                    top: 126%;
+                    left: 15.3%;
+                }
+                @include xs{
+                    top: 120%;
+                    left: 6%;
+                }
                 .business__btn--detail{
                     width: 280px;
+                    @include lg{
+                        width: 380px;
+                    }
+                    @include md{
+                        width: 280px;
+                    }
+                    @include xs{
+                        width: 800px
+                    }
                 }
             }
             .business__btn--p03{
                 position: absolute;
                 left: 82.2%;
                 top: 117%;
+                @include lg{
+                    top: 109%;
+                    left: 80%;
+                }
+                @include md{
+                    top: 112%;
+                    left: 64.4%;
+                }
+                @include xs{
+                    width: 30%;
+                    left: 70%;
+                    top: 112%;
+                }
             }
         }
     }
