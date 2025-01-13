@@ -17,7 +17,7 @@
   
     #center-message {
       position: absolute;
-      top: 45%;
+      top: 30%;
       right: 0;
       font-size: 3rem;
       font-weight: bold;
@@ -27,7 +27,6 @@
       background: rgba(255, 255, 255, 0.6);
       padding: 30px;
       letter-spacing: 0.5rem;
-  
       .skyblue {
         color: #4CB6E9;
         font-size: 4rem;
@@ -59,7 +58,7 @@
       margin-right: 5%;
       z-index: 10002;
       cursor: pointer;
-  
+      width: 25%;
       &::after {
         position: absolute;
         top: 14px;
