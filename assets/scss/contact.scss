@@ -21,6 +21,14 @@
     &__inner {
         max-width: 800px;
         margin: 0 auto;
+        @include md{
+            max-width: 700px;
+            padding:  0 20px;
+        }
+        @include xs{
+            max-width: 550px;
+            padding: 0 10px;
+        }
     }
 
     &__form {
