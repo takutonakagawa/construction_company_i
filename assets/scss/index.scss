@@ -9,16 +9,32 @@
     .about{
         margin-bottom: 250px;
         padding-top: 1px;
+        @include md{
+            margin: 0 30px;
+        }
+        @include xs{
+            margin: 0 10px;
+        }
         .about__inner{
             padding: 0 100px;
             position: relative;
+            @include md{
+                padding: 0 0px;
+            }
             .p-index__about-title{
                 margin-top: 250px;
+                @include lg{
+                    margin-top: 150px;
+                }
             }
             .p-index__about-catch{
                 margin-top: 50px;
                 font-weight: bold;
                 font-size: 40px;
+                @include xs{
+                    padding-left: 30px;
+                    padding-top: 100px;
+                }
             }
             .p-index__about-desc{
                 margin-top: 50px;
@@ -26,6 +42,10 @@
                 width: 70%;
                 background: rgba(255, 255, 255, 0.7);
                 padding: 10px;
+                @include xs{
+                    margin-top: 240px;
+                    width: 100%;
+                }
             }
             .index__about-img{
                 position: absolute;
@@ -38,9 +58,24 @@
                 object-fit: cover;
                 opacity: 0.8;
                 padding: 30px;
+                @include xs{
+                    width: 100%;
+                    right: 0;
+                    padding: 0;
+                    height: 400px;
+                    top: 10%;
+                }
             }
             .p-index__about-btn{
                 float: right;
+                @include lg{
+                    margin-top: 100px;
+                }
+                @include xs{
+                    margin-top: 200px;
+                    width: 100%;
+                    margin-top: 20px;
+                }
             }
         }
     }
@@ -49,18 +84,38 @@
     .business{
         padding-top: 150px;
         position: relative;
+        @include md{
+            margin-top: 200px;
+            margin-right: 30px;
+            margin-left: 30px;
+        }
+        @include xs{
+            margin: 0 10px;
+        }
         &__container{
             display: flex;
             margin-left: auto;
             margin-right: auto;
+            @include xs{
+                width: 100%;
+                display: block;
+                position: relative;
+            }
         }
         .business__inner{
             padding: 0 100px;
+            @include md{
+                padding: 0 0px;
+            }
             .p-index__business-imgs{
                 width: 850px;
                 height: 500px;
                 position: relative;
                 z-index: -1;
+                @include xs{
+                    margin-top: 400px;
+                    width: 120%;
+                }
                 .block__title{
                     z-index: 3;
                     position: absolute;
@@ -68,13 +123,35 @@
                     left: 42%;
                     top: -10px;
                     color: #ffffff;
+                    @include lg{
+                        font-size: 15px;
+                    }
+                    @include md{
+                        font-size: 13px;
+                    }
+                    @include xs{
+                        left: 46%;
+                    }
                     &--property{
                         top: 459px;
                         left: -5%;
+                        @include md{
+                            left: 4%;
+                        }
+                        @include xs{
+                            top: 461px;
+                            left: 11%;
+                        }
                     }
                     &--renovation{
                         top: 459px;
                         left: 62%;
+                        @include lg{
+                            top:  461px;
+                        }
+                        @include xs{
+                            left: 58%;
+                        }
                     }
                 }
                 .block__blue{
@@ -87,14 +164,28 @@
                     left: 40%;
                     top: -25px;
                     transform: skew(-30deg);
+                    @include xs{
+                        width: 20%;
+                        left: 44%;
+                    }
                     &--property{
                         left: -8%;
                         top: 445px;
+                        @include md{
+                            left: 1%;
+                        }
+                        @include xs{
+                            left: 9%;
+                        }
                     }
                     &--renovation{
                         left: 60%;
                         top: 445px;
                         width: 34%;
+                        @include xs{
+                            width: 25%;
+                            left: 56%;
+                        }
                     }
                 }
                 .block__skyblue{
@@ -106,14 +197,28 @@
                     left: 37%;
                     top: -15px;
                     transform: skew(-30deg);
+                    @include xs{
+                        width: 20%;
+                        left: 42%;
+                    }
                     &--property{
                         left: -11%;
                         top: 456px;
+                        @include md{
+                            left: -2%;
+                        }
+                        @include xs{
+                            left: 7%;
+                        }
                     }
                     &--renovation{
                         left: 57%;
                         top: 456px;
                         width: 34%;
+                        @include xs{
+                            width: 25%;
+                            left: 54%;
+                        }
                     }
                 }
                 .index__about-img{
@@ -124,14 +229,26 @@
                     position: absolute;
                     &--construction{
                         left: 20%;
+                        @include md{
+                            left: 22%;
+                        }
+                        @include xs{
+                            left: 30%;
+                        }
                     }
                     &--property{
                         left: -4.8%;
                         top: 300px;
+                        @include xs{
+                            left: 8%;
+                        }
                     }
                     &--renovation{
                         left: 44.7%;
                         top: 300px;
+                        @include xs{
+                            left: 51%;
+                        }
                     }
                 }
                 .index__about-message{
@@ -139,31 +256,74 @@
                     font-size: 18px;
                     top: 285px;
                     left: 27.5%;
+                    @include lg{
+                        top: 250px;
+                    }
+                    @include md{
+
+                    }
+                    @include xs{
+                        top: 255px;
+                        left: 36%;
+                    }
                 }
                 .business__mark{
                     position: absolute;
                     width: 15%;
                     z-index: 100;
+                    @include lg{
+                        display: none;
+                    }
+                    @include md{
+                        display: none;
+                    }
+                    @include xs{
+                        display: none;
+                    }
                     &--left{
                         top: 31.5%;
                         left: 12%;
                         transform: rotate(33deg);
+                        @include lg{
+                            left: 23.5%;
+                            top: 35.5%;
+                        }
                     }
                     &--center{
                         top: 65%;
                         left: 27.6%;
                         transform: rotate(90deg);
+                        @include lg{
+                            left: 28.5%;
+                            top: 66.5%;
+                        }
+                        @include xs{
+                            left: 36.5%;
+                        }
                     }
                     &--right{
                         top: 31.5%;
                         left: 42.5%;
                         transform: rotate(-33deg);
+                        @include lg{
+                            top: 36.5%;
+                            left: 48%;
+                        }
+                        @include xs{
+                            top: 35.5%;
+                            left: 50%;
+                        }
                     }
                 }
             }
             .p-index__business-content{
                 // width: 55%;
                 width: 500px;
+                @include xs{
+                    width: 100%;
+                    position: absolute;
+                    top: -65%;
+                }
                 .p-index__business-desc{
                     margin-top: 30px;
                     font-size: 20px;
@@ -172,6 +332,10 @@
                 .p-index__business-btn{
                     margin-top: 50px;
                     float: right;
+                    @include xs{
+                        width: 100%;
+                        margin-top: 650px;
+                    }
                 }
             }
             .mark-text{
@@ -189,8 +353,17 @@
         padding-top: 150px;
         position: relative;
         margin-bottom: 150px;
+        @include md{
+            margin: 0 30px;
+        }
+        @include xs{
+            margin: 0 10px;
+        }
         .achivements__inner{
             padding: 0 100px;
+            @include md{
+                padding: 0 0;
+            }
             .p-index__achivements-catch{
                 margin-top: 40px;
                 width: 100%;
@@ -201,13 +374,24 @@
                 width: 100%;
                 margin-top: 50px;
                 height: 550px;
+                @include xs{
+                    margin-top: 30px;
+                }
                 &--float-off{
                     clear: both;
+                    @include xs{
+                        margin-top: 330px;
+                    }
                 }
+                
                 .p-index__achivements-list-right{
                     width: 47%;
                     float: right;
                     padding-top: 60px;
+                    @include xs{
+                        float: none;
+                        width: 100%;
+                    }
                     .p-index__achivements-category{
                         font-size: 32px;
                         border-bottom: 1px solid #004982;
@@ -221,6 +405,10 @@
                     .p-index__achivements-btn{
                         margin-top: 60px;
                         float: right;
+                        @include xs{
+                            margin-top: 550px;
+                            width: 45%;
+                        }
                     }
                 }
                 .p-index__achivements-list-left{
@@ -231,10 +419,16 @@
                         width: 180px;
                         height: 180px;
                         background-color: #4CB6E9;
+                        @include xs{
+                            top: 50px;
+                        }
                         &--1{
                             width: 360px;
                             height: 220px;
                             right: 0;
+                            @include xs{
+                                right: -90%;
+                            }
                         }
                     }
                     .block__blue{
@@ -244,10 +438,17 @@
                         width: 200px;
                         height: 200px;
                         background-color: #004982;
+                        @include xs{
+                            right: -90%;
+                            width: 240px;
+                        }
                         &--1{
                             left: 0;
                             height: 320px;
                             top: 200px;
+                            @include xs{
+                                left: 18%;
+                            }
                         }
                     }
                     .index__achivements-img{
@@ -259,6 +460,11 @@
                             z-index: 3;
                             top: 10px;
                             right: 3%;
+                            @include xs{
+                                width: 300px;
+                                height: 300px;
+                                right: -100%;
+                            }
                         }
                         // &--2{
                         //     width: 330px;
@@ -273,6 +479,12 @@
                             z-index: 1;
                             left: -5%;
                             top: 140px;
+                            @include xs{
+                                top: 90px;
+                                left: 15%;
+                                width: 450px;
+                                height: 400px;
+                            }
                         }
                         // &--4{
                         //     width: 260px;
@@ -287,6 +499,13 @@
                             left: 20%;
                             top: 260px;
                             z-index: 2;
+                            @include lg{
+                                left: 9%;
+                            }
+                            @include xs{
+                                top: 200px;
+                                left: 105%;
+                            }
                         }
                         &--6{
                             width: 450px;
@@ -294,6 +513,12 @@
                             left: -10%;
                             top: 40px;
                             z-index: 1;
+                            @include md{
+                                left: -5%;
+                            }
+                            @include xs{
+                                left: 8%;
+                            }
                         }
                     }
                     
@@ -319,6 +544,9 @@
     .price{
         padding-top: 1px;
         margin-bottom: 100px;
+        @include xs{
+            margin-top: 250px;
+        }
         .price__inner{
             padding: 0 100px;
             position: relative;
