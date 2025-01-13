@@ -25,7 +25,7 @@
             max-width: 700px;
             padding:  0 20px;
         }
-        @include xs{
+        @include lg{
             max-width: 550px;
             padding: 0 10px;
         }
@@ -33,7 +33,9 @@
 
     &__form {
         text-align: left;
-
+        @include lg{
+            flex-direction: column;
+        }
         &-item {
             position: relative;
             margin-bottom: 55px;

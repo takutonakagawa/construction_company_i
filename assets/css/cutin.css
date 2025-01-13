@@ -28,14 +28,31 @@
   background: rgba(255, 255, 255, 0.6);
   padding: 30px;
   letter-spacing: 0.5rem;
+  margin-left: 5%;
+}
+@media only screen and (max-width: 767px) {
+  .l-cutin #center-message {
+    font-size: 2rem;
+    letter-spacing: 0;
+  }
 }
 .l-cutin #center-message .skyblue {
   color: #4CB6E9;
   font-size: 4rem;
 }
+@media only screen and (max-width: 767px) {
+  .l-cutin #center-message .skyblue {
+    font-size: 3rem;
+  }
+}
 .l-cutin #center-message .blue {
   color: #004982;
   font-size: 4rem;
+}
+@media only screen and (max-width: 767px) {
+  .l-cutin #center-message .blue {
+    font-size: 3rem;
+  }
 }
 .l-cutin #center-message span {
   opacity: 0; /* 初期状態は透明 */
@@ -71,12 +88,17 @@
 }
 .l-cutin .skip-button {
   position: absolute;
-  bottom: 20%;
+  bottom: 10%;
   right: 0;
   margin-right: 5%;
   z-index: 10002;
   cursor: pointer;
   width: 25%;
+}
+@media only screen and (max-width: 767px) {
+  .l-cutin .skip-button {
+    width: 40%;
+  }
 }
 .l-cutin .skip-button::after {
   position: absolute;
