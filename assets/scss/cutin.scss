@@ -1,3 +1,9 @@
+@charset "utf-8";
+
+@import "./config";
+@import "./function";
+@import "./mixin";
+
 .l-cutin {
     position: fixed;
     top: 0;
@@ -27,14 +33,24 @@
       background: rgba(255, 255, 255, 0.6);
       padding: 30px;
       letter-spacing: 0.5rem;
+      margin-left: 5%;
+      @include xs{
+        font-size: 2rem;
+        letter-spacing: 0;
+      }
       .skyblue {
         color: #4CB6E9;
         font-size: 4rem;
+        @include xs{
+            font-size: 3rem;
+          }
       }
-  
       .blue {
         color: #004982;
         font-size: 4rem;
+        @include xs{
+            font-size: 3rem;
+          }
       }
   
       span {
@@ -53,12 +69,15 @@
   
     .skip-button {
       position: absolute;
-      bottom: 20%;
+      bottom: 10%;
       right: 0;
       margin-right: 5%;
       z-index: 10002;
       cursor: pointer;
       width: 25%;
+      @include xs{
+        width: 40%;
+      }
       &::after {
         position: absolute;
         top: 14px;

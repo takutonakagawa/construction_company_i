@@ -75,7 +75,7 @@
                     width: 70%;
                 }
                 @include xs{
-                    width: 70%;
+                    width: 100%;
                 }
             }
             .business_desc--p01{
@@ -89,7 +89,7 @@
                     left: 30%;
                 }
                 @include xs{
-                    left: 30%;
+                    left: 0;
                 }
             }
             .business_desc--p02{
@@ -101,6 +101,9 @@
                 }
                 @include md{
                     left: 2%;
+                }
+                @include xs{
+                    left: 0;
                 }
             }
             .business__design-block--construction_blue-p01{
@@ -221,9 +224,9 @@
                     top: 142%;
                 }
                 @include xs{
-                    width: 30%;
-                    left: 70%;
-                    top: 142%;
+                    width: 100%;
+                    left: 0%;
+                    top: 148%;
                 }
             }
             .business__btn--p02{
@@ -242,8 +245,9 @@
                     left: 15.3%;
                 }
                 @include xs{
-                    top: 120%;
-                    left: 6%;
+                    top: 130%;
+                    left: 0%;
+                    width: 100%;
                 }
                 .business__btn--detail{
                     width: 280px;
@@ -271,9 +275,9 @@
                     left: 64.4%;
                 }
                 @include xs{
-                    width: 30%;
-                    left: 70%;
-                    top: 112%;
+                    width: 100%;
+                    left: 0;
+                    top: 120%;
                 }
             }
         }
