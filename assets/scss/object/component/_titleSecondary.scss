@@ -3,6 +3,9 @@
     margin: 20px 0;
     position: relative;
     margin-bottom: 150px;
+    @include xs{
+        margin-bottom: 40px;
+    }
     .en {
         font-size: 42px;
         font-weight: bold;

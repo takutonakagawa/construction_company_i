@@ -283,6 +283,11 @@ img {
   position: relative;
   margin-bottom: 150px;
 }
+@media only screen and (max-width: 767px) {
+  .c-title-secondary {
+    margin-bottom: 40px;
+  }
+}
 .c-title-secondary .en {
   font-size: 42px;
   font-weight: bold;

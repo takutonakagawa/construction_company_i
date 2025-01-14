@@ -58,8 +58,7 @@
 .business .business__inner .p-business__contents .p-business__content--visual {
   width: 1000px;
   height: 400px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .business .business__inner .p-business__contents #renovation-section {
   padding-top: 150px;
@@ -363,4 +362,4 @@
     left: 0;
     top: 120%;
   }
-}/*# sourceMappingURL=business.css.map */
+}

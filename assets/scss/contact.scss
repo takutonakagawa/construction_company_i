@@ -13,7 +13,10 @@
 .contact {
     text-align: center;
     position: relative;
-
+    @include xs{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
     &__bg {
         text-align: center;
     }
@@ -26,32 +29,49 @@
             padding:  0 20px;
         }
         @include lg{
-            max-width: 550px;
+
             padding: 0 10px;
         }
     }
 
     &__form {
         text-align: left;
-        @include lg{
-            flex-direction: column;
+        @include xs{
+            display: block;
+            text-align: left;
         }
         &-item {
             position: relative;
             margin-bottom: 55px;
             display: flex;
             align-items: center;
-
+            @include xs{
+                flex-direction: column;
+                margin-bottom: 40px;
+            }
             .contact__label {
                 display: block;
                 width: 85px;
+                @include xs{
+                    width: 100%;
+                    margin-bottom: 15px;
+                }
             }
-
+            p{
+                @include xs{
+                    width: 100%;
+                }
+            }
             .contact__input {
                 width: calc(100% - 100px);
-
+                @include xs{
+                    width: 100%;
+                }
                 &--compact {
                     width: calc((100% - 100px) / 2);
+                    @include xs{
+                        width: 100%;
+                    }
                 }
 
                 .c-forms {
@@ -136,9 +156,29 @@
     }
 
     &__privacy {
+        border-radius: 3px;
         margin-top: 60px;
         border: solid 1px;
-        margin-bottom: 30px;
+        // margin-bottom: 30px;
+        padding: 20px;
+        text-align: left;
+        line-height: 1.7;
+        max-height: 300px;
+        overflow-y: scroll;
+        h1{
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        h2{
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        p{
+            margin-bottom: 40px;
+        }
+        ul{
+            margin-bottom: 40px;
+        }
     }
 
     &__btn {
