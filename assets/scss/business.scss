@@ -42,6 +42,10 @@
                     @include md{
                         width: 65%;
                     }
+                    @include xs{
+                        width: 100%;
+                        font-size: 24px;
+                    }
                 }
             }
             .p-business__content--visual{
@@ -104,6 +108,7 @@
                 }
                 @include xs{
                     left: 0;
+                    top: 50%;
                 }
             }
             .business__design-block--construction_blue-p01{
@@ -245,9 +250,9 @@
                     left: 15.3%;
                 }
                 @include xs{
-                    top: 130%;
-                    left: 0%;
-                    width: 100%;
+                    margin-top: 250px;
+                    position: static;
+                    display: block;
                 }
                 .business__btn--detail{
                     width: 280px;
@@ -258,7 +263,9 @@
                         width: 280px;
                     }
                     @include xs{
-                        width: 800px
+                        width: 100%;
+                        max-width: 400px;
+                        margin-bottom: 50px;
                     }
                 }
             }
