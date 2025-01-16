@@ -55,10 +55,17 @@
     width: 65%;
   }
 }
+@media only screen and (max-width: 767px) {
+  .business .business__inner .p-business__contents .p-business__content .p-business__title {
+    width: 100%;
+    font-size: 24px;
+  }
+}
 .business .business__inner .p-business__contents .p-business__content--visual {
   width: 1000px;
   height: 400px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .business .business__inner .p-business__contents #renovation-section {
   padding-top: 150px;
@@ -132,6 +139,7 @@
 @media only screen and (max-width: 767px) {
   .business .business__inner .p-business__contents .business_desc--p02 {
     left: 0;
+    top: 50%;
   }
 }
 .business .business__inner .p-business__contents .business__design-block--construction_blue-p01 {
@@ -316,9 +324,9 @@
 }
 @media only screen and (max-width: 767px) {
   .business .business__inner .p-business__contents .business__btn--p02 {
-    top: 130%;
-    left: 0%;
-    width: 100%;
+    margin-top: 250px;
+    position: static;
+    display: block;
   }
 }
 .business .business__inner .p-business__contents .business__btn--p02 .business__btn--detail {
@@ -336,7 +344,9 @@
 }
 @media only screen and (max-width: 767px) {
   .business .business__inner .p-business__contents .business__btn--p02 .business__btn--detail {
-    width: 800px;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 50px;
   }
 }
 .business .business__inner .p-business__contents .business__btn--p03 {
@@ -362,4 +372,4 @@
     left: 0;
     top: 120%;
   }
-}
+}/*# sourceMappingURL=business.css.map */
